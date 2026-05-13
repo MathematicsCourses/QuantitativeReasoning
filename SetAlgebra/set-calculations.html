@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <title>Set Calculations</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in set calculations." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samdom4peace, samuel dominic chukwuemeka, math, mathematics, algebra, set, set theory, 
+              union, intersection, intersect, set notation, prime, complement, universal set, empty set, null set, set algebra,
+              Cartesian product, symmetric difference, difference of sets, power set, subset, proper subset, superset,
+              finite set, infinite set, roster form, set builder notation, set generator notation, cardinality, cardinal number,
+              equal sets, equivalent sets, ellipsis, infinity, element, member, Venn diagrams, Identity law, Domination law, 
+              Idempotent law, Complement law, law of Complementation, De Morgan's law, Involution law, law of Double Complementation, 
+              Commutative law, Associative law, Distributive law, Absorption law, n-tuple notation, roster notation" />
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-32 silver" id="quotes">
+        <h1>Solved Examples on Set Problems/Calculations</h1>
+    </header>
+    <!--End Header/Home -->
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+
+        <div class="w3-container">
+            <!-- Image in top left corner --
+                <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                    <img class="image" src="images/samuelchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+            -->
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for a wrong answer. <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately. <br><br>
+
+            Solve all questions <br>
+            Write each formula used for solving the question. <br>
+            If the question includes a requirement to draw a Venn Diagram, draw the Venn Diagram. <br>
+            Show all work.
+            <br><br>
+
+            <b>Corequisites:</b>
+            <a href="https://statistical-science.appspot.com/Probability/probability.html"
+                target="_blank">Probability</a>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>ACT</b> Fifty shoppers at a pet store were asked if they owned at least 1 cat or at least 1 dog.
+                <br>
+                Data from their answers were recorded below. <br>
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 50;">Ownership</td>
+                        <td class="w3-center" style="width: 50%;">Number of shoppers</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Cat(s) only</td>
+                        <td class="w3-center">13</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Dog(s) only</td>
+                        <td class="w3-center">24</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Both cat(s) and dog(s)</td>
+                        <td class="w3-center">7</td>
+                    </tr>
+                </table>
+                <br>
+                How many of these shoppers said that they owned NEITHER a cat NOR a dog? <br><br>
+                $
+                A.\;\; 0 \\[3ex]
+                B.\;\; 6 \\[3ex]
+                C.\;\; 7 \\[3ex]
+                D.\;\; 13 \\[3ex]
+                E.\;\; 43 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC1')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC1">
+                    <br>
+                    $
+                    Let \\[3ex]
+                    Cat = C \\[3ex]
+                    Dog = D \\[3ex]
+                    Cat(s)\;\;only = n(C \cap D') = 13 \\[3ex]
+                    Dog(s)\;\;only = n(D \cap C') = 24 \\[3ex]
+                    Both\;\;cat(s)\;\;and\;\;dogs = n(C \cap D) = 7 \\[3ex]
+                    Neither\;\;a\;\;cat\;\;nor\;\;a\;\;dog = n(C' \cap D') = ? \\[3ex]
+                    Universal\;\;set = n(\mu) = 50 \\[3ex]
+                    n(C \cap D') + n(D \cap C') + n(C \cap D) + n(C' \cap D') = n(\mu) \\[3ex]
+                    13 + 24 + 7 + n(C' \cap D') = 50 \\[3ex]
+                    44 + n(C' \cap D') = 50 \\[3ex]
+                    n(C' \cap D') = 50 - 44 \\[3ex]
+                    n(C' \cap D') = 6
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>WASSCE</b> Out of 30 candidates applying for a post, 17 have degrees, 15 diplomas and 4 neither
+                degree nor
+                diploma. <br>
+                How many of them have both?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSC2')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC2">
+                    <br>
+                    $
+                    n(\xi) = 30 \\[3ex]
+                    Let: \\[3ex]
+                    degree = DE \\[3ex]
+                    diploma = DI \\[3ex]
+                    n(DE) = 17 \\[3ex]
+                    n(DI) = 15 \\[3ex]
+                    n(neither) = n(DE \cup DI)' = 4 \\[3ex]
+                    n(both) = n(DE \cap DI) = d \\[3ex]
+                    n(DE\;\;only) = n(DE \cap DI') = 17 - d \\[3ex]
+                    n(DI\;\;only) = n(DI \cap DE') = 15 - d \\[3ex]
+                    \implies \\[3ex]
+                    (17 - d) + (15 - d) + d + 4 = 30 \\[3ex]
+                    17 - d + 15 - d + d + 4 = 30 \\[3ex]
+                    36 - d = 30 \\[3ex]
+                    36 - 30 = d \\[3ex]
+                    d = 6 \\[3ex]
+                    $
+                    6 candidates have both degrees and diplomas
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSC3')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC3">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>ACT</b> At Brookfield High School, 55 seniors are enrolled in the sociology class and 40 seniors
+                are enrolled
+                in the drawing class. <br>
+                Of these seniors, 20 are enrolled in both the sociology class and the drawing class. <br>
+                How many of the 120 seniors enrolled at Brookfield High School are NOT enrolled in either the sociology
+                class or the
+                drawing class? <br><br>
+                $
+                F.\;\; 5 \\[3ex]
+                G.\;\; 15 \\[3ex]
+                H.\;\; 20 \\[3ex]
+                J.\;\; 35 \\[3ex]
+                K.\;\; 45 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC4')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC4">
+                    <br>
+                    $
+                    n(\mu) = 120 \\[3ex]
+                    Let: \\[3ex]
+                    sociology\;\;class = C \\[3ex]
+                    drawing\;\;class = D \\[3ex]
+                    n(C) = 55 \\[3ex]
+                    n(D) = 40 \\[3ex]
+                    n(C \cap D) = 20 \\[3ex]
+                    n(C\;\;only) = n(C \cap D') = 55 - 20 = 35 \\[3ex]
+                    n(D\;\;only) = n(D \cap C') = 40 - 20 = 20 \\[3ex]
+                    n(C \cup D)' = k \\[3ex]
+                    \implies \\[3ex]
+                    35 + 20 + 20 + k = 120 \\[3ex]
+                    75 + k = 120 \\[3ex]
+                    k = 120 - 75 \\[3ex]
+                    k = 45 \\[3ex]
+                    $
+                    45 students are NOT enrolled in either the sociology class or the drawing class
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) BeGood Tutors offer tutorials on Physics, Chemistry, and Biology classes. <br>
+                They divided their student population into two groups: Group $A$ and Group $B$ <br><br>
+                (a.) Group $A$ has a hundred and eighty students. <br>
+                Each student is enrolled in at least one of the three classes. <br>
+                Sixty students are taking Physics <br>
+                Seventy five students are taking Chemistry. <br>
+                Seventy students are taking Biology. <br>
+                Twelve students are taking Physics and Chemistry. <br>
+                Twenty one students are taking Physics and Biology. <br>
+                Ten students are taking Chemistry and Biology. <br>
+                How many students are taking all three classes? <br><br>
+
+                (b.) Group $B$ has a certain number of students. <br>
+                Thirty students are taking Physics. <br>
+                Twenty students are taking Chemistry. <br>
+                Sixteen students are taking Biology. <br>
+                Ten students are taking Physics and Chemistry <br>
+                Seven students are taking Physics and Biology. <br>
+                Twelve students are taking Chemistry and Biology. <br>
+                Five students are taking all three classes. <br>
+                Nine students are not taking any class. <br>
+                How many students are in Group $B$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSC5')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC5">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Physics = P \\[3ex]
+                    Chemistry = C \\[3ex]
+                    Biology = B \\[3ex]
+                    (a.) \\[3ex]
+                    n(P \cap C \cap B) = x \\[3ex]
+                    n(\mu) = 180 \\[3ex]
+                    n(P) = 60 \\[3ex]
+                    n(C) = 75 \\[3ex]
+                    n(B) = 70 \\[3ex]
+                    n(P \cap C) = 12 \\[3ex]
+                    n(P \cap B) = 21 \\[3ex]
+                    n(C \cap B) = 10 \\[3ex]
+                    \underline{Physics\;\;and\;\;Chemistry\;\;only} \\[3ex]
+                    n(P \cap C \cap B') = n(P \cap C) - n(P \cap C \cap B) \\[3ex]
+                    = 12 - x \\[3ex]
+                    \underline{Physics\;\;and\;\;Biology\;\;only} \\[3ex]
+                    n(P \cap B \cap C') = n(P \cap B) - n(P \cap C \cap B) \\[3ex]
+                    = 21 - x \\[3ex]
+                    \underline{Chemistry\;\;and\;\;Biology\;\;only} \\[3ex]
+                    n(C \cap B \cap P') = n(C \cap B) - n(P \cap C \cap B) \\[3ex]
+                    = 10 - x \\[3ex]
+                    \underline{Physics\;\;only} \\[3ex]
+                    = n(P) - [n(P \cap C \cap B') + n(P \cap B \cap C') + n(P \cap C \cap B)] \\[3ex]
+                    = 60 - [(12 - x) + (21 - x) + x] \\[3ex]
+                    = 60 - (12 - x + 21 - x + x) \\[3ex]
+                    = 60 - (33 - x) \\[3ex]
+                    = 60 - 33 + x \\[3ex]
+                    = 27 + x \\[3ex]
+                    \underline{Chemistry\;\;only} \\[3ex]
+                    = n(C) - [n(P \cap C \cap B') + n(C \cap B \cap P') + n(P \cap C \cap B)] \\[3ex]
+                    = 60 - [(12 - x) + (10 - x) + x] \\[3ex]
+                    = 60 - (12 - x + 10 - x + x) \\[3ex]
+                    = 60 - (22 - x) \\[3ex]
+                    = 60 - 22 + x \\[3ex]
+                    = 38 + x \\[3ex]
+                    \underline{Biology\;\;only} \\[3ex]
+                    = n(B) - [n(P \cap B \cap C') + n(C \cap B \cap P') + n(P \cap C \cap B)] \\[3ex]
+                    = 60 - [(21 - x) + (10 - x) + x] \\[3ex]
+                    = 60 - (21 - x + 10 - x + x) \\[3ex]
+                    = 60 - (31 - x) \\[3ex]
+                    = 60 - 31 + x \\[3ex]
+                    = 29 + x \\[3ex]
+                    Based\;\;on\;\;the\;\;information\;\;given \\[3ex]
+                    This\;\;implies\;\;that: \\[3ex]
+                    (27 + x) + (38 + x) + (29 + x) + (12 - x) + (21 - x) + (10 - x) + x = 180 \\[3ex]
+                    27 + x + 38 + x + 29 + x + 12 - x + 21 - x + 10 - x + x = 180 \\[3ex]
+                    137 + x = 180 \\[3ex]
+                    x = 180 - 137 \\[3ex]
+                    x = 43\;\;students \\[3ex]
+                    $
+                    Forty three students are taking all three classes. <br><br>
+
+                    $
+                    (b.) \\[3ex]
+                    n(P \cap C \cap B) = 5 \\[3ex]
+                    n(\mu) = ? \\[3ex]
+                    n(P) = 30 \\[3ex]
+                    n(C) = 20 \\[3ex]
+                    n(B) = 16 \\[3ex]
+                    n(P \cap C) = 10 \\[3ex]
+                    n(P \cap B) = 7 \\[3ex]
+                    n(C \cap B) = 12 \\[3ex]
+                    n(P' \cap C' \cap B') = 9 \\[3ex]
+                    \underline{Physics\;\;and\;\;Chemistry\;\;only} \\[3ex]
+                    n(P \cap C \cap B') = n(P \cap C) - n(P \cap C \cap B) \\[3ex]
+                    = 10 - 5 \\[3ex]
+                    = 5 \\[3ex]
+                    \underline{Physics\;\;and\;\;Biology\;\;only} \\[3ex]
+                    n(P \cap B \cap C') = n(P \cap B) - n(P \cap C \cap B) \\[3ex]
+                    = 7 - 5 \\[3ex]
+                    = 2 \\[3ex]
+                    \underline{Chemistry\;\;and\;\;Biology\;\;only} \\[3ex]
+                    n(C \cap B \cap P') = n(C \cap B) - n(P \cap C \cap B) \\[3ex]
+                    = 12 - 5 \\[3ex]
+                    = 7 \\[3ex]
+                    \underline{Physics\;\;only} \\[3ex]
+                    = n(P) - [n(P \cap C \cap B') + n(P \cap B \cap C') + n(P \cap C \cap B)] \\[3ex]
+                    = 30 - (5 + 2 + 5) \\[3ex]
+                    = 30 - 12 \\[3ex]
+                    = 18 \\[3ex]
+                    \underline{Chemistry\;\;only} \\[3ex]
+                    = n(C) - [n(P \cap C \cap B') + n(C \cap B \cap P') + n(P \cap C \cap B)] \\[3ex]
+                    = 20 - (5 + 7 + 5) \\[3ex]
+                    = 20 - 17 \\[3ex]
+                    = 3 \\[3ex]
+                    \underline{Biology\;\;only} \\[3ex]
+                    = n(B) - [n(P \cap B \cap C') + n(C \cap B \cap P') + n(P \cap C \cap B)] \\[3ex]
+                    = 16 - (2 + 7 + 5) \\[3ex]
+                    = 16 - 14 \\[3ex]
+                    = 2 \\[3ex]
+                    Based\;\;on\;\;the\;\;information\;\;given \\[3ex]
+                    This\;\;implies\;\;that: \\[3ex]
+                    n(\mu) = \\[3ex]
+                    Physics\;\;only + Chemistry\;\;only + Biology\;\;only + \\[3ex]
+                    Physics\;\;and\;\;Chemistry\;\;only + Physics\;\;and\;\;Biology\;\;only +
+                    Chemistry\;\;and\;\;Biology\;\;only + \\[3ex]
+                    Physics\;\;and\;\;Chemistry\;\;and\;\;Biology + \\[3ex]
+                    Neither\;\;Physics\;\;nor\;\;Chemistry\;\;nor\;\;Biology \\[3ex]
+                    n(\mu) = 18 + 3 + 2 + 5 + 2 + 7 + 5 + 9 \\[3ex]
+                    n(\mu) = 51 \\[3ex]
+                    $
+                    $51$ students are in Group $B$
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Every student at Divine Mercy Bible School is required to study at least one of the
+                book of Genesis from the Old Testament or the Book of Revelation from the New Testament. <br>
+                During the Fall Semester of a certain year, seventy students studied the Book of Genesis. <br>
+                One hundred students studied the book of Revelation. <br>
+                One hundred and sixty students studied the book of Genesis OR the book of Revelation. <br><br>
+                How many students: <br>
+                (I.) studied both books? <br>
+                (II.) studied the book of Genesis but not the book of Revelation? <br>
+                (III.) studied the book of Revelation but not the book of Genesis? <br>
+                (IV.) did not study any of the books? <br>
+                (V.) are enrolled in the school? <br>
+                (VI.) studied at least one book? <br>
+                (VII.) studied at least two books? <br>
+                (VIII.) studied exactly one book? <br>
+                (IX.) studied exactly two books? <br>
+                (X.) studied at most one book? <br>
+                (XI.) studied at most two books? <br>
+                (XII.) more than one book? <br>
+                (XIII.) more than two books? <br>
+                (XIV.) less than one book? <br>
+                (XV.) less than two books?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSC6')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC6">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Genesis = G \\[3ex]
+                    Revelation = R \\[3ex]
+                    n(G) = 70 \\[3ex]
+                    n(R) = 100 \\[3ex]
+                    (I.) \\[3ex]
+                    n(G \cup R) = 160 \\[3ex]
+                    n(G \cap R) = n(G) + n(R) - n(G \cup R) \\[3ex]
+                    = 70 + 100 - 160 \\[3ex]
+                    = 10 \\[3ex]
+                    $
+                    $10$ students studied BOTH books. <br><br>
+                    $
+                    (II.) \\[3ex]
+                    n(G \cap R') = n(G) - n(G \cap R) \\[3ex]
+                    = 70 - 10 \\[3ex]
+                    = 60 \\[3ex]
+                    $
+                    $60$ students studied ONLY the book of Genesis. <br><br>
+                    $
+                    (III.) \\[3ex]
+                    n(G' \cap R) = n(R) - n(G \cap R) \\[3ex]
+                    = 100 - 10 \\[3ex]
+                    = 90 \\[3ex]
+                    $
+                    $90$ students studied ONLY the book of Revelation. <br><br>
+                    (IV.) <br>
+                    $n(G \cup R)' = 0$ <br>
+                    Based on the Question: Every student at Divine Mercy Bible School is required to study the
+                    book of Genesis from the Old Testament or the Book of Revelation from the New Testament. <br><br>
+                    No student did not study any book. <br><br>
+                    $
+                    (V.) \\[3ex]
+                    n(\mu) = n(G \cup R) + n(G \cup R)' \\[3ex]
+                    = 160 + 0 \\[3ex]
+                    = 160 \\[3ex]
+                    $
+                    $160$ students are enrolled in the school. <br><br>
+
+                    (VI.) <br>
+                    "At least one" book means "one book or more" <br>
+                    "At least one" means $\ge 1$ <br>
+                    They are the students who studied ONLY the book of Genesis and the students who studied ONLY the
+                    book of
+                    Revelation and the students who studied BOTH books. <br><br>
+                    $
+                    n(\gt 1) = n(G \cap R') + n(G' \cap R) + n(G \cap R) \\[3ex]
+                    = 60 + 90 + 10 \\[3ex]
+                    = 160 \\[3ex]
+                    $
+                    $160$ students studied AT LEAST one book. <br><br>
+                    (VII.) <br>
+                    "At least two" books means "two books or more" <br>
+                    "At least two" means $\ge 2$ <br>
+                    Because we have only two books in this case, we shall find the students who studied BOTH books.
+                    <br><br>
+                    $
+                    n(\gt 2) = n(G \cap R) \\[3ex]
+                    = 10 \\[3ex]
+                    $
+                    $10$ students studied AT LEAST two books. <br><br>
+                    (VIII.) <br>
+                    "Exactly one book" means "only one book" <br>
+                    "Exactly one" means $=1$ <br>
+                    They are the students who studied ONLY the book of Genesis and the students who studied ONLY the
+                    book of
+                    Revelation. <br><br>
+                    $
+                    n(= 1) = n(G \cap R') + n(G' \cap R) \\[3ex]
+                    = 60 + 90 \\[3ex]
+                    = 150 \\[3ex]
+                    $
+                    $150$ students studied EXACTLY one books. <br><br>
+
+                    (IX.) <br>
+                    "Exactly two" books means "only two books" <br>
+                    "Exactly two" means $= 2$ <br>
+                    Because we have only two books in this case, we shall find the students who studied BOTH books.
+                    <br><br>
+                    $
+                    n(= 2) = n(G \cap R) \\[3ex]
+                    = 10 \\[3ex]
+                    $
+                    $10$ students studied EXACTLY two books. <br><br>
+
+                    (X.) <br>
+                    "At most one" book means "one book or less" <br>
+                    "At most one" means $\le 1$ <br>
+                    They are the students who studied ONLY the book of Genesis and the students who studied ONLY the
+                    book of
+                    Revelation and the students who did not study any book. <br><br>
+                    $
+                    n(\le 1) = n(G \cap R') + n(G' \cap R) + n(G \cup R)' \\[3ex]
+                    = 60 + 90 + 0 \\[3ex]
+                    = 150 \\[3ex]
+                    $
+                    $150$ students studied AT MOST one book. <br><br>
+
+                    (XI.) <br>
+                    "At most two" books means "two books or less" <br>
+                    "At most two" means $\le 2$ <br>
+                    They are the students who studied BOTH books and the students who studied ONLY the book of Genesis
+                    and the
+                    students who studied ONLY the book of Revelation and the students who did not study any book.
+                    <br><br>
+                    $
+                    n(\le 2) = n(G \cap R) + n(G \cap R') + n(G' \cap R) + n(G \cup R)' \\[3ex]
+                    = 10 + 60 + 90 + 0 \\[3ex]
+                    = 160 \\[3ex]
+                    $
+                    $160$ students studied AT MOST two books. <br><br>
+
+                    (XII.) <br>
+                    "More than one" means $\gt 1$ <br>
+                    They are the students who studied BOTH books <br><br>
+                    $
+                    n(\gt 1) = n(G \cap R) \\[3ex]
+                    = 10 \\[3ex]
+                    $
+                    $10$ students studied MORE THAN one book. <br><br>
+
+                    (XIII.) <br>
+                    "More than two" means $\gt 2$ <br>
+                    We have only two books. So, there are no students who studied more than two books. <br>
+                    $0$ student studied MORE THAN two books. <br><br>
+
+                    (XIV.) <br>
+                    "Less than one" means $\lt 1$ <br>
+                    They are the students who did not study any book. <br><br>
+                    $
+                    n(\lt 1) = n(G \cup R)' \\[3ex]
+                    = 0 \\[3ex]
+                    $
+                    $0$ student studied less than one book. <br><br>
+
+                    (XV.) <br>
+                    "Less than one" means $\lt 1$ <br>
+                    They are the students studied ONLY the book of Genesis and the students who studied ONLY the book of
+                    Revelation and the students who did not study any book. <br><br>
+                    $
+                    n(\lt 2) = n(G \cap R') + n(G' \cap R) + n(G \cup R)' \\[3ex]
+                    = 60 + 90 + 0 \\[3ex]
+                    = 150 \\[3ex]
+                    $
+                    $150$ students studied less than two books.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <button class="solutions" onclick="solutions('solutionSC7')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC7">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>ACT</b> Among a group of 20 students, 13 students are members of the Math Club, 11 students are
+                members of the
+                Drama Club, and 9 students are members of both clubs. <br>
+                How many of the 20 students are NOT members of either club? <br><br>
+                $
+                F.\;\; 4 \\[3ex]
+                G.\;\; 5 \\[3ex]
+                H.\;\; 6 \\[3ex]
+                J.\;\; 11 \\[3ex]
+                K.\;\; 13 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC8')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC8">
+                    <br>
+                    $
+                    n(\mu) = 20 \\[3ex]
+                    Let: \\[3ex]
+                    Math\;\;Club = M \\[3ex]
+                    Drama\;\;Club = D \\[3ex]
+                    n(M) = 13 \\[3ex]
+                    n(D) = 11 \\[3ex]
+                    n(M \cap D) = 9 \\[3ex]
+                    n(M \cap D') = 13 - 9 = 4 \\[3ex]
+                    n(M' \cap D) = 11 - 9 = 2 \\[3ex]
+                    n(M' \cap D') = ? \\[3ex]
+                    \implies \\[3ex]
+                    n(M' \cap D') + n(M \cap D') + n(M' \cap D) + n(M \cap D) = n(\mu) \\[3ex]
+                    n(M' \cap D') + 4 + 2 + 9 = 20 \\[3ex]
+                    n(M' \cap D') + 15 = 20 \\[3ex]
+                    n(M' \cap D') = 20 - 15 \\[3ex]
+                    n(M' \cap D') = 5 \\[3ex]
+                    $
+                    5 students are NOT members of either club.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <button class="solutions" onclick="solutions('solutionSC9')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC9">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>ACT</b> In a small high school with 20 seniors, 8 of the seniors are in soccer, 9 of the
+                seniors are in band,
+                and 5 of the seniors are in both. <br>
+                How many seniors are in neither soccer nor band? <br><br>
+                $
+                A.\;\; 15 \\[3ex]
+                B.\;\; 12 \\[3ex]
+                C.\;\; 11 \\[3ex]
+                D.\;\; 8 \\[3ex]
+                E.\;\; 3 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC10')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC10">
+                    <br>
+                    $
+                    n(\mu) = 20 \\[3ex]
+                    Let: \\[3ex]
+                    Soccer = C \\[3ex]
+                    Band = B \\[3ex]
+                    n(C) = 8 \\[3ex]
+                    n(B) = 9 \\[3ex]
+                    n(C \cap B) = 5 \\[3ex]
+                    n(C \cap B') = 8 - 5 = 3 \\[3ex]
+                    n(C' \cap B) = 9 - 5 = 4 \\[3ex]
+                    n(C' \cap B') = ? \\[3ex]
+                    \implies \\[3ex]
+                    n(C' \cap B') + n(C \cap B') + n(C' \cap B) + n(C \cap B) = n(\mu) \\[3ex]
+                    n(C' \cap B') + 3 + 4 + 5 = 20 \\[3ex]
+                    n(C' \cap B') + 12 = 20 \\[3ex]
+                    n(C' \cap B') = 20 - 12 \\[3ex]
+                    n(C' \cap B') = 8 \\[3ex]
+                    $
+                    8 seniors are in neither soccer nor band.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <button class="solutions" onclick="solutions('solutionSC11')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC11">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <button class="solutions" onclick="solutions('solutionSC12')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <button class="solutions" onclick="solutions('solutionSC13')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>ACT</b> A health club surveyed 175 members about which types of equipment they had used in the
+                past month. <br>
+                Of the 175 members, 117 had used treadmills, 89 had used stationary bikes, and 53 had used both types of
+                equipment. <br>
+                Some members had used neither type of equipment. <br>
+                Of the 175 members, how many had used treadmills, stationary bikes, or both? <br><br>
+                $
+                A.\;\; 53 \\[3ex]
+                B.\;\; 81 \\[3ex]
+                C.\;\; 122 \\[3ex]
+                D.\;\; 134 \\[3ex]
+                E.\;\; 153 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC14')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC14">
+                    <br>
+                    The members that had used treadmills, stationary bikes, or both are those that: <br>
+                    used treadmills ONLY <br>
+                    used stationary bikes ONLY <br>
+                    used both treadmills and stationary bikes <br><br>
+                    $
+                    Let: \\[3ex]
+                    treadmills = T \\[3ex]
+                    stationary\;\;bikes = B \\[3ex]
+                    n(\xi) = 175 \\[3ex]
+                    n(T) = 175 \\[3ex]
+                    n(B) = 89 \\[3ex]
+                    n(T \cap B) = 53 \\[3ex]
+                    n(T\;only) = n(T \cap B') = 117 - 53 = 64 \\[3ex]
+                    n(B\;only) = n(B \cap T') = 89 - 53 = 36 \\[3ex]
+                    n(T \cup B) \\[3ex]
+                    = n(T \cap B') + n(B \cap T') + n(T \cap B) \\[3ex]
+                    = 64 + 36 + 53 \\[3ex]
+                    = 153 \\[3ex]
+                    $
+                    153 members had used treadmills, stationary bikes, or both
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <button class="solutions" onclick="solutions('solutionSC15')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC15">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <button class="solutions" onclick="solutions('solutionSC16')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionSC17')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <button class="solutions" onclick="solutions('solutionSC18')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <button class="solutions" onclick="solutions('solutionSC19')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>ACT</b> Kelly asked 120 students questions about skiing. <br>
+                The results of the poll are shown in the table below. <br>
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 80%;">Question</td>
+                        <td class="w3-center" style="width: 10%;">Yes</td>
+                        <td class="w3-center" style="width: 10%;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">1. Have you skied either cross-country or downhill?</td>
+                        <td class="w3-center">65</td>
+                        <td class="w3-center">55</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">2. If you answered Yes to Question 1, did you ski downhill?</td>
+                        <td class="w3-padding">28</td>
+                        <td class="w3-padding">37</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">3. If you answered Yes to Question 1, did you ski cross-country?</td>
+                        <td class="w3-padding">45</td>
+                        <td class="w3-padding">20</td>
+                    </tr>
+                </table>
+                <br>
+                After completing the poll, Kelly wondered how many of the students polled had skied both cross-country
+                <i>and</i>
+                downhill. <br>
+                How many of the students polled indicated that they had skied both cross-country and downhill?
+                <br><br>
+                $
+                A.\;\; 73 \\[3ex]
+                B.\;\; 65 \\[3ex]
+                C.\;\; 47 \\[3ex]
+                D.\;\; 18 \\[3ex]
+                E.\;\; 8 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC20')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC20">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    C = cross-country \\[3ex]
+                    D = downhill \\[3ex]
+                    n(C \cup D) = 65 \\[3ex]
+                    n(D) = 28 \\[3ex]
+                    n(C) = 45 \\[3ex]
+                    n(C \cap D) = e \\[3ex]
+                    n(C \cap D') = 45 - e \\[3ex]
+                    n(C' \cap D) = 28 - e \\[3ex]
+                    n(C \cap D) + n(C \cap D') + n(C' \cap D) = n(C \cup D) \\[3ex]
+                    e + (45 - e) + (28 - e) = 65 \\[3ex]
+                    e + 45 - e + 28 - e = 65 \\[3ex]
+                    73 - e = 65 \\[3ex]
+                    73 - 65 = e \\[3ex]
+                    e = 8 \\[3ex]
+                    $
+                    8 students skied both cross-country and downhill
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-calculations.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionSC21')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <button class="solutions" onclick="solutions('solutionSC22')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionSC23')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) <b>ACT</b> After polling a class of 20 music students by a show of hands, you find that 8 students
+                play the guitar
+                and 9 students play the piano. <br>
+                Given that information, what is the minimum number of students in this music class who play both the
+                guitar and the
+                piano? <br><br>
+                $
+                F.\;\; 0 \\[3ex]
+                G.\;\; 1 \\[3ex]
+                H.\;\; 8 \\[3ex]
+                J.\;\; 9 \\[3ex]
+                K.\;\; 17 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC24')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC24">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    guitar = G \\[3ex]
+                    piano = P \\[3ex]
+                    n(G) = 8 \\[3ex]
+                    n(P) = 9 \\[3ex]
+                    n(G \cap P) = k \\[3ex]
+                    n(\mu) = 20 \\[3ex]
+                    n(G \cap P') = 8 - k \\[3ex]
+                    n(G \cap P') = 9 - k \\[3ex]
+                    \implies \\[3ex]
+                    n(G \cap P') + n(G' \cap P) + n(G \cap P) = n(\mu) \\[3ex]
+                    8 - k + 9 - k + k = 20 \\[3ex]
+                    17 - k = 20 \\[3ex]
+                    17 - 20 = k \\[3ex]
+                    k = -3 \\[3ex]
+                    $
+                    This is not possible because the number that play both the guitar and the piano cannot be negative
+                    <br>
+                    That number must be non-negative (zero and positive integers only) <br>
+                    So, let us analyze the options. <br>
+                    The number of students that play ONLY the guitar cannot be negative. This eliminates Options
+                    <b>J.</b> and <b>K.</b> <br>
+                    Any of Options <b>F.</b>, <b>G.</b>, and <b>H.</b> can be the number of students that play both the
+                    guitar and the
+                    piano. <br>
+                    However, the question is asking for the minimum number <br>
+                    That leaves us with zero...Option <b>F.</b> as the correct answer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionSC25')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <button class="solutions" onclick="solutions('solutionSC26')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <button class="solutions" onclick="solutions('solutionSC27')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <button class="solutions" onclick="solutions('solutionSC28')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionSC29')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <button class="solutions" onclick="solutions('solutionSC30')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionSC31')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) <b>ACT</b> All 30 students in a history class took 2 tests. <br>
+                Of these students, 28 passed the first test and 25 passed the second test. <br>
+                What is the maximum possible number of students who passed both tests?
+                <br><br>
+                $
+                F.\;\; 23 \\[3ex]
+                G.\;\; 25 \\[3ex]
+                H.\;\; 27 \\[3ex]
+                J.\;\; 28 \\[3ex]
+                K.\;\; 30 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSC32')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC32">
+                    <br>
+                    Let: \\[3ex]
+                    first\;\;test = F \\[3ex]
+                    second\;\;test = E \\[3ex]
+                    n(F) = 28 \\[3ex]
+                    n(E) = 25 \\[3ex]
+                    n(both\;\;tests) = n(F \cap E) = p \\[3ex]
+                    n(F\;\;ONLY) = n(F \cap E') = 28 - p \\[3ex]
+                    n(E\;\;ONLY) = n(E \cap F') = 25 - p \\[3ex]
+                    n(\xi) = 30 \\[3ex]
+                    \implies \\[3ex]
+                    n(F \cap E) + n(F \cap E') + n(F' \cap E) = n(\xi) \\[3ex]
+                    p + 28 - p + 25 - p = 30 \\[3ex]
+                    53 - p = 30 \\[3ex]
+                    53 - 30 = p \\[3ex]
+                    p = 23 \\[3ex]
+                    $
+                    The number of students who passed both tests is 23 <br>
+                    However, the maximum number of students who passed both tests is 25 <br><br>
+                    <i>
+                        <b>Student:</b> How is it 25? <br>
+                        <b>Teacher:</b> Because the number of students who passed either test ONLY cannot be negative
+                        <br>
+                        The number of students who passed the either test ONLY should be at least the number of people
+                        who passed
+                        either test <br>
+                        For example: the number of people who passed the second test ONLY should be at least the number
+                        of people who
+                        passed the second test. <br>
+                        In other words, the number of people who passed the second test ONLY cannot be negative. <br>
+                        <b>Student:</b> You used the second test as the example because 28 is greater than 25? <br>
+                        <b>Teacher:</b> That is correct.
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionSC33')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <button class="solutions" onclick="solutions('solutionSC34')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionSC35')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <button class="solutions" onclick="solutions('solutionSC36')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionSC37')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <button class="solutions" onclick="solutions('solutionSC38')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <button class="solutions" onclick="solutions('solutionSC39')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <button class="solutions" onclick="solutions('solutionSC40')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-calculations.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionSC41')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <button class="solutions" onclick="solutions('solutionSC42')">Show/Hide Answer</button>
+                <div class="result" id="solutionSC42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center silver w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages2.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script src="scripts/piecewise-functions.js"></script>
+</body>
+
+</html>

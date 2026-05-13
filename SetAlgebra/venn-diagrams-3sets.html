@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <title>Venn Diagrams for Three or More Sets</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in Venn diagrams for three sets calculations." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samdom4peace, samuel dominic chukwuemeka, math, mathematics, algebra, set, set theory, 
+              union, intersection, intersect, set notation, prime, complement, universal set, empty set, null set, set algebra,
+              Cartesian product, symmetric difference, difference of sets, power set, subset, proper subset, superset,
+              finite set, infinite set, roster form, set builder notation, set generator notation, cardinality, cardinal number,
+              equal sets, equivalent sets, ellipsis, infinity, element, member, Venn diagrams, Identity law, Domination law, 
+              Idempotent law, Complement law, law of Complementation, De Morgan's law, Involution law, law of Double Complementation, 
+              Commutative law, Associative law, Distributive law, Absorption law, n-tuple notation, roster notation" />
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <!-- Header/Home -->
+    <header class="w3-padding-32 silver" id="quotes">
+        <h1>Solved Examples on Venn Diagrams for Three or More Sets</h1>
+    </header>
+    <!-- End Header/Home -->
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+
+        <div class="w3-container">
+            <!-- Image in top left corner --
+                <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                    <img class="image" src="images/samdomforpeace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+            -->
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for any wrong answer. <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+            <br><br>
+            <b>Corequisites:</b>
+            <a href="https://statistical-science.appspot.com/Probability/probability.html"
+                target="_blank">Probability</a>
+            <br><br>
+            Solve all questions <br>
+            Draw Venn Diagrams for each question and answer as applicable <br>
+            Show all work.
+        </div>
+
+        <p class="w3-center">
+            <b>Reference Venn Diagram:</b> We shall use it for some questions. <br>
+            <img src="images/Set Algebra/Three Sets/working copy.png" alt="Working Copy - 3 Sets">
+        </p>
+
+        <p class="w3-container">
+            $
+            \mu = \{1, 2, 3, 4, 5, 6, 7, 8\} \\[3ex]
+            A = \{1, 4, 5, 7\} \\[3ex]
+            A' = \{2, 3, 6, 8\} \\[3ex]
+            B = \{2, 5, 6, 7\} \\[3ex]
+            B' = \{1, 3, 4, 8\} \\[3ex]
+            C = \{3, 4, 6, 7\} \\[3ex]
+            C' = \{1, 2, 5, 8\}
+            $
+        </p>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>NSC</b> Complaints about a restaurant fell into three main categories: the menu (<i>M</i>), the
+                food (<i>F</i>) and
+                the service (<i>S</i>). <br>
+                In total 173 complaints were received in a certain month. <br>
+                The complaints were as follows: <br>
+                <ul style="list-style-type: disc;">
+                    <li>110 complained about the menu.</li>
+                    <li>55 complained about the food.</li>
+                    <li>67 complained about the service.</li>
+                    <li>20 complained about the menu and the food, but not the service.</li>
+                    <li>11 complained about the menu and the service, but not the food.</li>
+                    <li>16 complained about the food and the service, but not the menu.</li>
+                    <li>The number who complained about all three is unknown.</li>
+                </ul>
+                (1.1) Draw a Venn Diagram to illustrate the above information. <br><br>
+                (1.2) Determine the number of people who complained about ALL THREE categories. <br><br>
+                (1.3) Determine the probability that a complaint selected at random from those received, complained
+                about AT LEAST
+                TWO of the categories (that is. menu, food and service). <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets1')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets1">
+                    <br>
+                    Let the number who complained about all three = $x$ <br><br>
+                    $
+                    n(\mu) = 173 \\[3ex]
+                    n(M) = 110 \\[3ex]
+                    n(F) = 55 \\[3ex]
+                    n(S) = 67 \\[3ex]
+                    n(M\;\;and\;\;F\;\;only) = 20 \\[3ex]
+                    n(M\;\;and\;\;S\;\;only) = 11 \\[3ex]
+                    n(F\;\;and\;\;S\;\;only) = 16 \\[3ex]
+                    n(M\;\;only) = 110 - (20 + x + 11) \\[3ex]
+                    n(F\;\;only) = 55 - (20 + x + 16) \\[3ex]
+                    n(S\;\;only) = 67 - (11 + x + 16) \\[3ex]
+                    (1.1) \\[3ex]
+                    $
+                    The Venn Diagram is drawn as shown: <br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number1.png" alt="Number 1">
+                    </div> <br><br>
+
+                    $
+                    (1.2) \\[3ex]
+                    110 - (20 + x + 11) + 55 - (20 + x + 16) + 67 - (11 + x + 16) + 20 + 11 + 16 + x = 173 \\[3ex]
+                    110 - (31 + x) + 55 - (36 + x) + 67 - (27 + x) + 47 + x = 173 \\[3ex]
+                    110 - 31 - x + 55 - 36 - x + 67 - 27 - x + 47 + x = 173 \\[3ex]
+                    185 - 2x = 173 \\[3ex]
+                    185 - 173 = 2x \\[3ex]
+                    12 = 2x \\[3ex]
+                    2x = 12 \\[3ex]
+                    x = \dfrac{12}{2} \\[5ex]
+                    x = 6 \\[3ex]
+                    $
+                    $6$ people complained about all three categories. <br><br>
+
+                    Let $E$ be the event of selecting a complaint about at least two of the categories <br>
+                    At least two means two or more <br>
+                    It means: <br>
+                    $M$ and $F$ only ($20$) or <br>
+                    $M$ and $S$ only ($11$) or <br>
+                    $F$ and $S$ only ($16$) or <br>
+                    $M$, $F$, and $S$ ... in other words all three = $6$ <br><br>
+                    $
+
+                    (1.3) \\[3ex]
+                    n(E) = 20 + 11 + 16 + 6 \\[3ex]
+                    n(E) = 53 \\[3ex]
+                    n(S) = n(\mu) = 173 \\[3ex]
+                    P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                    P(E) = \dfrac{53}{173}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>JAMB</b>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number2.png" alt="Number 2">
+                </div> <br>
+                The Venn diagram above shows a class of 40 students with the games they play. <br>
+                How many of the students play two games only? <br><br>
+                $
+                A.\;\; 19 \\[3ex]
+                B.\;\; 16 \\[3ex]
+                C.\;\; 15 \\[3ex]
+                D.\;\; 4 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets2')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets2">
+                    <br>
+                    The number of studnets who play two games only are: <br>
+                    those who play only Football and Tennis : $5$ and <br>
+                    those who play only Football and Athletics : $7$ and <br>
+                    those who play only Tennis and Athletics : $3$ <br><br>
+                    $
+                    n(Students\;\;who\;\;play\;\;only\;\;two\;\;games) \\[3ex]
+                    = 5 + 7 + 3 \\[3ex]
+                    = 15\;\;students \\[3ex]
+                    $
+                    $15$ students play only two games
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>NSC</b> A survey is conducted among $174$ students. <br>
+                The results are shown below. <br>
+                <ul style="list-style-type: disc;">
+                    <li>37 study Life Sciences</li>
+                    <li>60 study Physical Sciences</li>
+                    <li>111 study Mathematics</li>
+                    <li>29 study Life Sciences and Mathematics</li>
+                    <li>50 study Mathematics and Physical Sciences</li>
+                    <li>13 study Physical Sciences and Life Sciences</li>
+                    <li>45 do not study any of Life Sciences, Mathematics or Physical Sciences</li>
+                    <li><i>x</i> students study Life Sciences, Mathematics and Physical Sciences</li>
+                </ul> <br>
+                (3.1) Draw a Venn diagram to represent the information above. <br>
+                (3.2) Show that <i>x</i> = 13 <br>
+                (3.3) If a student were selected at random, calculate the probabability that he studies the following:
+                <br>
+                (3.3.1) Mathematics and Physical Sciences but not Life Sciences <br>
+                (3.3.2) Only one of Mathematics or Physical Sciences or Life Sciences
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets3')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets3">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Life\;\;Sciences = L \\[3ex]
+                    Physical\;\;Sciences = P \\[3ex]
+                    Mathematics = M \\[3ex]
+                    (3.1) \\[3ex]
+                    $
+                    The Venn Diagram is drawn as shown: <br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number3.png" alt="Number 3">
+                    </div> <br><br>
+                    $
+                    (3.2) \\[3ex]
+                    37 − [(13 − 𝑥) + 𝑥 + (29 − 𝑥)] + 60 − [(13 − 𝑥) + 𝑥 + (50 − 𝑥)] + 111 − [(29 − 𝑥) + 𝑥 + (50
+                    − 𝑥)] + 13 - x + 29 - x + 50 - x + x + 45 = 174 \\[3ex]
+                    37 - [13 - x + x + 29 - x] + 60 - [13 - x + x + 50 - x] + 111 - [29 - x + x + 50 - x] + 137 - 2x =
+                    174 \\[3ex]
+                    37 - [42 - x] + 60 - [63 - x] + 111 - [79 - x] + 137 - 2x = 174 \\[3ex]
+                    37 - 42 + x + 60 - 63 + x + 111 - 79 + x + 137 - 2x = 174 \\[3ex]
+                    161 + x = 174 \\[3ex]
+                    x = 174 - 161 \\[3ex]
+                    x = 13 \\[3ex]
+                    $
+                    $13$ students study Life Sciences, Mathematics and Physical Sciences <br><br>
+
+                    Let $E$ be the event of selecting a student that studies Mathematics and Physical Sciences but not
+                    Life Sciences <br><br>
+                    $
+                    (3.3.1) \\[3ex]
+                    Mathematics\;\;and\;\;Physical\;\;Sciences\;\;but\;\;not\;\;Life\;\;Sciences \\[3ex]
+                    = Mathematics\;\;and\;\;Physical\;\;Sciences\;\;only \\[3ex]
+                    = 50 - x \\[3ex]
+                    = 50 - 13 \\[3ex]
+                    = 37 \\[3ex]
+                    n(E) = 37 \\[3ex]
+                    n(S) = 174 \\[3ex]
+                    P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                    P(E) = \dfrac{37}{174} \\[5ex]
+                    $
+
+                    Let $K$ be the event of selecting a student that studies only one of Mathematics or Physical
+                    Sciences or Life Sciences <br><br>
+                    $
+                    (3.3.2) \\[3ex]
+                    Only\;\;one\;\;of\;\;Mathematics\;\;or\;\;Physical\;\;Sciences\;\;or\;\;Life\;\;Sciences \\[3ex]
+                    = only\;\;Mathematics\;\;or\;\;only\;\;Physical\;\;Sciences\;\;or\;\;only\;\;Life\;\;Sciences
+                    \\[3ex]
+                    Only\;\;Mathematics \\[3ex]
+                    = 37 − [(13 − 𝑥) + 𝑥 + (29 − 𝑥)] \\[3ex]
+                    = 37 - [13 - x + x + 29 - x] \\[3ex]
+                    = 37 - [42 - x] \\[3ex]
+                    = 37 - 42 + x \\[3ex]
+                    = -5 + x \\[3ex]
+                    = -5 + 13 \\[3ex]
+                    = 8 \\[3ex]
+                    Only\;\;Physical\;\;Sciences \\[3ex]
+                    = 60 − [(13 − 𝑥) + 𝑥 + (50 − 𝑥)] \\[3ex]
+                    = 60 - [13 - x + x + 50 - x] \\[3ex]
+                    = 60 - [63 - x] \\[3ex]
+                    = 60 - 63 + x \\[3ex]
+                    = -3 + x \\[3ex]
+                    = -3 + 13 \\[3ex]
+                    = 10 \\[3ex]
+                    Only\;\;Life\;\;Sciences \\[3ex]
+                    = 111 − [(29 − 𝑥) + 𝑥 + (50 − 𝑥)] \\[3ex]
+                    = 111 - [29 - x + x + 50 - x] \\[3ex]
+                    = 111 - [79 - x] \\[3ex]
+                    = 111 - 79 + x \\[3ex]
+                    = 32 + x \\[3ex]
+                    = 32 + 13 \\[3ex]
+                    = 45 \\[3ex]
+                    n(K) = 8 + 10 + 45 \\[3ex]
+                    n(K) = 63 \\[3ex]
+                    P(K) = \dfrac{n(K)}{n(S)} \\[5ex]
+                    P(K) = \dfrac{63}{174} \\[5ex]
+                    P(K) = \dfrac{21}{58}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>ACT</b> In a large high school, some teachers teach only 1 subject, and some teachers more than
+                1 subject. <br>
+                Using the information given in the table below about the math, science, and gym teachers in the school,
+                how many teachers
+                teach math only? <br>
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">Number of teachers</td>
+                        <td class="w3-center" style="width: 80%;">Subject(s) taught</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">
+                            12 <br>
+                            10 <br>
+                            20 <br>
+                            6 <br>
+                            5 <br>
+                            2 <br>
+                            1
+                        </td>
+                        <td class="w3-padding">
+                            at least 1 class of math <br>
+                            at least 1 class of gym <br>
+                            at least 1 class of science <br>
+                            both gym and science but not math <br>
+                            both math and science but not gym <br>
+                            gym only <br>
+                            math, gym, and science
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                $
+                F.\;\; 1 \\[3ex]
+                G.\;\; 2 \\[3ex]
+                H.\;\; 5 \\[3ex]
+                J.\;\; 16 \\[3ex]
+                K.\;\; 28 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets4')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets4">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    math = M \\[3ex]
+                    gym = G \\[3ex]
+                    science = C \\[3ex]
+                    n(M) = 12 \\[3ex]
+                    n(G) = 10 \\[3ex]
+                    n(C) = 20 \\[3ex]
+                    n(G\;\;and\;\;C\;\;ONLY) = n(G \cap C \cap M') = 6 \\[3ex]
+                    n(M\;\;and\;\;C\;\;ONLY) = n(M \cap C \cap G') = 5 \\[3ex]
+                    n(G\;\;ONLY) = n(G \cap M' \cap C') = 2 \\[3ex]
+                    n(M \cap G \cap C) = 1 \\[3ex]
+                    n(M\;\;and\;\;G\;\;ONLY) = n(M \cap G \cap C') = r \\[3ex]
+                    n(M\;\;ONLY) = n(M \cap G' \cap C') = p \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number4.png" style="width: 100%;"
+                            alt="Number 4">
+                    </div> <br><br>
+                    $
+                    r + 2 + 1 + 6 = 10 \\[3ex]
+                    r + 9 = 10 \\[3ex]
+                    r = 10 - 9 \\[3ex]
+                    r = 1 \\[3ex]
+                    p + r + 5 + 1 = 12 \\[3ex]
+                    p + 1 + 6 = 12 \\[3ex]
+                    p + 7 = 12 \\[3ex]
+                    p = 12 - 7 \\[3ex]
+                    p = 5 \\[3ex]
+                    $
+                    5 teachers teach only math.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>WASSCE</b> A selection interview was conducted for 110 students into various subjects in a
+                Science department. <br>
+                25 were selected for Physics, 45 for Biology, and 48 for Mathematics. <br>
+                10 were selected for Physics and Mathematics, 8 for Biology and Mathematics, and 6 for Physics and
+                Biology, while 5 were
+                selected for all three subjects. <br>
+                (i.) Illustrate the information on a Venn diagram <br>
+                (ii.) How many students were selected for Biology but neither Physics nor Mathematics? <br>
+                (iii.) How many students were not selected for any of the three subjects?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets5')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets5">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Physics = P \\[3ex]
+                    Biology = B \\[3ex]
+                    Mathematics = M \\[3ex]
+                    n(P) = 25 \\[3ex]
+                    n(B) = 45 \\[3ex]
+                    n(M) = 48 \\[3ex]
+                    n(P \cap M) = 10 \\[3ex]
+                    n(B \cap M) = 8 \\[3ex]
+                    n(P \cap B) = 6 \\[3ex]
+                    n(P \cap B \cap M) = 5 \\[3ex]
+                    n(\mu) = 110 \\[3ex]
+                    $
+                    (i.) <br>
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number5.png" style="width: 100%;"
+                            alt="Number 5">
+                    </div> <br>
+                    $
+                    (ii.) \\[3ex]
+                    n(B\;\;ONLY) = n(B \cap P' \cap M') = 36 \\[3ex]
+                    $
+                    36 students were selected for Biology only <br><br>
+                    $
+                    (iii) \\[3ex]
+                    n(neither) = n(P' \cap B' \cap M') = k \\[3ex]
+                    \implies \\[3ex]
+                    14 + 36 + 35 + 5 + 1 + 3 + 5 + k = 110 \\[3ex]
+                    99 + k = 110 \\[3ex]
+                    k = 110 - 99 \\[3ex]
+                    k = 11 \\[3ex]
+                    $
+                    11 students were not selected for any of the three subjects
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>CSEC</b> The universal set <i>U</i> = {<i>b, d, e, f, g, i, k, s, t, v, w</i>} <br>
+                The Venn diagram below shows <i>U</i> and three sets, <i>M, P</i> and <i>R</i>, which are subsets of
+                <i>U</i> <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number6.png" alt="Number 6">
+                </div> <br>
+                (i) State the value of $n(P \cup R)$ <br><br>
+                (ii) List the members of <br>
+                (a.) $M \cap P$ <br>
+                (b.) $M \cup R'$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets6')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets6">
+                    <br>
+                    $
+                    M = \{b, d, i, k\} \\[3ex]
+                    P = \{b, d, e, f, s, v\} \\[3ex]
+                    R = \{d, e, f, g, i\} \\[3ex]
+                    \mu = \{b, d, e, f, g, i, k, s, t, v, w\} \\[3ex]
+                    (i) \\[3ex]
+                    P \cup R = \{b, d, e, f, g, i, s, v\} \\[3ex]
+                    n(P \cup R) = 8 \\[3ex]
+                    (ii) \\[3ex]
+                    (a.) \\[3ex]
+                    M \cap P = \{b, d\} \\[3ex]
+                    (b.) \\[3ex]
+                    R' = \{b, k, s, t, v, w\} \\[3ex]
+                    M \cup R' = \{b, d, i, k, s, t, v, w\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) <b>Hebrews 13:8 School of Thought</b> offers Algebra, Biology, and Chemistry courses. <br>
+                Six students are enrolled in all three courses. <br>
+                Twenty one students are enrolled in Algebra and Biology. <br>
+                Twenty six students are enrolled in Algebra and Chemistry. <br>
+                Seven students are enrolled in Biology and Chemistry. <br>
+                Forty students are enrolled in Chemistry. <br>
+                Among those enrolled in Algebra, the number of students studying <b>only Algebra</b> and <b>only Algebra
+                    and Biology</b> is
+                twenty. <br>
+                Among those enrolled in Bology, the number of students studying <b>only Biology</b> and <b>only Algebra
+                    and Biology</b> is
+                twenty five. <br>
+                Two students are not enrolled in any of the three courses. <br><br>
+                (a.) Represent this information on a Venn Diagram. <br><br>
+                (b.) Complete the Venn Diagram. <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets7')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets7">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Algebra = A \\[3ex]
+                    Biology = B \\[3ex]
+                    Chemistry = C \\[3ex]
+                    n(A \cap B \cap C) = 6 \\[3ex]
+                    n(A \cap B) = 21 \\[3ex]
+                    n(B \cap C) = 7 \\[3ex]
+                    n(C) = 40 \\[3ex]
+                    n(A \cap B' \cap C') + n(A \cap B \cap C') = 20 \\[3ex]
+                    But:\;\; \\[3ex]
+                    n(A \cap B' \cap C') + n(A \cap B \cap C') = n(A \cap C') \\[3ex]
+                    \implies n(A \cap C') = 20 \\[3ex]
+                    \implies n(A \cap B' \cap C') + n(A \cap B \cap C') = 20 \\[3ex]
+                    n(A' \cap B \cap C') + n(A \cap B \cap C') = 25 \\[3ex]
+                    But:\;\; \\[3ex]
+                    n(A' \cap B \cap C') + n(A \cap B \cap C') = n(B \cap C') \\[3ex]
+                    \implies n(B \cap C') = 25 \\[3ex]
+                    \implies n(A' \cap B \cap C') + n(A \cap B \cap C') = 25 \\[3ex]
+                    n(A' \cap B' \cap C') = 2 \\[3ex]
+                    $
+                    <img src="images/VennDiagrams-ThreeSets/Answers/Number7-1.png" alt="Number 7-1"> <br><br>
+
+                    $
+                    \underline{Only\;\;A\;\;and\;\;B} \\[3ex]
+                    n(A \cap B \cap C') \\[3ex]
+                    = 21 - 6 \\[3ex]
+                    = 15\;\;students \\[3ex]
+                    \underline{Only\;\;A\;\;and\;\;C} \\[3ex]
+                    n(A \cap B' \cap C) \\[3ex]
+                    = 26 - 6 \\[3ex]
+                    = 20\;\;students \\[3ex]
+                    \underline{Only\;\;B\;\;and\;\;C} \\[3ex]
+                    n(A' \cap B \cap C) \\[3ex]
+                    = 7 - 6 \\[3ex]
+                    = 1\;\;student \\[3ex]
+                    \underline{Only\;\;C} \\[3ex]
+                    n(A' \cap B' \cap C) \\[3ex]
+                    = 40 - (20 + 6 + 1) \\[3ex]
+                    = 40 - 27 \\[3ex]
+                    = 13\;\;students \\[3ex]
+                    \underline{Only\;\;A} \\[3ex]
+                    n(A \cap B' \cap C') + 15 = 20 \\[3ex]
+                    n(A \cap B' \cap C') \\[3ex]
+                    = 20 - 15 \\[3ex]
+                    = 5\;\;students \\[3ex]
+                    \underline{Only\;\;B} \\[3ex]
+                    n(A' \cap B \cap C') + 15 = 25 \\[3ex]
+                    n(A' \cap B \cap C') \\[3ex]
+                    = 25 - 15 \\[3ex]
+                    = 10\;\;students \\[3ex]
+                    \underline{Neither\;\;A\;\;nor\;\;B\;\;C} \\[3ex]
+                    n(A' \cap B' \cap C') = 2 \\[3ex]
+                    \underline{Universal\;\;Set} \\[3ex]
+                    n(\mu) \\[3ex]
+                    = 5 + 10 + 13 + 20 + 15 + 1 + 6 + 2 \\[3ex]
+                    = 72\;\;students \\[3ex]
+                    $
+                    <img src="images/VennDiagrams-ThreeSets/Answers/Number7-2.png" alt="Number 7-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>GCSE</b> $\mathcal{E}$ = {even numbers between 1 and 25} <br>
+                <i>A</i> = {2, 8, 10, 14} <br>
+                <i>B</i> = {6, 8, 20} <br>
+                <i>C</i> = {8, 18, 20, 22} <br><br>
+                (a) Complete the Venn diagram for this information. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number8.png" alt="Number 8">
+                </div> <br>
+                A number is chosen at random from $\mathcal{E}$ <br>
+                (b) Find the probability that the number is a member of $A \cap B$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets8')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets8">
+                    <br>
+                    $
+                    \mathcal{E} = \{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24\} \\[3ex]
+                    A = \{2, 8, 10, 14\} \\[3ex]
+                    B = \{6, 8, 20\} \\[3ex]
+                    C = \{8, 18, 20, 22\} \\[3ex]
+                    n(all\;\;three) = n(A \cap B \cap C) = \{8\} \\[3ex]
+                    A' = \{4, 6, 12, 16, 18, 20, 22, 24\} \\[3ex]
+                    B' = \{2, 4, 10, 12, 14, 16, 18, 22, 24\} \\[3ex]
+                    C' = \{2, 4, 6, 10, 12, 14, 16, 24\} \\[3ex]
+                    \underline{A\;\;and\;\;B\;\;only} \\[3ex]
+                    A \cap B = \{8\} \\[3ex]
+                    A \cap B \cap C' = \{\} \\[3ex]
+                    \underline{A\;\;and\;\;C\;\;only} \\[3ex]
+                    A \cap C = \{8\} \\[3ex]
+                    A \cap C \cap B' = \phi \\[3ex]
+                    \underline{B\;\;and\;\;C\;\;only} \\[3ex]
+                    B \cap C = \{8, 20\} \\[3ex]
+                    B \cap C \cap A' = \{20\} \\[3ex]
+                    \underline{A\;\;only} \\[3ex]
+                    B' \cap C' = \{2, 4, 10, 12, 14, 16, 24\} \\[3ex]
+                    A \cap B' \cap C' = \{2, 10, 14\} \\[3ex]
+                    \underline{B\;\;only} \\[3ex]
+                    A' \cap C' = \{4, 6, 12, 16, 24\} \\[3ex]
+                    B \cap A' \cap C' = \{6\} \\[3ex]
+                    \underline{C\;\;only} \\[3ex]
+                    A' \cap B' = \{4, 12, 16, 18, 22, 24\} \\[3ex]
+                    C \cap A' \cap B' = \{18, 22\} \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number8.png" alt="Number 8">
+                    </div> <br>
+                    $
+                    A \cap B = \{8\} \\[3ex]
+                    n(A \cap B) = 1 \\[3ex]
+                    \mathcal{E} = \{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24\} \\[3ex]
+                    n(\mathcal{E}) = 12 \\[3ex]
+                    P(A \cap B) = \dfrac{n(A \cap B)}{n(\mathcal{E})} = \dfrac{1}{12}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) <b>WASSCE</b> Out of the 95 travellers interviewed, 7 travelled by bus and train only, 3 by train
+                and car only
+                and 8 travelled by all three means of transport. <br>
+                The number, <i>x</i>, of travellers who travelled by bus only was equal to the number who travelled by
+                bus and car
+                only. <br>
+                If 47 people travelled by bus and 30 by train: <br><br>
+                (a) Represent this information in a Venn diagram <br><br>
+                (b) Calculate the <br>
+                (i) value of <i>x</i> <br>
+                (ii) number who travelled by <b>at least</b> two means
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets9')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets9">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    bus = B \\[3ex]
+                    train = T \\[3ex]
+                    car = C \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number9.png" style="width: 100%;"
+                            alt="Number 9">
+                    </div> <br>
+                    $
+                    (b) \\[3ex]
+                    (i) \\[3ex]
+                    n(B) = 47 \\[3ex]
+                    \implies \\[3ex]
+                    x + x + 7 + 8 = 47 \\[3ex]
+                    2x + 15 = 47 \\[3ex]
+                    2x = 47 - 15 \\[3ex]
+                    2x = 32 \\[3ex]
+                    x = \dfrac{32}{2} \\[5ex]
+                    x = 16 \\[3ex]
+                    (ii) \\[3ex]
+                    n(at\;\;least\;\;two\;\;means) \\[3ex]
+                    n(exactly\;\;two\;\;means) + n(exactly\;\;three\;\;means) \\[3ex]
+                    = n(Bus\;\;and\;\;Train\;\;only) \\[3ex]
+                    + n(Bus\;\;and\;\;Car\;\;only) \\[3ex]
+                    + n(Train\;\;and\;\;Car\;\;only) \\[3ex]
+                    + n(Bus\;\;and\;\;Train\;\;and\;\;Car) \\[3ex]
+                    = 7 + x + 3 + 8 \\[3ex]
+                    = 7 + 16 + 3 + 8 \\[3ex]
+                    = 34 \\[3ex]
+                    $
+                    34 people travelled by at least two means
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>ACT</b> The counselors at Riverdale High School created the Venn diagram below to show the
+                distribution of
+                music elective placements of 150 students. <br>
+                Students could request placement in 3 different music electives: Band, Orchestra, and Chorus. <br>
+                What is the number of students who were placed in at least 2 of these music electives? <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number10.png" alt="Number 10">
+                </div> <br>
+                $
+                A.\;\; 5 \\[3ex]
+                B.\;\; 13 \\[3ex]
+                C.\;\; 16 \\[3ex]
+                D.\;\; 22 \\[3ex]
+                E.\;\; 27 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets10')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets10">
+                    <br>
+                    Let: <br>
+                    Band = B <br>
+                    Chorus = C <br>
+                    Orchestra = R <br><br>
+                    <b>At least 2</b> means <b>2 or more</b> <br>
+                    This means exactly 2 of the music electives and exactly 3 (all three) of the music electives. <br>
+                    The number of students who were placed in <b>at least 2</b> of the musical electives are those
+                    placed in: <br>
+                    Band and Chorus ONLY <br>
+                    Band and Orchestra ONLY <br>
+                    Chrous and Orchestra ONLY <br>
+                    Band, Chorus, and Orchestra <br><br>
+                    $
+                    n(at\;\;least\;2) = n(\ge 2) \\[3ex]
+                    = 13 + 7 + 2 + 5 \\[3ex]
+                    = 27 \\[3ex]
+                    $
+                    27 students were placed in at least two of the music electives.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) The following numbers of patients in a (hypothetical) hospital on a single day were taking
+                antibiotics (A),
+                blood pressure medication (BP) and/or pain medication (P) in numbers summarized in the table below. <br>
+                <table style="border: none;">
+                    <tr>
+                        <td style="width: 50%; border: none;"></td>
+                        <td style="width: 50%; border: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>A only &emsp;&emsp;&emsp; 10</td>
+                        <td>A and BP only &emsp;&emsp;&emsp; 17</td>
+                    </tr>
+                    <tr>
+                        <td>BP only &emsp;&emsp;&emsp; 5</td>
+                        <td>A and P only &emsp;&emsp;&emsp;&nbsp;&nbsp; 22</td>
+                    </tr>
+                    <tr>
+                        <td>P only &emsp;&emsp;&emsp; 26</td>
+                        <td>BP and P only &emsp;&emsp;&emsp; 17</td>
+                    </tr>
+                    <tr>
+                        <td>None &emsp;&emsp;&emsp;&emsp; 5</td>
+                        <td>All three &emsp;&emsp;&emsp;&emsp;&emsp; 20</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Draw a three-circle Venn diagram that summarizes the results in the table. <br>
+                (b.) How many patients took pain medication or blood pressure medication? <br>
+                (c.) How many patients took blood pressure medication but not antibiotics? <br>
+                (d.) How many patients took (at least) blood pressure medication? <br>
+                (e.) How many patients took only pain medication? <br>
+                (f.) How many patients took exactly two medications?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets11')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets11">
+                    <br>
+                    (a.) The Venn diagram showing the information is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number11.png" style="width: 100%;"
+                            alt="Number 11">
+                    </div> <br>
+                    (b.) Number of patients that took pain medication or blood pressure medication = $n(P \cup BP)$ <br>
+                    = Medication &plus; Blood pressure &minus; (Medication and Blood pressure) <br><br>
+                    $
+                    = n(P) + n(BP) - n(P \cup BP) \\[3ex]
+                    n(P) = 22 + 20 + 17 + 26 = 85 \\[3ex]
+                    n(BP) = 17 + 5 + 20 + 17 = 59 \\[3ex]
+                    n(P \cap BP) = 20 + 17 = 37 \\[3ex]
+                    \implies \\[3ex]
+                    n(P \cup BP) = 85 + 59 - 37 \\[3ex]
+                    n(P \cup BP) = 107 \\[3ex]
+                    $
+                    107 patients took pain medication or blood pressure medication <br><br>
+                    (c.) Number of patients that took blood pressure medication but not antibiotics = sum of:
+                    Antibiotics and Blood pressure medication <i>only</i> <u>and</u> Blood pressure medication
+                    <i>only</i> <br><br>
+                    $
+                    = n(A \cap BP \cap P') + n(BP \cap A' \cap P') \\[3ex]
+                    = 17 + 5 \\[3ex]
+                    = 22 \\[3ex]
+                    $
+                    22 patients took blood pressure medication but not antibiotics <br><br>
+                    (d.) Number of patients that took (at least) blood pressure medication = sum of:
+                    Blood pressure medication <i>only</i> <u>and</u> Blood pressure medication and Antibiotics
+                    <i>only</i> <u>and</u>
+                    Blood pressure medication and Pain medication <i>only</i> <u>and</u> All three medications <br><br>
+                    $
+                    = n(BP \cap P' \cap A') + n(BP \cap A \cap P') + n(BP \cap P \cap A') + n(BP \cap A \cap P) \\[3ex]
+                    = 5 + 17 + 17 + 20 \\[3ex]
+                    = 59 \\[3ex]
+                    $
+                    59 patients took (at least) blood pressure medication <br><br>
+                    (e.) Number of patients that took only pain medication = $n(P \cap A' \cap BP')$ = 26 <br>
+                    26 patients took only pain medication. <br><br>
+                    (f.) Number of patients that exactly two medications = the sum of:
+                    Antibiotics and Blood pressure medication <i>only</i> <u>and</u> Antibiotics and Pain medication
+                    <i>only</i> <u>and</u>
+                    Blood pressure medication and Pain medication <i>only</i> <br><br>
+                    $
+                    = n(A \cap BP \cap P') + n(A \cap P \cap BP') + n(BP \cap P \cap A') \\[3ex]
+                    = 17 + 22 + 17 \\[3ex]
+                    = 56 \\[3ex]
+                    $
+                    56 patients took exactly two medications.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) Use the Venn diagram to answer questions (a.) through (d.) <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number12.png" alt="Number 12">
+                </div> <br>
+                (a.) How many people at the conference are unemployed women with a college degree? <br>
+                (b.) How many people at the conference are employed men? <br>
+                (c.) How many people at the conference are employed women without a college degree? <br>
+                (d.) How many men are at the conference?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets12')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets12">
+                    <br>
+                    Let the set of: <br>
+                    women = W <br>
+                    college degree = D <br>
+                    currently employed = E <br><br>
+                    (a.) People at the conference that are unemployed women with a college degree = $n(W \cap D \cap
+                    E')$
+                    women with college degree <i>only</i> = 19 <br>
+                    19 people at the conference are unemployed women with a college degree
+                    <br><br>
+                    (b.) People at the conference that are employed men = $n(E \cap W' \cap D') + n(E \cap D \cap W')$ =
+                    the sum of: currently employed <i>only</i> <u>and</u> currently employed with a college degree
+                    <i>only</i> =
+                    7 + 16 = 23 <br>
+                    23 people at the conference are employed men
+                    <br><br>
+                    (c.) People at the conference are employed women without a college degree = $n(W \cap D \cap E')$ =
+                    currently employed women <i>only</i> = 8 <br>
+                    8 people at the conference are employed women without a college degree
+                    <br><br>
+                    (d.) Men are at the conference = $n(W)'$ = the sum of: college degree <i>only</i> <u>and</u>
+                    currently employed <i>only</i>
+                    <u>and</u> currently employed with college degree <i>only</i> <u>and</u> neither women nor college
+                    degree nor currently employed
+                    = 9 + 7 + 16 + 3 = 35 <br>
+                    35 men were at the conference
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets13')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>ACT</b> A group of students was surveyed about what types of music each had listened to during
+                the previous
+                week. <br>
+                Students could choose 1, 2, or 3 types of music (Rap, Rock, or Country), or they could respond
+                "none of these music types." <br>
+                Only 10 students responded with "none of these music types," and 18 students responded that they had
+                listened to all
+                3 types. <br>
+                In the figure below, the 8 regions show the numbers of responses in each category. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number14.png" alt="Number 14">
+                </div> <br>
+                One region had exactly 8 responses. <br>
+                What type(s) of music did those 8 students respond they had listened to during the previous week? <br>
+                <b>F.</b> Rap only <br>
+                <b>G.</b> Country and Rock only <br>
+                <b>H.</b> Country and Rap only <br>
+                <b>J.</b> Rap and Rock only <br>
+                <b>K.</b> All 3 types of music
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets14')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets14">
+                    <br>
+                    8 students had listened to <b>Rap and Rock only</b> ... Option <b>J.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) <b>WASSCE</b> A survey of 40 students showed that 23 students study Mathematics, 5 study
+                Mathematics and Physics,
+                8 study Chemistry and Mathematics, 5 study Physics and Chemistry and 3 study all the three subjects.
+                <br>
+                The number of students who study Physics only is twice the number who study Chemistry only. <br><br>
+                (a) Find the number of students who study: <br>
+                (i) only Physics <br>
+                (ii) only one subject <br><br>
+                (b) What is the probability that a student selected at random studies exactly 2 subjects?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets15')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets15">
+                    <br>
+                    $
+                    (a) \\[3ex]
+                    Let: \\[3ex]
+                    Mathematics = M \\[3ex]
+                    Physics = P \\[3ex]
+                    Chemistry = C \\[3ex]
+                    n(Chemistry\;\;ONLY) = k \\[3ex]
+                    n(Physics\;\;ONLY) = 2k \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number15.png" style="width: 100%;"
+                            alt="Number 15">
+                    </div> <br>
+                    $
+                    (i) \\[3ex]
+                    k + 2k + 13 + 2 + 2 + 5 + 3 = 40 \\[3ex]
+                    3k + 25 = 40 \\[3ex]
+                    3k = 40 - 25 \\[3ex]
+                    3k = 15 \\[3ex]
+                    k = \dfrac{15}{3} \\[5ex]
+                    k = 5 \\[3ex]
+                    2k = 2(5) = 10 \\[3ex]
+                    $
+                    5 students study only Chemistry. <br>
+                    10 students study only Physics.
+                    <br><br>
+                    $
+                    (ii) \\[3ex]
+                    n(only\;\;one\;\;subject) \\[3ex]
+                    = n(only\;\;Mathematics) + n(only\;\;Physics) + n(only\;\;Chemistry) \\[3ex]
+                    = 13 + 2k + k \\[3ex]
+                    = 13 + 10 + 5 \\[3ex]
+                    = 28 \\[3ex]
+                    $
+                    28 students study only one subject
+                    <br><br>
+                    $
+                    n(exactly\;\;two\;\;subjects) \\[3ex]
+                    = n(only\;\;Mathematics\;\;and\;\;Physics) + n(only\;\;Mathematics\;\;and\;\;Chemistry) +
+                    n(only\;\;Physics\;\;and\;\;Chemistry) \\[3ex]
+                    = 2 + 5 + 2 \\[3ex]
+                    = 9 \\[3ex]
+                    n(\xi) = 40 \\[3ex]
+                    P(exactly\;\;two\;\;subjects) \\[3ex]
+                    = \dfrac{n(exactly\;\;two\;\;subjects)}{n(\xi)} \\[5ex]
+                    = \dfrac{9}{40}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) <b>JAMB</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number16.png" alt="Number 16">
+                </div> <br>
+                The shaded portion in the Venn diagram above is <br><br>
+                $
+                A.\;\; X \cap Z \\[3ex]
+                B.\;\; X^c \cap Y \cap Z \\[3ex]
+                C.\;\; X \cap Y^c \cap Z \\[3ex]
+                D.\;\; X \cap Y \cap Z^c \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets16')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets16">
+                    <br>
+                    Explained in these resources: <br>
+                    Notes: <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Venn Diagrams for Three Sets: Examples 14 - 16</a>
+                    <br><br>
+                    The shaded area is X and Z only <br>
+                    This implies: $X \cap Z \cap Y'$...Option C
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets17')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) <b>JAMB</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number18.png" alt="Number 18">
+                </div> <br>
+                In the Venn diagram above, the shaded region is <br><br>
+                $
+                A.\;\; (P \cap Q) \cup R \\[3ex]
+                B.\;\; (P \cap Q) \cap R \\[3ex]
+                C.\;\; (P \cap Q') \cap R \\[3ex]
+                D.\;\; (P \cap Q') \cup R \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets18')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets18">
+                    <br>
+                    Explained in these resources: <br>
+                    Notes: <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Venn Diagrams for Three Sets: Examples 14 - 16</a>
+                    <br><br>
+                    The shaded area is P and R only <br>
+                    This implies: <br><br>
+                    $
+                    P \cap R \cap Q' \\[3ex]
+                    = P \cap Q' \cap R ... Commutative\;\;Law \\[3ex]
+                    = (P \cap Q') \cap R ... Associative\;\;Law
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) <b>WASSCE</b> In a road worthiness test on 240 cars, 60% passed. <br>
+                The number that failed had faults in Clutch, Brakes, and Steering as follows: Clutch only - 28; Clutch
+                and Steering - 14;
+                Clutch, Steering and Brakes - 8; Clutch and Brakes - 20; Brakes and Steering only - 6. <br>
+                The number of cars with faults in Steering only is twice the number of cars with faults in Brakes only.
+                <br><br>
+                (a) Draw a Venn diagram to illustrate this information. <br><br>
+                (b) How many cars had: <br>
+                (i) faulty brakes? <br>
+                (ii) only one fault?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets19')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets19">
+                    <br>
+                    $
+                    n(\xi) = 240 \\[3ex]
+                    60\% \;\;passed \implies 40\%\;\;failed \\[3ex]
+                    Passed:\;\; 60\% * 240 = 144 \\[3ex]
+                    Failed:\;\; 40\% * 240 = 96 \\[3ex]
+                    \underline{Failed} \\[3ex]
+                    Let: \\[3ex]
+                    Clutch = C \\[3ex]
+                    Brakes = B \\[3ex]
+                    Steering = T \\[3ex]
+                    n(B\;\;only) = p \\[3ex]
+                    \rightarrow n(T\;\;only) = 2p \\[3ex]
+                    $
+                    (a.) <br>
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number19.png" style="width: 100%;"
+                            alt="Number 19">
+                    </div> <br>
+                    $
+                    \underline{Failed} \\[3ex]
+                    p + 2p + 28 + 6 + 12 + 6 + 8 = 96 \\[3ex]
+                    3p + 60 = 96 \\[3ex]
+                    3p = 96 - 60 \\[3ex]
+                    3p = 36 \\[3ex]
+                    p = \dfrac{36}{3} \\[5ex]
+                    p = 12 \\[3ex]
+                    (i) \\[3ex]
+                    n(B) = p + 12 + 6 + 8 \\[3ex]
+                    = 12 + 12 + 6 + 8 \\[3ex]
+                    = 38 \\[3ex]
+                    $
+                    38 cars had faulty brakes <br><br>
+                    $
+                    (ii) \\[3ex]
+                    n(only\;\;one\;\;fault) \\[3ex]
+                    = n(only\;\;C) + n(only\;\;B) + n(only\;\;T) \\[3ex]
+                    = 28 + p + 2p \\[3ex]
+                    = 28 + 3p \\[3ex]
+                    = 28 + 3(12) \\[3ex]
+                    = 28 + 36 \\[3ex]
+                    = 64 \\[3ex]
+                    $
+                    64 cars had only one fault
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>GCSE</b> Thirty shoppers were asked which of apples, oranges and bananas, they regularly liked
+                to eat. <br>
+                Of these 30 shoppers
+                <ul style="list-style-type: disc;">
+                    <li>2 liked all three fruits,</li>
+                    <li>5 liked oranges but did not like apples or bananas,</li>
+                    <li>6 liked both oranges and bananas,</li>
+                    <li>17 liked apples,</li>
+                    <li>10 liked bananas.</li>
+                </ul>
+                (a) Extra information from the 30 shoppers has been shown in the Venn diagram below. <br>
+                Complete the Venn diagram using the information given above. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number20.png" alt="Number 20">
+                </div> <br>
+                (b) One shopper is chosen at random. <br>
+                Find the probability that this shopper does not like any of the three fruits. <br><br>
+                (c) One shopper is chosen at random from those who like apples. <br>
+                Find the probability that this shopper does <b>not</b> like oranges.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets20')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets20">
+                    <br>
+                    $
+                    \underline{Given:\;\;in\;\;English} \\[3ex]
+                    n(\varepsilon) = 30 \\[3ex]
+                    n(all\;\;three\;\;fruits) = 2 \\[3ex]
+                    n(oranges\;\;but\;\;not\;\;apples\;\;or\;\;bananas) = 5 \\[3ex]
+                    n(oranges\;\;and\;\;bananas) = 6 \\[3ex]
+                    n(apples) = 17 \\[3ex]
+                    n(bananas) = 10 \\[3ex]
+                    \underline{Given:\;\;in\;\;Diagram} \\[3ex]
+                    n(apples\;\;and\;\;oranges\;\;but\;\;not\;\;bananas) = 8 \\[3ex]
+                    n(apples\;\;and\;\;bananas\;\;but\;\;not\;\;oranges) = 1 \\[3ex]
+                    \underline{Determine} \\[3ex]
+                    n(oranges\;\;and\;\;bananas\;\;but\;\;not\;\;apples) \\[3ex]
+                    = 6 - 2 \\[3ex]
+                    = 4 \\[3ex]
+                    n(apples\;\;but\;\;not\;\;oranges\;\;or\;\;bananas) \\[3ex]
+                    = 17 - (1 + 8 + 2) \\[3ex]
+                    = 17 - 11 \\[3ex]
+                    = 6 \\[3ex]
+                    n(bananas\;\;but\;\;not\;\;apples\;\;or\;\;oranges) \\[3ex]
+                    = 10 - (1 + 2 + 4) \\[3ex]
+                    = 10 - 7 \\[3ex]
+                    = 3 \\[3ex]
+                    n(neither\;\;apples\;\;nor\;\;oranges\;\;nor\;\;bananas) = p \\[3ex]
+                    6 + 5 + 3 + 1 + 8 + 4 + 2 + p = 30 \\[3ex]
+                    29 + p = 30 \\[3ex]
+                    p = 30 - 29 \\[3ex]
+                    p = 1 \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number20.png" alt="Number 20">
+                    </div> <br>
+                    $
+                    (b) \\[3ex]
+                    n(neither\;\;fruit) = p = 1 \\[3ex]
+                    n(\varepsilon) = 30 \\[3ex]
+                    P(neither\;\;fruit) = \dfrac{n(neither\;\;fruit)}{n(\varepsilon)} = \dfrac{1}{30} \\[5ex]
+                    (c) \\[3ex]
+                    \underline{From\;\;Apples} \\[3ex]
+                    n(apples) = 17 \\[3ex]
+                    n(apples\;\;but\;\;not\;\;oranges) = 6 + 1 = 7 \\[3ex]
+                    P(apples\;\;but\;\;not\;\;oranges) \\[3ex]
+                    = \dfrac{n(apples\;\;but\;\;not\;\;oranges)}{n(apples)} \\[5ex]
+                    = \dfrac{7}{17}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-3sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <br><br>
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            <b>ACT</b> Use the following information to answer questions 21 - 23 <br>
+            Each of the 200 people in a random sample of the 2,500 people at the mall today was asked which, if any, of
+            the following
+            types of pets he or she owns: bird, cat, dog, or fish. <br>
+            All 200 people answered the question. <br>
+            The answers were tallied, and the exact percents of people who own the pets are shown in the diagram below.
+            <br><br>
+            <div class="w3-center">
+                <img src="images/VennDiagrams-ThreeSets/Questions/Numbers21-23.png" alt="Numbers 21-23">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) Because this was a random sample, the percents in the sample are the most likely estimates for the
+                corresponding
+                percents among all the people at the mall today. <br>
+                What estimate does this give for the number of people at the mall today who own dogs but none of the
+                other 3 types of
+                pets? <br><br>
+                $
+                F.\;\; 125 \\[3ex]
+                G.\;\; 250 \\[3ex]
+                H.\;\; 375 \\[3ex]
+                J.\;\; 500 \\[3ex]
+                K.\;\; 875 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets21')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets21">
+                    <br>
+                    Sample size = 200 <br>
+                    Population size = 1200 <br><br>
+
+                    <i>
+                        Depening on time: <br>
+                        Discuss with your Statistics students regarding the conditions for a sample proportion to
+                        estimate population
+                        proportion.
+                    </i> <br><br>
+
+                    Sample is a likely estimate of the population because the sample is a random sample <br>
+                    The number of people who own dogs but none of the other 3 types of pets means the number of people
+                    who own
+                    ONLY dogs <br><br>
+                    $
+                    \underline{Population} \\[3ex]
+                    n(dogs\;\;ONLY) \\[3ex]
+                    15\% * 1200 \\[3ex]
+                    = \dfrac{15}{100} * 1200 \\[5ex]
+                    = 375 \\[3ex]
+                    $
+                    About 375 people at the mall today own only dogs.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) What percent of the people in the random sample own exactly 1 type of the 4 types of pets?
+                <br><br>
+                $
+                A.\;\; 10\% \\[3ex]
+                B.\;\; 25\% \\[3ex]
+                C.\;\; 45\% \\[3ex]
+                D.\;\; 70\% \\[3ex]
+                E.\;\; 90\% \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets22')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets22">
+                    <br>
+                    $
+                    \underline{Sample} \\[3ex]
+                    n(exactly\;\;1\;\;type\;\;of\;\;the\;\;4\;\;types\;\;of\;\;pets) \\[3ex]
+                    = n(cat\;\;ONLY) \\[3ex]
+                    + n(dog\;\;ONLY) \\[3ex]
+                    + n(bird\;\;ONLY) \\[3ex]
+                    + n(fish\;\;ONLY) \\[3ex]
+                    = 5\% + 15\% + 5\% + 45\% \\[3ex]
+                    = 70\% \\[3ex]
+                    $
+                    70% of the 200 people in the random sample own excatly 1 type of the types of pet.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) Suppose 25 additional people at random were asked the question, with the following answers: 15 own
+                fish only,
+                5 own a cat and a dog only, and 5 own a cat, a dog, and a bird only. <br>
+                Among all 225 people asked, what fraction own fish but none of the other 3 types of pets? <br><br>
+                $
+                F.\;\; \dfrac{105}{225} \\[5ex]
+                G.\;\; \dfrac{105}{215} \\[5ex]
+                H.\;\; \dfrac{105}{200} \\[5ex]
+                J.\;\; \dfrac{115}{225} \\[5ex]
+                K.\;\; \dfrac{115}{200} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDThreeSets23')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets23">
+                    <br>
+                    $
+                    \underline{Initial\;\;Sample} \\[3ex]
+                    sample\;\;size = 200 \\[3ex]
+                    n(fish\;\;ONLY) \\[3ex]
+                    = 45\% * 200 \\[3ex]
+                    = \dfrac{45}{100} * 200 \\[5ex]
+                    = 90 \\[3ex]
+                    \underline{Additional\;\;Sample} \\[3ex]
+                    sample\;\;size = 25 \\[3ex]
+                    n(fish\;\;ONLY) = 15 \\[3ex]
+                    \underline{Total\;\;Sample} \\[3ex]
+                    sample\;\;size = 200 + 25 = 225 \\[3ex]
+                    n(fish\;\;ONLY) = 90 + 15 = 105 \\[3ex]
+                    Fraction(fish\;\;ONLY) = \dfrac{105}{225}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) <b>CSEC</b> The Venn Diagram below represents information on the type of games played by members
+                of a youth club. <br>
+                All members of the club play <b>at least one</b> game. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number24.png" alt="Number 24">
+                </div> <br>
+                <b>S</b> represents the set of members who play squash. <br>
+                <b>T</b> represents the set of members who play tennis. <br>
+                <b>H</b> represents the set of members who play hockey. <br>
+                Leo, Mia and Neil are three members of the youth club. <br><br>
+                (i) State what game(s) is/are played by <br>
+                (a) Leo <br>
+                (b) Mia <br>
+                (c) Neil <br><br>
+                (ii) Describe in words the members of the set $H' \cap S$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets24')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets24">
+                    <br>
+                    (i) <br>
+                    (a) Leo plays tennis and hockey <br>
+                    He plays tennis <br>
+                    He plays hockey because of the intersection of T and H <br><br>
+                    (b) Mia plays squash, tennis, and hockey <br>
+                    She plays squash <br>
+                    She plays tennis because S is a subset of T <br>
+                    She plays hockey because of the intersection of S and H <br><br>
+                    (c) Neil plays only hockey <br><br>
+                    (ii) <br>
+                    The members of the set $H' \cap S$ are the members that play squash but not hockey <br>
+                    Because squash is a subset of tennis, all those members also play tennis. <br>
+                    In that regard, we can also describe them as the members that play squash and tennis but not hockey.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) <b>WASCCE</b> In a class of 200 students, 70 offered Physics, 90 Chemistry, 100 Mathematics while
+                24 did not offer
+                any of the three subjects. <br>
+                Twenty three (23) students offered Physics and Chemistry, 41 Chemistry and Mathematics while 8 offered
+                all three subjects. <br><br>
+                (a) Draw a Venn diagram to illustrate the information. <br><br>
+                (b) Find the probability that a student selected at random from the class offered: <br>
+                (i) Physics only <br>
+                (ii) Exactly two of the subjects
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets25')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets25">
+                    <br>
+                    $
+                    n(\mu) = 200 \\[3ex]
+                    Let: \\[3ex]
+                    Physics = P \\[3ex]
+                    Chemistry = C \\[3ex]
+                    Mathematics = M \\[3ex]
+                    n(P) = 70 \\[3ex]
+                    n(C) = 90 \\[3ex]
+                    n(M) = 100 \\[3ex]
+                    n(neither) = 24 \\[3ex]
+                    n(P\;\;and\;\;C) = 23 \\[3ex]
+                    n(C\;\;and\;\;M) = 41 \\[3ex]
+                    n(all\;\;three) = 8 \\[3ex]
+                    n(P\;\;and\;\;M\;\;only) = d \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number25.png" alt="Number 25">
+                    </div> <br>
+                    $
+                    n(P\;\;and\;\;C\;\;only) \\[3ex]
+                    = 23 - 8 \\[3ex]
+                    = 15 \\[3ex]
+                    n(C\;\;and\;\;M\;\;only) \\[3ex]
+                    = 41 - 8 \\[3ex]
+                    = 33 \\[3ex]
+                    n(C\;\;only) \\[3ex]
+                    = 90 - (15 + 8 + 33) \\[3ex]
+                    = 90 - 56 \\[3ex]
+                    = 34 \\[3ex]
+                    n(P\;\;only) \\[3ex]
+                    = 70 - (d + 8 + 15) \\[3ex]
+                    = 70 - (d + 23) \\[3ex]
+                    = 70 - d - 23 \\[3ex]
+                    = 47 - d \\[3ex]
+                    n(M\;\;only) \\[3ex]
+                    = 100 - (d + 8 + 33) \\[3ex]
+                    = 100 - (d + 41) \\[3ex]
+                    = 100 - d - 41 \\[3ex]
+                    = 59 - d \\[3ex]
+                    \implies \\[3ex]
+                    (47 - d) + (59 - d) + 34 + d + 15 + 33 + 8 + 24 = 200 \\[3ex]
+                    47 - d + 59 - d + d + 34 + 15 + 33 + 8 + 24 = 200 \\[3ex]
+                    220 - d = 200 \\[3ex]
+                    220 - 200 = d \\[3ex]
+                    20 = d \\[3ex]
+                    d = 20 \\[3ex]
+                    \implies \\[3ex]
+                    n(P\;\;and\;\;M\;\;only) = 20 \\[3ex]
+                    (b) \\[3ex]
+                    (i) \\[3ex]
+                    n(P\;\;only) = 47 - d = 47 - 20 = 27 \\[3ex]
+                    n(\mu) = 200 \\[3ex]
+                    P(P\;\;only) = \dfrac{n(P\;\;only)}{n(\mu)} = \dfrac{27}{200} \\[5ex]
+                    (ii) \\[3ex]
+                    n(exactly\;\;2\;\;subjects) \\[3ex]
+                    = n(P\;\;and\;\;C\;\;only) + n(C\;\;and\;\;M\;\;only) + n(P\;\;and\;\;M\;\;only) \\[3ex]
+                    = 15 + 33 + 20 \\[3ex]
+                    = 68 \\[3ex]
+                    P(exactly\;\;2\;\;subjects) \\[3ex]
+                    = \dfrac{n(exactly\;\;2\;\;subjects)}{n(\mu)} \\[5ex]
+                    = \dfrac{68}{200} \\[5ex]
+                    = \dfrac{17}{50}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) <b>JAMB</b> Which of the Venn diagrams below represents $P' \cap Q \cap R'$ <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number26.png" alt="Number 26">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets26')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets26">
+                    <br>
+                    Explained in these resources: <br>
+                    Notes: <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Venn Diagrams for Three Sets: Examples 14 - 16</a>
+                    <br><br>
+                    $
+                    P' \cap Q \cap R' = Q\;\;only \\[3ex]
+                    $
+                    The shaded area for <b>Q only</b> is Option D.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets27')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) <b>WASCCE</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number28.png" alt="Number 28">
+                </div> <br>
+                In the Venn diagram, <i>P, Q</i>, and <i>R</i> are subsets of the universal set <i>U</i> <br>
+                If $n(U) = 125$, find: <br>
+                (a) the value of <i>x</i> <br>
+                (b) $n(P \cup Q \cap R')$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets28')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets28">
+                    <br>
+                    $
+                    (a) \\[3ex]
+                    (16 - 2x) + (6 + x) + (19 - 3x) + 5x + 7x + 8x + 4x + 4 = 125 \\[3ex]
+                    16 - 2x + 6 + x + 19 - 3x + 5x + 7x + 8x + 4x + 4 = 125 \\[3ex]
+                    20x + 45 = 125 \\[3ex]
+                    20x = 125 - 45 \\[3ex]
+                    20x = 80 \\[3ex]
+                    x = \dfrac{80}{20} \\[5ex]
+                    x = 4 \\[3ex]
+                    (b) \\[3ex]
+                    $
+                    We need to find the shaded area for $P \cup Q \cap R'$ before we can find the cardinality <br>
+                    Explained in these resources: <br>
+                    Notes: <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Venn Diagrams for Three Sets: Examples 14 - 16</a>
+                    <br><br>
+                    Let us do this (draw a Venn diagram with some elements) quickly: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number28-first.png" style="width: 100%;"
+                            alt="Number 28-first">
+                    </div> <br>
+                    $
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8\} \\[3ex]
+                    P = \{1, 2, 4, 5\} \\[3ex]
+                    Q = \{2, 3, 5, 6\} \\[3ex]
+                    R = \{4, 5, 6, 7\} \\[3ex]
+                    P \cup Q = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                    R' = \{1, 2, 3, 8\} \\[3ex]
+                    (P \cup Q) \cap R' = \{1, 2, 3\} \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number28-second.png" style="width: 100%;"
+                            alt="Number 28-second">
+                    </div> <br>
+                    $
+                    \implies \\[3ex]
+                    n(P \cup Q \cap R') \\[3ex]
+                    = (16 - 2x) + 5x + (6 + x) \\[3ex]
+                    = 16 - 2x + 5x + 6 + x \\[3ex]
+                    = 4x + 22 \\[3ex]
+                    = 4(4) + 22 \\[3ex]
+                    = 16 + 22 \\[3ex]
+                    = 38
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets29')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.) <b>NSC</b> A survey was conducted among 150 learners at a school. <br>
+                The following observations were made: <br>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        The probability that a learner, selected at random, will take part in: <br>
+                        <ul style="list-style-type: circle;">
+                            <li>Only hockey (H) is 0,24</li>
+                            <li>Hockey and debating (D), but not chess (C) is 0,14</li>
+                            <li>Debating and chess, but not hockey is 0,12</li>
+                            <li>Hockey and chess, but not debating is 0,02</li>
+                        </ul>
+                    </li>
+                    <li>The probability that a learner, selected at random, participates in at least one activity is 0,7
+                    </li>
+                    <li>15 learners participated in all three activities.</li>
+                    <li>
+                        The number of learners that participate only in debating is the same as the number of learners
+                        who
+                        participate only in chess.
+                    </li>
+                </ul> <br>
+                The Venn diagram below shows some of the above information. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number30.png" alt="Number 30">
+                </div> <br>
+                (30.1) Determine <i>a</i>, the probability that a learner, selected at random, participates in all three
+                activities. <br><br>
+                (30.2) Determine <i>m</i>, the probability that a learner, selected at random, does NOT participate in
+                any of the three
+                activities. <br><br>
+                (30.3) How many learners play only chess?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets30')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets30">
+                    <br>
+                    $
+                    (30.1) \\[3ex]
+                    a = \dfrac{n(H \cap D \cap C)}{n(S)} \\[5ex]
+                    = \dfrac{15}{150} = \dfrac{1}{10} = 0.1 \\[3ex]
+                    (30.2) \\[3ex]
+                    P(at\;\;least\;\;one\;\;activity) + P(no\;\;activity) = 1 \\[3ex]
+                    ...Complementary\;\;Rule \\[3ex]
+                    0.7 + m = 1 \\[3ex]
+                    m = 1 - 0.7 \\[3ex]
+                    m = 0.3 \\[3ex]
+                    (30.3) \\[3ex]
+                    P(only\;\;1\;\;activity) = 0.24 + b + b = 2b + 0.24 \\[3ex]
+                    P(only\;\;2\;\;activities) = 0.02 + 0.14 + 0.12 = 0.28 \\[3ex]
+                    P(all\;\;three\;\;activities) = a = 0.1 \\[3ex]
+                    P(no\;\;activity) = m = 0.3 \\[3ex]
+                    P(total\;\;probabability) = 1 \\[3ex]
+                    \implies \\[3ex]
+                    2b + 0.24 + 0.28 + 0.1 + 0.3 = 1 \\[3ex]
+                    2b + 0.92 = 1 \\[3ex]
+                    2b = 1 - 0.92 \\[3ex]
+                    2b = 0.08 \\[3ex]
+                    b = \dfrac{0.08}{2} \\[5ex]
+                    b = 0.04 \\[3ex]
+                    P(only\;\;chess) = \dfrac{n(only\;\;chess)}{n(S)} \\[5ex]
+                    b = \dfrac{n(only\;\;chess)}{150} \\[5ex]
+                    n(only\;\;chess) \\[3ex]
+                    = 150 * b \\[3ex]
+                    = 150 * 0.04 \\[3ex]
+                    = 6 \\[3ex]
+                    $
+                    6 learners play only chess
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.) In the given Venn Diagram, sets are labeled with uppercase letters, A, B, C and U, and regions
+                are labeled with lowercase letters p, q, r, s, t, u, and v. <br>
+                Identify the region(s) that result from performing the given set operations.
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number31-1st.png" alt="Number 31-1st">
+                </div> <br>
+                (a.) List the region(s) included in A' <br>
+                (b.) List the region(s) included in B &Union; C <br>
+                (c.) Use the answers in parts (a.) and (b.) to decide which of the shaded region(s) represents the set
+                A' &Intersection; (B &Union; C) <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number31-2nd.png" alt="Number 31-2nd">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets31')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets31">
+                    <br>
+                    There are at least two approaches that we can use to solve this question. <br>
+                    We can do a visual inspection or we can list the elements on paper
+                    (as we did in the <a
+                        href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Notes</a>) <br>
+                    Let us use the easiest approach: By Inspection <br>
+                    But you can list them if you prefer. <br><br>
+                    (a.) A' includes all the elements not in set A <br>
+                    A' = {p, q, r, w} <br><br>
+                    (b.) B &Union; C includes all the elements in set B and in set C <br>
+                    B &Union; C = {p, u, t, q, s, r} <br><br>
+                    (c.) A' &Intersection; (B &Union; C) includes the common elements in A' <u>and</u> (B &Union; C)
+                    <br>
+                    This means the elements that are common to parts (a.) and (b.) <br>
+                    A' &Intersection; (B &Union; C) = {p, q, r} <br>
+                    The correct answer is Option <b>D.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets32')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets32">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.) <b>WASCCE</b> In a class of 40 students, 18 passed Mathematics, 19 passed Accounts, 16 passed
+                Economics, 5 passed
+                Mathematics and Accounts only, 6 Mathematics only, 9 Accounts only, 2 Accounts and Economics only. <br>
+                If each student offered at least one of the subjects, <br><br>
+                (a) how many students failed in all subjects? <br><br>
+                (b) find the percentage number that failed in at least one of Economics and Mathematics <br><br>
+                (c) calculate the probability that a student picked at random failed in Accounts.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets33')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets33">
+                    <br>
+                    $
+                    n(\mu) = 40 \\[3ex]
+                    Let: \\[3ex]
+                    Mathematics = M \\[3ex]
+                    Accounts = A \\[3ex]
+                    Economics = E \\[3ex]
+                    n(M) = 18 \\[3ex]
+                    n(A) = 19 \\[3ex]
+                    n(E) = 16 \\[3ex]
+                    n(M\;\;and\;\;A\;\;only) = 5 \\[3ex]
+                    n(M\;\;only) = 6 \\[3ex]
+                    n(A\;\;only) = 9 \\[3ex]
+                    n(A\;\;and\;\;E\;\;only) = 2 \\[3ex]
+                    n(M\;\;and\;\;A\;\;and\;\;E) = n(passed\;\;all\;\;three) \\[3ex]
+                    $
+                    Let us use a Venn diagram <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number33-first.png" alt="Number 33-first">
+                    </div> <br>
+                    $
+                    \underline{Accounts} \\[3ex]
+                    n(passed\;\;all\;\;three) + n(M\;\;and\;\;A\;\;only) + n(A\;\;and\;\;E\;\;only) + n(A\;\;only) =
+                    n(A) \\[3ex]
+                    n(passed\;\;all\;\;three) + 5 + 2 + 9 = 19 \\[3ex]
+                    n(passed\;\;all\;\;three) + 16 = 19 \\[3ex]
+                    n(passed\;\;all\;\;three) = 19 - 16 \\[3ex]
+                    n(passed\;\;all\;\;three) = 3 \\[3ex]
+                    \underline{Mathematics} \\[3ex]
+                    n(passed\;\;all\;\;three) + n(M\;\;and\;\;A\;\;only) + n(M\;\;and\;\;E\;\;only) + n(M\;\;only) =
+                    n(M) \\[3ex]
+                    3 + 5 + n(M\;\;and\;\;E\;\;only) + 6 = 18 \\[3ex]
+                    14 + n(M\;\;and\;\;E\;\;only) = 18
+                    n(M\;\;and\;\;E\;\;only) = 18 - 14 \\[3ex]
+                    n(M\;\;and\;\;E\;\;only) = 4 \\[3ex]
+                    \underline{Economics} \\[3ex]
+                    n(passed\;\;all\;\;three) + n(M\;\;and\;\;E\;\;only) + n(A\;\;and\;\;E\;\;only) + n(E\;\;only) =
+                    n(E) \\[3ex]
+                    3 + 4 + 2 + n(E\;\;only) = 16 \\[3ex]
+                    9 + n(E\;\;only) = 16 \\[3ex]
+                    n(E\;\;only) = 16 - 9 \\[3ex]
+                    n(E\;\;only) = 7 \\[3ex]
+                    \implies \\[3ex]
+                    (a) \\[3ex]
+                    n(M\;\;only) + n(A\;\;only) + n(E\;\;only) \\[3ex]
+                    + n(M\;\;and\;\;A\;\;only) + n(N\;\;and\;\;E\;\;only) + n(A\;\;and\;\;E\;\;only) \\[3ex]
+                    + n(passed\;\;all\;\;three) + n(failed\;\;all\;\;three) = n(\mu) \\[3ex]
+                    6 + 9 + 7 + 5 + 4 + 2 + 3 + n(failed\;\;all\;\;three) = 40 \\[3ex]
+                    36 + n(failed\;\;all\;\;three) = 40 \\[3ex]
+                    n(failed\;\;all\;\;three) = 40 - 36 \\[3ex]
+                    n(failed\;\;all\;\;three) = 4 \\[3ex]
+                    $
+                    4 students failed all subjects. <br><br>
+
+                    The completed Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number33-second.png" alt="Number 33-second">
+                    </div> <br>
+
+                    (b) Failed at least one of Economics and Mathematics implies: <br>
+                    failed in Economics only <br>
+                    failed in Mathematics only <br>
+                    failed in Economics and Mathematics only <br><br>
+                    failed in all three subjects <br><br>
+                    In other words, it implies: not passing anything that has to do with Economics or Mathematics <br>
+                    Because of the Venn diagram (that shows passing for the subjects): <br>
+                    This means: <br>
+                    passing only Accounts <br>
+                    failing all three subjects <br><br>
+                    $
+                    n(failed\;\;in\;\;at\;\;least\;\;one\;\;of\;\;Economics\;\;and\;\;Mathematics) \\[3ex]
+                    = n(A\;\;only) + n(failed\;\;all\;\;three) \\[3ex]
+                    = 9 + 4 \\[3ex]
+                    = 13 \\[3ex]
+                    n(U) = 40 \\[3ex]
+                    \%(failed\;\;in\;\;at\;\;least\;\;one\;\;of\;\;Economics\;\;and\;\;Mathematics) \\[3ex]
+                    = \dfrac{n(failed\;\;in\;\;at\;\;least\;\;one\;\;of\;\;Economics\;\;and\;\;Mathematics)}{n(U)} * 100
+                    \\[5ex]
+                    = \dfrac{13}{40} * 100 \\[5ex]
+                    = 32.5\% \\[3ex]
+                    (c) \\[3ex]
+                    P(failed\;\;in\;\;Accounts) + P(passed\;\;in\;\;Accounts) = 1 ...Complementary\;\;Rule \\[3ex]
+                    P(failed\;\;in\;\;Accounts) = 1 - P(passed\;\;in\;\;Accounts) \\[3ex]
+                    P(passed\;\;in\;\;Accounts) = \dfrac{n(A)}{n(U)} = \dfrac{19}{40} \\[5ex]
+                    \implies \\[3ex]
+                    P(passed\;\;in\;\;Accounts) = 1 - \dfrac{19}{40} = \dfrac{40 - 19}{40} = \dfrac{21}{40} \\[5ex]
+                    $
+                    Alternatively: <br>
+                    Failed in Accounts means that the student did not pass anything related to Accounts <br>
+                    It is $n(A')$ <br>
+                    Because of the Venn diagram (that shows passing for the subjects): <br>
+                    This includes: <br>
+                    passing only Mathematics <br>
+                    passing only Economics <br>
+                    passed Mathematics and Economics only <br>
+                    failing all three subjects <br><br>
+                    $
+                    n(failed\;\;in\;\;Accounts) \\[3ex]
+                    = n(M\;\;only) + n(E\;\;only) + n(M\;\;and\;\;E\;\;only) + n(failed\;\;all\;\;three) \\[3ex]
+                    = 6 + 7 + 4 + 4 \\[3ex]
+                    = 21 \\[3ex]
+                    n(U) = 40 \\[3ex]
+                    P(failed\;\;in\;\;Accounts) \\[3ex]
+                    = \dfrac{n(failed\;\;in\;\;Accounts)}{n(U)} \\[5ex]
+                    = \dfrac{21}{40}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.) <b>JAMB</b> P, Q and R are subsets of the universal set, U <br>
+                The Venn diagram showing the relationship $(P \cap Q) \cup R$ is <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-ThreeSets/Questions/Number34.png" alt="Number 34">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets34')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets34">
+                    <br>
+                    Explained in these resources: <br>
+                    Notes: <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Venn Diagrams for Three Sets: Examples 14 - 16</a>
+                    <br><br>
+                    Let us do this (draw a Venn diagram with some elements) quickly: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number34-first.png" style="width: 100%;"
+                            alt="Number 34-first">
+                    </div> <br>
+                    $
+                    P = \{1, 2, 4, 5\} \\[3ex]
+                    Q = \{2, 3, 5, 6\} \\[3ex]
+                    R = \{4, 5, 6, 7\} \\[3ex]
+                    P \cap Q = \{2, 5\} \\[3ex]
+                    (P \cap Q) \cup R = \{2, 4, 5, 6, 7\} \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-ThreeSets/Answers/Number34-second.png" style="width: 100%;"
+                            alt="Number 34-second">
+                    </div> <br>
+                    The correct answer is Option C
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets35')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets36')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets37')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets38')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.) A media company that produces videos surveyed its customers to determine whether they would prefer
+                to purchase
+                the videos by buying an access code to allow them to download from a website, purchase hard copies on a
+                DVD, or
+                access the videos via a podcast. <br>
+                The company has extracted the table of information shown below from its customer database: <br>
+                <table class="w3-center">
+                    <tr>
+                        <td style="width: 20%;"></td>
+                        <td style="width: 20%;">Access Code (A)</td>
+                        <td style="width: 20%;">Podcast (P)</td>
+                        <td style="width: 20%;">DVD (D)</td>
+                        <td style="width: 20%;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>Under 41 (Y)oung</td>
+                        <td>73</td>
+                        <td>50</td>
+                        <td>48</td>
+                        <td>171</td>
+                    </tr>
+                    <tr>
+                        <td>41 &ndash; 55 (M)iddle aged</td>
+                        <td>35</td>
+                        <td>43</td>
+                        <td>55</td>
+                        <td>133</td>
+                    </tr>
+                    <tr>
+                        <td>Over 55 (S)enior</td>
+                        <td>33</td>
+                        <td>70</td>
+                        <td>55</td>
+                        <td>158</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>141</td>
+                        <td>163</td>
+                        <td>158</td>
+                        <td>462</td>
+                    </tr>
+                </table>
+                <br>
+                Use the information in the table to find the number of elements in: <br>
+                (a.) P <br>
+                (b.) D &Intersection; M <br>
+                (b.) A &Union; M <br>
+                (c.) S' <br>
+                (e.) M &Intersection; (A &Union; D)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets39')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets39">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    n(P) = 163 \\[3ex]
+                    (b.) \\[3ex]
+                    n(D \cap M) = 55 \\[3ex]
+                    (c.) \\[3ex]
+                    n(A \cup M) \\[3ex]
+                    = n(A) + n(M) - n(A \cap M)...Addition\;\;Rule \\[3ex]
+                    = 141 + 133 - 35 \\[3ex]
+                    = 239 \\[3ex]
+                    (d.) \\[3ex]
+                    n(S') \\[3ex]
+                    = n(Y) + n(M) \\[3ex]
+                    = 171 + 133 \\[3ex]
+                    = 304 \\[3ex]
+                    (e.) \\[3ex]
+                    n[M \cap (A \cup D)] \\[3ex]
+                    = n[(M \cap A) \cup (M \cap D)]...Distributive\;\;Law \\[3ex]
+                    = 35 + 55 \\[3ex]
+                    = 90 \\[3ex]
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDThreeSets40')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-3sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets41')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets42')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets43')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <button class="solutions" onclick="solutions('solutionVDThreeSets44')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDThreeSets44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center silver w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages2.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

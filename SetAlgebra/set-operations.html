@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <title>Set Operations</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in set operations." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samdom4peace, samuel dominic chukwuemeka, math, mathematics, algebra, set, set theory, 
+              union, intersection, intersect, set notation, prime, complement, universal set, empty set, null set, set algebra,
+              Cartesian product, symmetric difference, difference of sets, power set, subset, proper subset, superset,
+              finite set, infinite set, roster form, set builder notation, set generator notation, cardinality, cardinal number,
+              equal sets, equivalent sets, ellipsis, infinity, element, member, Venn diagrams, Identity law, Domination law, 
+              Idempotent law, Complement law, law of Complementation, De Morgan's law, Involution law, law of Double Complementation, 
+              Commutative law, Associative law, Distributive law, Absorption law, n-tuple notation, roster notation" />
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-32 silver" id="quotes">
+        <h1>Solved Examples on Set Operations</h1>
+    </header>
+    <!-- End Header/Home -->
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+
+        <div class="w3-container">
+            <!-- Image in top left corner --
+                <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                    <img class="image" src="images/sam4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+            -->
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for a wrong answer. <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+            <br><br>
+            <b>Corequisites:</b>
+            <a href="https://statistical-science.appspot.com/Probability/probability.html"
+                target="_blank">Probability</a>
+            <br><br>
+            Solve all questions <br>
+            Show all work.
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>WASSCE</b> <i>A</i> = {2, 4, 6, 8}, <i>B</i> = {2, 3, 7, 9} and <i>C</i> = {<i>x</i>: 3 &lt; x
+                &lt; 9}
+                are subsets of the universal set, $\mu$ = {2, 3, 4, 5, 6, 7, 8, 9} <br>
+                Find: <br>
+                (a.) $A \cap (B' \cap C')$ <br>
+                (b.) $(A \cup B) \cap (B \cup C)$ <br><br>
+                <button class="solutions" onclick="solutions('solutionSO1')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO1">
+                    <br>
+                    $
+                    A = \{2, 4, 6, 8\} \\[3ex]
+                    B = \{2, 3, 7, 9\} \\[3ex]
+                    C = \{x: 3 \lt x \lt 9\} \\[3ex]
+                    \rightarrow C = \{4, 5, 6, 7, 8\} \\[3ex]
+                    \mu = \{2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                    (a.) \\[3ex]
+                    B' = \{4, 5, 6, 8\} \\[3ex]
+                    C' = \{2, 3, 9\} \\[3ex]
+                    B' \cap C' = \phi \\[3ex]
+                    A \cap (B' \cap C') = A \cap \phi = \phi \\[3ex]
+                    (b.) \\[3ex]
+                    A \cup B = \{2, 3, 4, 6, 7, 8, 9\} \\[3ex]
+                    B \cup C = \{2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                    (A \cup B) \cap (B \cup C) = \{2, 3, 4, 6, 7, 8, 9\}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>WASSCE</b> Given that $\mu$ = {1, 2, 3, 4, 5, 6, 7, 8}, <i>X</i> = {1, 3, 5, 7} and
+                <i>Y</i> = {1, 5, 8}, <br>
+                find: <br>
+                (i) $X' \cap Y$ <br>
+                (ii) $(X' \cup Y)'$ <br><br>
+                <button class="solutions" onclick="solutions('solutionSO2')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO2">
+                    <br>
+                    $
+                    (i) \\[3ex]
+                    X = \{1, 3, 5, 7\} \\[3ex]
+                    X' = \{2, 4, 6, 8\} \\[3ex]
+                    X' \cap Y = \{8\} \\[3ex]
+                    (ii) \\[3ex]
+                    X' \cup Y = \{1, 2, 4, 5, 6, 8\} \\[3ex]
+                    (X' \cup Y)' = \{3, 7\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Sets <i>C, D</i>, and <i>E</i> are: <br>
+                <i>C</i> = {love, peace, joy} <br>
+                <i>D</i> = {hope, strength} <br>
+                <i>E</i> = {favor, blessing} <br><br>
+                Write the following Cartesian products using <i>n-</i>tuple notation in roster form. <br><br>
+                $
+                (a.)\:\: C * D \\[3ex]
+                (b.)\:\: D * C \\[3ex]
+                (c.)\:\: D * E \\[3ex]
+                (d.)\:\: C * D * E \\[3ex]
+                (e.)\:\: D * C * E \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO3')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO3">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    n(C * D) = n(C) * n(D) = 3 * 2 = 6 \\[3ex]
+                    C * D = \{love, peace, joy\} * \{hope, strength\} \\[3ex]
+                    = \{(love, hope), (love, strength), (peace, hope), (peace, strength), (joy, hope), (joy, strength)\}
+                    \\[3ex]
+                    n(C * D) = 6 \\[3ex]
+                    (b.) \\[3ex]
+                    n(D * C) = n(D) * n(C) = 2 * 3 = 6 \\[3ex]
+                    D * C = \{hope, strength\} * \{love, peace, joy\} \\[3ex]
+                    = \{(hope, love), (hope, peace), (hope, joy), (strength, love), (strength, peace), (strength, joy)\}
+                    \\[3ex]
+                    n(D * C) = 6 \\[3ex]
+                    (c.) \\[3ex]
+                    n(D * E) = n(D) * n(E) = 2 * 2 = 4 \\[3ex]
+                    D * E = \{hope, strength\} * \{favor, blessing\} \\[3ex]
+                    = \{(hope, favor), (hope, blessing), (strength, favor), (strength, blessing)\} \\[3ex]
+                    n(D * E) = 4 \\[3ex]
+                    (d.) \\[3ex]
+                    n(C * D * E) = n(C) * n(D) * n(E) = 3 * 2 * 2 = 12 \\[3ex]
+                    C * D * E = \{love, peace, joy\} * \{hope, strength\} * \{favor, blessing\} \\[3ex]
+                    = \{ \\[3ex]
+                    (love, hope, favor), (love, hope, blessing), (love, strength, favor), (love, strength, blessing),
+                    \\[3ex]
+                    (peace, hope, favor), (peace, hope, blessing), (peace, strength, favor), (peace, strength,
+                    blessing), \\[3ex]
+                    (joy, hope, favor), (joy, hope, blessing), (joy, strength, favor), (joy, strength, blessing) \\[3ex]
+                    \} \\[3ex]
+                    n(C * D * E) = 12 \\[3ex]
+                    (e.) \\[3ex]
+                    n(D * C * E) = n(D) * n(C) * n(E) = 2 * 3 * 2 = 12 \\[3ex]
+                    D * C * E = \{hope, strength\} * \{love, peace, joy\} * \{favor, blessing\} \\[3ex]
+                    = \{ \\[3ex]
+                    (hope, love, favor), (hope, love, blessing), \\[3ex]
+                    (hope, peace, favor), (hope, peace, blessing), \\[3ex]
+                    (hope, joy, favor), (hope, joy, blessing), \\[3ex]
+                    (strength, love, favor), (strength, love, blessing), \\[3ex]
+                    (strength, peace, favor), (strength, peace, blessing), \\[3ex]
+                    (strength, joy, favor), (strength, joy, blessing) \\[3ex]
+                    \} \\[3ex]
+                    n(D * C * E) = 12 \\[3ex]
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Set C = {b, o, y} <br>
+                (a.) Determine the cardinality of set C <br>
+                (b.) List the power set of C <br>
+                (c.) What is the cardinality of the power set of C?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO4')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO4">
+                    <br>
+                    C = {b, o, y} <br><br>
+                    (a.) n(C) = 3 <br><br>
+                    (b.) P(C) = {&phi;, {b}, {o}, {y}, {b, o}, {b, y}, {o, y}, {b, o, y}} <br><br>
+                    (c.) n(P(C)) = 8
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.)
+                <button class="solutions" onclick="solutions('solutionSO5')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO5">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>JAMB</b> If $\mu$ = {x|x is a positive integer less than 10} and
+                <i>P</i> = {x|x is a prime factor of 30}, find the complement of <i>P</i> <br><br>
+                $
+                A.\;\; \{1, 2, 4, 7, 8, 9\} \\[3ex]
+                B.\;\; \{1, 2, 4, 6, 7, 8, 9\} \\[3ex]
+                C.\;\; \{1, 4, 6, 7, 8, 9\} \\[3ex]
+                D.\;\; \{1, 4, 7, 8, 9\} \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO6')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO6">
+                    <br>
+                    $
+                    \mu = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                    P = \{2, 3, 5\} \\[3ex]
+                    P' = \{1, 4, 6, 7, 8, 9\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO7')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO7">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>WASCCE</b> Given that <i>X</i> = {<i>x</i>: 10 &le; <i>x</i> &lt; 15} and <i>Y</i> = {even
+                numbers &lt; 18} are
+                subsets of <i>U</i> = {10, 11, 12, ..., 20}, find: <br>
+                (a.) $X \cap Y$ <br>
+                (b.) $n(X' \cap Y)$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO8')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO8">
+                    <br>
+                    $
+                    U = \{10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20\} \\[3ex]
+                    X = \{10, 11, 12, 13, 14\} \\[3ex]
+                    Y = \{2, 4, 6, 8, 10, 12, 14, 16\} \\[3ex]
+                    X' = \{15, 16, 17, 18, 19, 20\} \\[3ex]
+                    (a) \\[3ex]
+                    X \cap Y = \{10, 12, 14\} \\[3ex]
+                    (b) \\[3ex]
+                    X' \cap Y = \{16\} \\[3ex]
+                    n(X' \cap Y) = 1
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <button class="solutions" onclick="solutions('solutionSO9')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO9">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>ACT</b> The 3 statements below are true for the elements of sets <i>A, B, C,</i> and <i>D</i>
+                <br>
+                I. All elements of <i>A</i> are elements of <i>B</i> <br>
+                II. All elements of <i>C</i> are elements of <i>D</i> <br>
+                III. No elements of <i>D</i> are elements of <i>B</i> <br><br>
+                Which of the following statements <i>must</i> be true? <br>
+                <b>F.</b> All elements of <i>A</i> are elements of <i>C</i> <br>
+                <b>G.</b> All elements of <i>B</i> are elements of <i>D</i> <br>
+                <b>H.</b> All elements of <i>C</i> are elements of <i>B</i> <br>
+                <b>J.</b> No elements of <i>A</i> are elements of <i>B</i> <br>
+                <b>K.</b> No elements of <i>A</i> are elements of <i>C</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO10')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO10">
+                    <br>
+                    Let us analyze each option <br>
+                    Option <b>J.</b> <br>
+                    No elements of <i>A</i> are elements of <i>B</i> <br>
+                    This is incorrect because: All elements of <i>A</i> are elements of <i>B</i> <br><br>
+
+                    Option <b>G.</b> <br>
+                    All elements of <i>B</i> are elements of <i>D</i> <br>
+                    This is false. <br>
+                    If: No elements of <i>D</i> are elements of <i>B</i>, it means that: <i>B</i> does not contain any
+                    element of <i>D</i> <br><br>
+
+                    Option <b>H.</b> <br>
+                    All elements of <i>C</i> are elements of <i>B</i> <br>
+                    This is not correct. <br>
+                    Here's why it is not true: <br>
+                    No elements of <i>D</i> are elements of <i>B</i> <br>
+                    This means that: <i>B</i> does not contain any element of <i>D</i> <br>
+                    All elements of <i>C</i> are elements of <i>D</i> <br>
+                    This means that <i>B</i> does not contain any element of <i>C</i> <br><br>
+
+                    Option <b>F.</b> <br>
+                    All elements of <i>A</i> are elements of <i>C</i> <br>
+                    This is also not correct. <br>
+                    Here's the reason: <br>
+                    No elements of <i>D</i> are elements of <i>B</i> <br>
+                    This means that: <i>B</i> does not contain any element of <i>D</i> <br>
+                    All elements of <i>C</i> are elements of <i>D</i> <br>
+                    This means that <i>B</i> does not contain any element of <i>C</i> <br>
+                    All elements of <i>A</i> are elements of <i>B</i> <br>
+                    Because: <i>B</i> does not contain any element of <i>C</i>, no elements of <i>A</i> can be elements
+                    of <i>C</i> <br><br>
+
+                    Option <b>K.</b> <br>
+                    No elements of <i>A</i> are elements of <i>C</i> <br>
+                    This is the correct option. <br>
+                    Based on the conclusion from the previous reason: <br>
+                    Because: <i>B</i> does not contain any element of <i>C</i>, no elements of <i>A</i> are elements of
+                    <i>C</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <button class="solutions" onclick="solutions('solutionSO11')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO11">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>JAMB</b> If <i>U</i> = {x | x is a positive integer less than 10} and <i>P</i> = {x | x is a
+                prime factor of 30},
+                find the complement of <i>P</i> <br><br>
+                $
+                A.\;\; \{1, 2, 4, 7, 8, 9\} \\[3ex]
+                B.\;\; \{1, 2, 4, 6, 7, 8, 9\} \\[3ex]
+                C.\;\; \{1, 4, 6, 7, 8, 9\} \\[3ex]
+                D.\;\; \{1, 4, 7, 8, 9\} \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO12')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO12">
+                    <br>
+                    $
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                    P = \{2, 3, 5\} \\[3ex]
+                    P' = \{1, 4, 6, 7, 8, 9\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <button class="solutions" onclick="solutions('solutionSO13')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) Set K = {l, o, v, e} <br>
+                (a.) Determine the cardinality of set K <br>
+                (b.) List the power set of K <br>
+                (c.) Determine the cardinality of the power set of K.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO14')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO14">
+                    <br>
+                    C = {l, o, v, e} <br><br>
+                    (a.) n(K) = 4 <br><br>
+                    (b.) P(K) = {{}, {l}, {o}, {v}, {e}, {l, o}, {l, v}, {l, e}, {o, v}, {o, e}, {v, e}, {l, o, v}, {l,
+                    o, e}, {l, v, e}, {o, v, e}, {l, o, v, e}} <br><br>
+                    (c.) n(P(C)) = 16
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <button class="solutions" onclick="solutions('solutionSO15')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO15">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <button class="solutions" onclick="solutions('solutionSO16')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionSO17')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) Decide whether these statements make sense​ (or is clearly​ true) or does not make sense​ (or is
+                clearly​ false). <br>
+                Explain your reasoning.
+                <br><br>
+                (I.) I counted an irrational number of students in my class.
+                <br><br>
+                (II.) The people who live in Boise form a subset of those who rent apartments in Boise.
+                <br><br>
+                (III.) My professor asked me to draw a Venn diagram from a categorical​ proposition, but I​ couldn't do
+                it because the proposition was clearly false.
+                <br><br>
+                (IV.) I surveyed my class to find out whether students rode a bike on campus or not. <br>
+                Then I made a Venn diagram with one circle​ (inside a​ rectangle) to summarize the results.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO18')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO18">
+                    <br>
+                    (I.) The statement does not make sense. Irrational numbers have​ non-repeating decimal​ expansion,
+                    so there could not be an irrational number of students.
+                    <br><br>
+                    (II.) The statement does not make sense because the set of people who live in Boise also includes
+                    home owners which are not part of the set of people who rent apartments in Boise.
+                    <br><br>
+                    (III.) The statement does not make sense because to draw a Venn​ diagram, the proposition can be
+                    either true or false.
+                    <br><br>
+                    (IV.) The statement makes sense because students will either answer with ride a bike or not ride a​
+                    bike, which can be summarized using one circle in a Venn diagram.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <button class="solutions" onclick="solutions('solutionSO19')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>JAMB</b> If P = {x | x is odd, -1 &lt; x &le; 20} and Q = {y: y is prime, -2 &lt; y &le; 25},
+                find $P \cap Q$
+                <br><br>
+                $
+                A.\;\; \{3, 5, 7, 11, 17, 19\} \\[3ex]
+                B.\;\; \{3, 5, 7, 11, 13, 17, 19\} \\[3ex]
+                C.\;\; \{3, 5, 7, 11, 17, 19\} \\[3ex]
+                D.\;\; \{2, 3, 5, 7, 11, 13, 17, 19\} \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO20')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO20">
+                    <br>
+                    $
+                    P = \{1, 3, 5, 7, 9, 11, 13, 15, 17, 19\} \\[3ex]
+                    Q = \{2, 3, 5, 7, 11, 13, 17, 19, 23\} \\[3ex]
+                    P \cap Q = \{3, 5, 7, 11, 13, 17, 19\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-operations.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionSO21')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <button class="solutions" onclick="solutions('solutionSO22')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) <b>JAMB</b> If $\mu = \{1, 2, 3, 6, 7, 8, 9, 10\}$ is the universal set, $E = \{0, 4, 6, 8, 10\}$
+                and
+                $F = \{x: x^2 = 2^6,\;\;x\;\;is\;\;odd\}$ <br>
+                Find $(E \cap F)'$, where ' means the complement of a set. <br><br>
+                $
+                A.\;\; \{0\} \\[3ex]
+                B.\;\; \mu \\[3ex]
+                C.\;\; \{8\} \\[3ex]
+                D.\;\; \phi \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO23')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO23">
+                    <br>
+                    $
+                    \mu = \{1, 2, 3, 6, 7, 8, 9, 10\} \\[3ex]
+                    E = \{0, 4, 6, 8, 10\} \\[3ex]
+                    2^6 = 64 \\[3ex]
+                    8^2 = 64\;\;but\;\;8\;\;is\;\;not\;\;odd \\[3ex]
+                    F = \phi \\[3ex]
+                    E \cap F = \{0, 4, 6, 8, 10\} \cap \phi = \phi...Domination\;\;Law \\[3ex]
+                    (E \cap F)' = \phi ' = \mu...Complement\;\;Law
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) <b>ACT</b> Consider sets <i>A, B, C,</i> and <i>D</i> such that <i>B</i> is a subset of <i>A</i>,
+                <i>C</i> is a subset of <i>B</i>, and <i>D</i> is a subset of <i>C.</i> <br>
+                Whenever <i>x</i> is an element of <i>B</i>, <i>x must</i> be an element of: <br>
+                <b>A.</b> <i>A</i> <br>
+                <b>B.</b> <i>D</i> <br>
+                <b>C.</b> <i>A</i> and <i>C</i> <br>
+                <b>D.</b> <i>C</i> and <i>D</i> <br>
+                <b>E.</b> <i>A, C,</i> and <i>D</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSO24')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO24">
+                    <br>
+                    $
+                    B \subseteq A \\[3ex]
+                    C \subseteq B \\[3ex]
+                    D \subseteq C \\[3ex]
+                    x \in B \;\;implies\;\;that\;\; x \in A \;\;because\;\; B \subseteq A <br>
+                    Option <b>A</b> is the correct option
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionSO25')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <button class="solutions" onclick="solutions('solutionSO26')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <button class="solutions" onclick="solutions('solutionSO27')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <button class="solutions" onclick="solutions('solutionSO28')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.) <b>JAMB</b> Given that for sets A and B, in a universal set E, $A \subseteq B$ then $A \cap (A
+                \cap B)'$ is <br><br>
+                $
+                A.\;\; A \\[3ex]
+                B.\;\; \phi \\[3ex]
+                C.\;\; B \\[3ex]
+                D.\;\; E \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionSO29')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO29">
+                    <br>
+                    $
+                    A \subseteq B \\[3ex]
+                    means\;\;that \\[3ex]
+                    A \cap B = A ...because\;\;A\;\;is\;\;contained\;\;in,\;\;or\;\;equal\;\;to\;\;B \\[3ex]
+                    (A \cap B)' = A' \\[5ex]
+                    \implies \\[3ex]
+                    A \cap (A \cap B)' \\[3ex]
+                    = A \cap A' = \phi...Complement\;\;Law
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <button class="solutions" onclick="solutions('solutionSO30')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionSO31')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+                <button class="solutions" onclick="solutions('solutionSO32')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO32">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionSO33')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <button class="solutions" onclick="solutions('solutionSO34')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionSO35')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <button class="solutions" onclick="solutions('solutionSO36')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionSO37')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <button class="solutions" onclick="solutions('solutionSO38')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <button class="solutions" onclick="solutions('solutionSO39')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <button class="solutions" onclick="solutions('solutionSO40')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-operations.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionSO41')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <button class="solutions" onclick="solutions('solutionSO42')">Show/Hide Answer</button>
+                <div class="result" id="solutionSO42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="w3-center silver w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages2.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script src="scripts/piecewise-functions.js"></script>
+</body>
+
+</html>

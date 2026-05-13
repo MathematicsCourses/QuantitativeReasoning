@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <meta charset="UTF-8">
+
+    <title>Applications of Bonds</title>
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in bond applications.">
+
+    <meta name="keywords" content="samuel, chukwuemeka, math, mathematics, mathematics of finance, financial mathematics, 
+                financial math, simple interest, compound interest, continuous compound interest, annual percentage yield, 
+                apy, annuity, ordinary annuity, annuity due, amortization, present value, future value, sinking fund, rule of 78, 
+                loan amortization, mortgage payments, stocks, bonds, investment decision rules, debt financing, time value of money,
+                project evaluation, refund fraction, coupon bonds, bond coupons, bond coupon amount, bond coupon number, bond price, 
+                face value, par value, bond coupon rate, yield to maturity, market value">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/mathematicsFinance.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <div class="w3-content w3-padding">
+            <h1>Solved Examples: Bonds</h1>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="https://quantitativereasoning.appspot.com/MathematicsFinance/financialMathematics.html" title="Samuel Chukwuemeka">
+            <img src="images/chukwuemekasamuel4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                class="image">
+        </a>
+    -->
+        Formulas Used: <a
+            href="https://quantitativereasoning.appspot.com/MathematicsFinance/financialMathematics.html#formulas"
+            target="_blank">Mathematics of Finance</a> <br>
+
+        <mark>
+            <u>NOTE:</u> Unless instructed otherwise; <br>
+            For all financial calculations, do not round until the final answer. <br>
+            Do not round intermediate calculations. If it is too long, write it to "at least" $5$ decimal places. <br>
+            Round your final answer to 2 decimal places. Make sure you include your unit.
+        </mark> <br><br>
+        Solve all questions. <br>
+        Show all work. <br>
+        Use <i>at least two methods</i> to solve each question <i>whenever applicable</i>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Divine Prosperity Inc. issued a thirty-year semiannual coupon bonds with a face value of one
+                thousand
+                dollars. <br>
+                If the annual coupon rate is six percent and the current yield to maturity is seven percent, what is the
+                firm's current price per bond?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA1')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA1">
+                    <br>
+                    $
+                    t = 30\:years \\[3ex]
+                    Semiannual\:\:coupon\:\:bonds \rightarrow m = 2 \\[3ex]
+                    FV = \$1000 \\[3ex]
+                    BCR = 6\% = \dfrac{6}{100} = 0.06 \\[5ex]
+                    YTM = 7\% = \dfrac{7}{100} = 0.07 \\[5ex]
+                    BP = ? \\[3ex]
+                    BP = \dfrac{FV * BCR}{YTM} * \left[1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}}\right] +
+                    \dfrac{FV}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} \\[10ex]
+                    Too\:\:long...let\:\:us\:\:solve\:\:in\:\:parts \\[3ex]
+                    \underline{First\:\:Part} \\[3ex]
+                    \dfrac{FV * BCR}{YTM} \\[5ex]
+                    = \dfrac{1000 * 0.06}{0.07} \\[5ex]
+                    = \dfrac{60}{0.07} \\[5ex]
+                    = 857.142857 \\[3ex]
+                    \underline{Second\:\:Part} \\[3ex]
+                    \left[1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}}\right] \\[10ex]
+                    mt = 2(30) = 60 \\[3ex]
+                    1 + \dfrac{YTM}{m} = 1 + \dfrac{0.07}{2} = 1 + 0.035 = 1.035 \\[5ex]
+                    \left(1 + \dfrac{YTM}{m}\right)^{mt} = (1.035)^{60} = 7.8780909 \\[7ex]
+                    \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} = \dfrac{1}{7.8780909} = 0.126934306 \\[10ex]
+                    1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} = 1 - 0.126934306 = 0.873065694 \\[10ex]
+                    \underline{Third\:\:Part} \\[3ex]
+                    \dfrac{FV}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} \\[7ex]
+                    = \dfrac{1000}{7.8780909} \\[5ex]
+                    = 126.934306 \\[3ex]
+                    \underline{Bond\:\:Price} \\[3ex]
+                    BP = 857.142857 * 0.873065694 + 126.934306 \\[3ex]
+                    BP = 748.342023 + 126.934306 \\[3ex]
+                    BP = 875.276329 \\[3ex]
+                    BP \approx \$875.28
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Favor Inc. has outstanding one thousand dollars face value four percent coupon bonds that make
+                semiannual payments, and have ten years remaining to maturity. <br>
+                If the current price for these bonds is nine hundred and thirty eight and fifty seven cents, what is
+                the annualized yield to maturity?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA2')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA2">
+                    <br>
+                    $
+                    FV = \$1000 \\[3ex]
+                    BCR = 4\% = \dfrac{4}{100} = 0.04 \\[5ex]
+                    Semiannual\:\:coupon\:\:bonds \rightarrow m = 2 \\[3ex]
+                    t = 10\:years \\[3ex]
+                    BP = \$938.57 \\[3ex]
+                    Annualized\:\:YTM = ? \\[3ex]
+                    Annualized\:\:YTM \approx \dfrac{2(t * FV * BCR + FV - BP)}{t(FV + BP)} \\[5ex]
+                    Annualized\:\:YTM \approx \dfrac{2(10 * 1000 * 0.04 + 1000 - 938.57)}{10(1000 + 938.57)} \\[5ex]
+                    \approx \dfrac{2(400 + 1000 - 938.57)}{10(1938.57)} \\[5ex]
+                    \approx \dfrac{2(461.43)}{19385.7} \\[5ex]
+                    \approx \dfrac{922.86}{19385.7} \\[5ex]
+                    \approx 0.0476051935 \\[3ex]
+                    to\:\:percent = 0.0476051935(100) \\[3ex]
+                    \approx 4.76\%
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Future and Hope Inc. issued a twenty-year one thousand dollars face value, eight percent annual
+                coupon bonds,
+                with a yield to maturity of ten percent. <br>
+                Calculate the current price of the bond.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA3')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA3">
+                    <br>
+                    $
+                    t = 20\:years \\[3ex]
+                    Annual\:\:coupon\:\:bonds \rightarrow m = 1 \\[3ex]
+                    FV = \$1000 \\[3ex]
+                    BCR = 8\% = \dfrac{8}{100} = 0.08 \\[5ex]
+                    YTM = 10\% = \dfrac{10}{100} = 0.1 \\[5ex]
+                    BP = ? \\[3ex]
+                    BP = \dfrac{FV * BCR}{YTM} * \left[1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}}\right] +
+                    \dfrac{FV}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} \\[10ex]
+                    Too\:\:long...let\:\:us\:\:solve\:\:in\:\:parts \\[3ex]
+                    \underline{First\:\:Part} \\[3ex]
+                    \dfrac{FV * BCR}{YTM} \\[5ex]
+                    = \dfrac{1000 * 0.08}{0.1} \\[5ex]
+                    = \dfrac{80}{0.1} \\[5ex]
+                    = 800 \\[3ex]
+                    \underline{Second\:\:Part} \\[3ex]
+                    \left[1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}}\right] \\[10ex]
+                    mt = 1(20) = 20 \\[3ex]
+                    1 + \dfrac{YTM}{m} = 1 + \dfrac{0.1}{1} = 1 + 0.1 = 1.1 \\[5ex]
+                    \left(1 + \dfrac{YTM}{m}\right)^{mt} = (1.1)^{20} = 6.72749995 \\[7ex]
+                    \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} = \dfrac{1}{6.72749995} = 0.148643628 \\[10ex]
+                    1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} = 1 - 0.148643628 = 0.851356372 \\[10ex]
+                    \underline{Third\:\:Part} \\[3ex]
+                    \dfrac{FV}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} \\[7ex]
+                    = \dfrac{1000}{6.72749995} \\[5ex]
+                    = 148.643628 \\[3ex]
+                    \underline{Bond\:\:Price} \\[3ex]
+                    BP = 800 * 0.851356372 + 148.643628 \\[3ex]
+                    BP = 681.085098 + 148.643628 \\[3ex]
+                    BP = 829.728726 \\[3ex]
+                    BP \approx \$829.73
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Peace Inc. has outstanding one thousand dollars face value twelve percent coupon bonds that make
+                semiannual payments, and have eight years remaining to maturity. <br>
+                If the current price for these bonds is one thousand, two hundred and seventy four dollars and
+                thirty five cents, what is the annualized yield to maturity?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA4')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA4">
+                    <br>
+                    $
+                    FV = \$1000 \\[3ex]
+                    BCR = 12\% = \dfrac{12}{100} = 0.12 \\[5ex]
+                    Semiannual\:\:coupon\:\:bonds \rightarrow m = 2 \\[3ex]
+                    t = 8\:years \\[3ex]
+                    BP = \$1274.35 \\[3ex]
+                    Annualized\:\:YTM = ? \\[3ex]
+                    Annualized\:\:YTM \approx \dfrac{2(t * FV * BCR + FV - BP)}{t(FV + BP)} \\[5ex]
+                    Annualized\:\:YTM \approx \dfrac{2(8 * 1000 * 0.12 + 1000 - 1274.35)}{8(1000 + 1274.35)} \\[5ex]
+                    \approx \dfrac{2(960 + 1000 - 1274.35)}{8(2274.35)} \\[5ex]
+                    \approx \dfrac{2(685.65)}{18194.8} \\[5ex]
+                    \approx \dfrac{1371.3}{18194.8} \\[5ex]
+                    \approx 0.0753676875 \\[3ex]
+                    to\:\:percent = 0.0753676875(100) \\[3ex]
+                    \approx 7.54\%
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA5')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA5">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Joy Inc. issued ten-year <b>zero-coupon bonds</b> with a thousand dollars face value. <br>
+                If the bonds are currently selling for five hundred and fourteen dollars and eighty seven cents,
+                what is the yield to maturity?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA6')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA6">
+                    <br>
+                    $
+                    t = 10\:years \\[3ex]
+                    FV = \$1000 \\[3ex]
+                    BP = \$514.87 \\[3ex]
+                    YTM = ? \\[3ex]
+                    YTM = \left(\dfrac{FV}{BP}\right)^{\dfrac{1}{t}} - 1 \\[7ex]
+                    YTM = \left(\dfrac{1000}{514.87}\right)^{\dfrac{1}{10}} - 1 \\[7ex]
+                    = \left(1.94223785\right)^{0.1} - 1 \\[5ex]
+                    = 1.06863708 - 1 \\[3ex]
+                    = 0.06863708 \\[3ex]
+                    to\:\:percent = 0.06863708(100) \\[3ex]
+                    = 6.863708\% \\[3ex]
+                    \approx 6.86\%
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA7')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA7">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA8')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA8">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA9')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA9">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionFMA10')">Show/Hide Answer</button>
+                <div class="result" id="solutionFMA10">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018&nbsp; SamDom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages2.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+    
+    <title>Set Theory</title>
+
+    <meta charset="UTF-8">
+        
+        <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in set theory.">
+        
+        <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samdom4peace, samuel dominic chukwuemeka, math, mathematics, algebra, set, set theory, 
+              union, intersection, intersect, set notation, prime, complement, universal set, empty set, null set, set algebra,
+              Cartesian product, symmetric difference, difference of sets, power set, subset, proper subset, superset,
+              finite set, infinite set, roster form, set builder notation, set generator notation, cardinality, cardinal number,
+              equal sets, equivalent sets, ellipsis, infinity, element, member, Venn diagrams, Identity law, Domination law, 
+              Idempotent law, Complement law, law of Complementation, De Morgan's law, Involution law, law of Double Complementation, 
+              Commutative law, Associative law, Distributive law, Absorption law, n-tuple notation, roster notation,
+              class, categorical proposition, subject set, predicate set, universal affirmative, universal negative, particular affirmative, 
+              particular negative, standard form"/>        
+        
+        <link href="styles/set-theory.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-padding w3-card">
+                <a href="#" class="w3-bar-item w3-button"><b>Set Theory</b></a>
+                <!-- Float links to the right. Hide them on small screens -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                    <a href="#references" class="w3-bar-item w3-button">References</a>
+                </div>
+                <div id="google_translate_element"></div><script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6'}, 'google_translate_element');
+                    }
+                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="w3-padding-120 silver" id="quotes">
+            <h1>Welcome to Set Theory</h1>
+        </header>
+        <!-- End Header -->
+
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+            <hr>                
+            <!-- Welcome -->
+            
+            <div class="w3-container w3-padding-32" id="welcome">
+                
+                <p>
+                    <a href="https://quantitativereasoning.appspot.com/" target="_blank">
+                        <img src="images/samuelchukwuemeka.jpg" alt="Samdom For Peace" title="Samuel Chukwuemeka (SamDom For Peace)" class="image">
+                    </a>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(Date() + ".");</script> <br>  
+                    <u>First:</u> read the notes/eText. <br>
+                    <u>Second:</u> view the videos/multimedia resources of your textbook. <br>
+                    <u>Third:</u> solve the questions/solved examples. <br> 
+                    <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. Thank you for visiting.
+                </p>
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span></p>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#overview';">Overview</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#terms';">Terms/Definitions</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#setAlgebra';">Set Algebra</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#interpretations';">Interpretations</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#lawsSets';">Laws of Sets</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#formulas';">Formulas</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#vennDiagrams';">Venn Diagrams</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#categoricalPropositions';">Categorical Propositions</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding" id="menu">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://quantitativereasoning.appspot.com/SetAlgebra/set-operations.html');">Solved Examples: Set Operations</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://quantitativereasoning.appspot.com/SetAlgebra/set-calculations.html');">Solved Examples: Set Calculations (Formulas)</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html');">Solved Examples: Venn Diagrams: Two Sets</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-3sets.html');">Solved Examples: Venn Diagrams: Three or More Sets</button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <!-- Overview -->
+            <div class="w3-container w3-padding-32" id="overview">
+                <h2 class="w3-padding-16">Set Theory</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br>
+                
+                    <br><br>
+
+                    (1.) Define sets. <br>
+                    (2.) Discuss the terms used in sets. <br>
+                    (3.) Determine the union of sets. <br>
+                    (4.) Determine the intersection of sets. <br>
+                    (5.) Determine the complement of a set. <br>
+                    (6.) List the subsets of a set. <br>
+                    (7.) List the power set of a set. <br>
+                    (8.) Determine the difference of sets. <br>
+                    (9.) Determine the symmetric difference of sets. <br>
+                    (10.) Determine the Cartesian product of sets. <br>
+                    (11.) Draw Venn diagrams for two sets. <br>
+                    (12.) Draw Venn diagrams for three sets. <br>
+                    (13.) Solve applied problems involving two sets. <br>
+                    (14.) Solve applied problems involving three sets.
+                
+                    <br><br>
+
+                    <i>Have you ever used the word, <b><i>Set</i></b>? In what way(s) have you used it?</i>
+                </p>
+
+
+                <h3>Why Study Sets?</h3>
+                <p>
+                    Sets are used in: <br>
+                    Business applications. <br>
+                    Political applications: in polls and surveys among others.
+                </p>
+                <i>If there is a large class, do some "fun applications" of sets.</i>
+
+                <h3>Definitions</h3>
+                <p>
+                    <b>Set theory</b> is the branch of mathematics that deals with the study of sets.
+                
+                    <br><br>
+                    
+                    A <b>Set</b> is a collection of things such as items and objects among others. <br>
+                    It is denoted by an upper-case letter, say <i>A</i>. <br>
+                    Sets can be <u>well-defined sets</u> or <u>non well-defined sets.</u> <br><br>
+
+                    A <b>Class</b> is a set of things. <br><br>
+                    Typically, a plural noun is used to identify a set or class such as set of books, set of students, set of teachers, 
+                    and set of colleges among others.
+                
+                    <br><br>
+
+                    A <b>Well-defined set</b> is a set arranged in order. <br>
+                    It does not depend on the opinion of the individual. <br>
+                    It is not biased. <br><br>
+                    <u>Examples are:</u> <br>
+                    the set of computer science books at the AWC library arranged by their dates of publications <br>
+                    the set of students in Mr. C's class arranged in alphabetical order of their last names
+                
+                    <br><br>
+
+                    A <b>Non well-defined set</b> is a set that depends on the opinion of the individual. <br>
+                    It is biased. <br><br>
+                    <u>Examples are:</u> <br>
+                    the set of the three best movies that were released last year <br>
+                    the set of the five most handsome guys at AWC. <br><br>
+
+                    <i>If you do not include me in the set, then it is a wrong set &#x263A;&#x263A;&#x263A;</i>
+
+                    <br><br>
+                
+                    <b>We shall only deal with Well-defined sets</b> <br><br>
+
+                    We also have <b>finite sets</b> and <b>infinite sets.</b> <br>
+                    
+                    A <b>Finite set</b> is a set that has a finite number of elements. <br>
+                    It has a bound. <br>
+                    It may have no elements or a positive integer number of elements.
+                
+                    <br><br>
+
+                    An <b>Infinite set</b> is a set that is not finite. <br>
+                
+                    <b>We shall only deal with Finite sets</b>
+                </p>
+
+                <h3>Description of Sets</h3>
+                <p>
+                    A set can be written or described in three ways. They are:
+                
+                    <br><br>
+
+                    (1.) <b>Description:</b> This method describes the sets in words. <br>
+                
+                    <br><br>
+
+                    (2.) <b>Roster Form:</b> This method uses a roster (similar to a classroom roster) to describe sets. <br>
+                    The roster form uses braces. <br>
+                    The elements of the set are listed in a roster format, separated with commas. <br>
+                    If the roster is too long, <b>ellipsis (three dots)</b> are used to indicate continuation. <br>
+                    Every member of the set is listed within the braces, with each member separated from the next by a comma. 
+                    If there are too many members to list, use three dots (ellipsis) ,..., to indicate a continuing pattern.
+                
+                    <br><br>
+                    
+                    (3.) <b>Set Notation:</b> This method uses a <i>shortened</i> form to describe sets. <br>
+                    It is also known as <b>Set Builder Notation</b> or <b>Set Generator Notation.</b> <br>
+                    The set notation also uses braces.
+                </p>
+                <br>
+                <p>
+                    <b><u>Exercise 1</u></b> <br>
+                    Assume Set <i>A</i> contains the elements: Sunday, Monday, Tuesday, Wednesday,
+                    Thursday, Friday, and Saturday. <br> 
+                    Describe set A using the three methods of describing sets.
+                </p>
+                <button class="solutions" onclick="solutions('solution1')">Show/Hide Answer</button>
+                <div class="result" id="solution1">
+                    <br>
+                    <u>Description:</u> Set $A$ is the days of the week. <br>
+                    <u>Roster Form:</u> $A$ = {Sunday, Monday, Tuesday, ..., Friday, Saturday} <br>
+                    <u>Set Notation:</u> $A$ = {$x | x\:\: is\:\: a\:\: day\:\: of\:\: the\:\: week$}
+                </div>              
+            </div>
+            <!-- End Overview -->
+
+            <br><br><br><br>            
+
+            <!-- Symbols/Terms/Definitions -->
+            <div class="w3-container w3-padding-32" id="terms">
+                <h2 class="w3-padding-16">Symbols, Terms, and Definitions</h2>
+                <hr>
+
+                <table>
+                    <tr>
+                        <th class="green w3-center" width="20%">Symbols</th>
+                        <th class="green w3-center" width="30%">Terms</th>
+                        <th class="green w3-center" width="50%">Definitions</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (1.) $\{$
+                        </td>
+                        <td class="w3-padding">
+                            Set of
+                        </td>
+                        <td class="w3-padding">
+                            $A$ = {... is read as: <b>$A$ is a set of ...</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (2.) $x |$ or $x:$
+                        </td>
+                        <td class="w3-padding">
+                            $x$ such that...
+                        </td>
+                        <td class="w3-padding">
+                            $x | ...$ is read as: <b>$x$ such that ...</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (3.) $...$
+                        </td>
+                        <td class="w3-padding">
+                            Ellipsis
+                        </td>
+                        <td class="w3-padding">
+                            This means continuation. It has to be only three dots.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (4.) $\infty$
+                        </td>
+                        <td class="w3-padding">
+                            Infinity
+                        </td>
+                        <td class="w3-padding">
+                            Without bounds.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (5.) $\mu$ or $\xi$ <br>
+                            (mu or xi)
+                        </td>
+                        <td class="w3-padding">
+                            Universal Set
+                        </td>
+                        <td class="w3-padding">
+                            It is the set that contains all the elements in a particular context. <br>
+                            It contains all the elements under consideration. <br>
+                            Every set is a subset of the universal set.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (6.) $\phi$ or $\{\}$
+                            (phi or empty set)
+                        </td>
+                        <td class="w3-padding">
+                            Empty Set or Null Set
+                        </td>
+                        <td class="w3-padding">
+                            It is a set that has no elements. <br>
+                            The cardinality of an empty set is zero. <br>
+                            <i>
+                                Student: What is the cardinality of a set? <br>
+                                Teacher: It is the number of elements in the set. <br>
+                                It is also known as the cardinal number of a set. <br>
+                                There are no elements in an empty set. <br>
+                                Hence, the cardinality of a null set is $0$ <br>
+                                NOTE: The null set is not $0$ <br>
+                                It is the cardinality of the null set that is $0$
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (7.) $\in$
+                        </td>
+                        <td class="w3-padding">
+                            element of or member of
+                        </td>
+                        <td class="w3-padding">
+                            Say $A$ is a set of the vowels of the English language alphabets. <br>
+                            $A$ = $\{a, e, i, o, u\}$ <br>
+                            $a\:\:\: \in\:\:\: A$ is read as <b>$a$ is an element of Set $A$</b> <br>
+                            $e\:\:\: \in\:\:\: A$ <br>
+                            $i\:\:\: \in\:\:\: A$ <br>
+                            $o\:\:\: \in\:\:\: A$ <br>
+                            $u\:\:\: \in\:\:\: A$ 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (8.) $n$
+                        </td>
+                        <td class="w3-padding">
+                            Cardinality or Cardinal Number
+                        </td>
+                        <td class="w3-padding">
+                            This is the number of elements of a set. <br>
+                            $n(A)$ is read as: <b>the cardinality of Set $A$</b> <br>
+                            It is the number of elements in Set $A$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (9.) $=$
+                        </td>
+                        <td class="w3-padding">
+                            Equals or Equal to
+                        </td>
+                        <td class="w3-padding">
+                            $A = B$ is read as: <b>Set $A$ is equal to Set $B$</b> <br>
+                            Two sets are equal if they have the same elements, regardless of the order of arrangement of
+                            the elements.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (10.) $\equiv$
+                        </td>
+                        <td class="w3-padding">
+                            Equivalent
+                        </td>
+                        <td class="w3-padding">
+                            $A \equiv B$ is read as: <b>Set $A$ is equivalent to Set $B$</b> <br>
+                            Two sets are equivalent if they have the same cardinality. <br>
+                            This means that they have the same number of elements.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (11.) $A'$ or $A^c$
+                        </td>
+                        <td class="w3-padding">
+                            Prime or Complement
+                        </td>
+                        <td class="w3-padding">
+                            $A'$ or $A^c$ is read as: <b>$A$-prime or $A$-complement</b> <br>
+                            The complement of Set $A$ is the set that contains all the elements in the Universal set but 
+                            are not in Set $A$. <br>
+                            <i>
+                                You can see it as "Not $A$" <br>
+                                They do not like Set $A$ at all.
+                            </i> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (12.) $\cup$
+                        </td>
+                        <td class="w3-padding">
+                            Union
+                        </td>
+                        <td class="w3-padding">
+                            $A \cup B$ is read as: <b>$A\:\: union\:\: B$</b> <br>
+                            <i>
+                                Look at it as "marriage". <br>
+                                The man brings what he has. Write it. <br>
+                                The woman brings what she has. Write it. <br>
+                                If they have anything in common, write it one time.
+                            </i> <br>
+                            It is the set that contains: <br>
+                            all the elements of set $A$, OR <br> 
+                            all the elements of set $B$, OR <br>
+                            all the elements of both sets $A$ AND $B$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (13.) $\cap$
+                        </td>
+                        <td class="w3-padding">
+                            Intersect
+                        </td>
+                        <td class="w3-padding">
+                            $A \cap B$ is read as: <b>$A\:\: intersect\:\: B$</b> <br>
+                            <i>
+                                Look at it as "intersection", "meet", "common".
+                            </i> <br>
+                            It is the set that contains the elements in both sets $A$ AND $B$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (14.) $\subset$
+                        </td>
+                        <td class="w3-padding">
+                            Proper Subset
+                        </td>
+                        <td class="w3-padding">
+                            $A \subset B$ is read as: <b>Set $A$ is a proper subset of Set $B$</b> <br>
+                            <i>
+                                Look at it as "less than" <br>
+                                $$
+                                1 \lt 3 \\[2ex]
+                                2 \lt 3
+                                $$
+                            </i> <br>
+                            A set, say $A$ is a proper subset of another set, say $B$ if: <br>
+                            all the elements of Set $A$ are also in Set $B$ AND <br>
+                            Set $B$ contains at least one element that is not in Set $A$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (15.) $\supset$
+                        </td>
+                        <td class="w3-padding">
+                            Superset
+                        </td>
+                        <td class="w3-padding">
+                            $B \supset A$ is read as: <b>Set $B$ is a superset of Set $A$</b> <br>
+                            <i>
+                                Look at it as "greater than" <br>
+                                $$
+                                3 \gt 1 \\[2ex]
+                                3 \lt 2
+                                $$
+                            </i> <br>
+                            A set, say $B$ is a superset of another set, say $A$ if: <br>
+                            all the elements of Set $A$ are also in Set $B$ AND <br>
+                            Set $B$ contains at least one element that is not in Set $A$ <br><br>
+                            In other words; <br>
+                            If Set A is a proper subset of Set $B$, then <br>
+                            Set $B$ is a superset of Set $A$ <br>
+                            If $A \subset B$, then $B \supset A$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (16.) $\subseteq$
+                        </td>
+                        <td class="w3-padding">
+                            Subset
+                        </td>
+                        <td class="w3-padding">
+                            $A \subseteq B$ is read as: <b>Set $A$ is a subset of Set $B$</b> <br>
+                            <i>
+                                Look at it as "less than or equal to" <br>
+                                $$
+                                1 \le 3 \\[2ex]
+                                2 \le 3 \\[2ex]
+                                3 \le 3
+                                $$
+                            </i> <br>
+                            A set, say $A$ is a subset of another set, say $B$ if: <br>
+                            all the elements of Set $A$ are also in Set $B$ AND <br>
+                            Set $B$ contains at least one element that is not in Set $A$ <br>
+                            OR <br>
+                            all the elements of Set $B$ are also in Set $A$ <br>
+                            <br>
+                            Compare: <br>
+                            Difference between <i>less than</i> and <i>less than or equal to</i> <br>
+                            Difference between <i>proper subset</i> and <i>subset</i> 
+                            <br><br>
+                            <b>Subsets</b> <u>includes</u> <b>proper subsets and equal sets</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (17.) $P$
+                        </td>
+                        <td class="w3-padding">
+                            Power Set
+                        </td>
+                        <td class="w3-padding">
+                            $P(A)$ is read as: <b>Power Set of Set $A$</b> <br>
+                            The power set of a set is the set of all the subsets of the set. <br>
+                            The Power Set of Set $A$, $P(A)$ is the set of all the subsets of Set $A$. <br><br>
+                            $
+                            If:\;\; n(A) = k \\[3ex]
+                            n(P(A)) = 2^k \\[3ex]
+                            $
+                            If the cardinality of a set is a number, say <i>k</i>, then the cardinality of the power set of that set is $2^k$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (18.) $A - B$
+                        </td>
+                        <td class="w3-padding">
+                            Difference of Sets
+                        </td>
+                        <td class="w3-padding">
+                            $A - B$ is read as: <b>Set $A$ difference Set $B$</b> <br>
+                            Set $A$ difference Set $B$ is the set of elements in Set $A$, but not in Set $B$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (19.) $A \dot{-} B$
+                        </td>
+                        <td class="w3-padding">
+                            Symmetric Difference
+                        </td>
+                        <td class="w3-padding">
+                            $A \dot{-} B$ is read as: <b>Set $A$ symmetric difference Set $B$</b> <br>
+                            Set $A$ symmetric difference Set $B$ is the set of elements in Set $A$ or Set $B$, 
+                            but not in both Sets $A$ and $B$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (20.) $A \times B$
+                        </td>
+                        <td class="w3-padding">
+                            Cartesian Product
+                        </td>
+                        <td class="w3-padding">
+                            $A \times B$ is read as: <b>Set $A$ cross Set $B$</b> <br>
+                            Set $A$ cross Set $B$ is the set of all possible ordered pairs of the form, $(a, b)$
+                            where $a \in A$ and $b \in B$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (21.) <br>
+                            $
+                            A \cap B = \phi \\[3ex]
+                            n(A \cap B) = 0
+                            $
+                        </td>
+                        <td class="w3-padding">
+                            Disjoint Sets
+                        </td>
+                        <td class="w3-padding">
+                            <b>Disjoint Sets</b> are <b>sets that do not have any common element.</b> <br>
+                            Two sets: say <i>A</i> and <i>B</i> are <b>disjoint</b> if <b>they have no common element.</b> <br>
+                            The intersection of those sets is an empty set. <br>
+                            The cardinality of the intersection is zero.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            (22.) <br>
+                            $
+                            A \cap B \ne \phi \\[3ex]
+                            n(A \cap B) \ne 0
+                            $
+                        </td>
+                        <td class="w3-padding">
+                            Overlapping Sets
+                        </td>
+                        <td class="w3-padding">
+                            <b>Overlapping Sets</b> are <b>sets that have at least one common element.</b> <br>
+                            Two sets: say <i>A</i> and <i>B</i> <b>overlap</b> if <b>they have at least one common element.</b>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End Symbols/Terms/Definitions -->
+
+            <br><br><br><br>
+
+            <!-- Set Algebra -->
+            <div class="w3-container w3-padding-32" id="setAlgebra">
+                <h2 class="w3-padding-16">Set Algebra</h2>
+                <hr>
+                <h3>Power Set</h3>
+                <p>
+                    The power set of a set, say $A$ is the set of all the subsets of set $A$. <br>
+                    It is denoted by $P(A)$ <br><br>
+                    <u>Given:</u> Set $A$ with cardinality, $n$ <br>
+                    $
+                    n(P(A)) = 2^n \\[3ex]
+                    n(Subsets) = 2^n \\[3ex]
+                    n(Proper\:\: Subsets) = 2^n - 1
+                    $
+                </p>
+                <p>
+                    <b><u>Exercise 2</u></b> <br>
+                    For the Set $A = \{L, O, V, E\}$; determine: <br>
+                    (1.) The cardinality of set $A$ <br>
+                    (2.) The set of the proper subsets. <br>
+                    (3.) The Power set (set of the subsets). <br>
+                    (4.) The cardinality of the proper subsets. <br>
+                    (5.) The cardinality of the power set.
+                </p>
+                <button class="solutions" onclick="solutions('solution2')">Show/Hide Answer</button>
+                <div class="result" id="solution2">
+                    <br>
+                    (1.) $n(A) = 4$ <br><br>
+                    (2.) The set of the proper subsets is: <br>
+                    {$\phi$, {L}, {O}, {V}, {E}, {L, O}, {L, V}, {L, E}, {O, V}, {O, E}, {V, E}, {L, O, V}, {L, O, E}, 
+                    {L, V, E}, {O, V, E}} <br><br>
+                    (3.) The power set is, $P(A)$ is: <br>
+                    {$\phi$, {L}, {O}, {V}, {E}, {L, O}, {L, V}, {L, E}, {O, V}, {O, E}, {V, E}, {L, O, V}, {L, O, E}, 
+                    {L, V, E}, {O, V, E}, {L, O, V, E}} <br><br>
+                    (4.) $n(Proper\:\: Subsets) = 15$ <br><br>
+                    (5.) $n(P(A)) = 16$
+                </div> 
+            </div>
+            <!-- End Set Algebra -->
+
+            <br><br><br><br>
+
+
+            <!-- Interpretations -->
+            <div class="w3-container w3-padding-32" id="interpretations">
+                <h2 class="w3-padding-16">Interpretations</h2>
+                <hr>
+
+                <h3>Interpretations for Two Sets</h3>
+                <p>
+                    <b><u>Exercise 7</u></b> <br>
+                    Assume: <br>
+                    Set $A$ represents Anatomy class at AWC (Arizona Western College) <br>
+                    Set $B$ represents Biology class at AWC (Arizona Western College) <br>
+                    $n(A)$ represents the number of AWC (Arizona Western College) students enrolled in Anatomy class <br>
+                    $n(B)$ represents the number of AWC (Arizona Western College) students enrolled in Biology class <br>
+                    Interpret the following sets.
+                </p>
+                <p>
+                    (1.) $n(A \cup B)$ <br><br>
+                    (2.) $n(A \cap B)$ <br><br>
+                    (3.) $n(A \cup B)'$ <br>
+                    Same as to $n(A' \cap B')$ <br><br>
+                    (4.) $n(A \cap B)'$ <br>
+                    Same as to $n(A' \cup B')$ <br><br>
+                    (5.) $n(A' \cap B)$ <br><br>
+                    (6.) $n(A \cap B')$ <br><br>
+                    (7.) $n(A')$ <br><br>
+                    (8.) $n(B')$
+                </p>
+                <button class="solutions" onclick="solutions('solution7')">Show/Hide Answer</button>
+                <div class="result" id="solution7">
+                    <br>
+                    (1.) $n(A \cup B)$ represents the number of students enrolled in Anatomy OR Biology class. <br><br>
+                    (2.) $n(A \cap B)$ represents the number of students enrolled in Anatomy AND Biology class. <br><br>
+                    (3.) $n(A \cup B)'$ represents the number of students NOT enrolled in any of the classes. <br>
+                    They are still students of AWC but they are NOT taking any of the two classes. <br><br>
+                    (4.) $n(A \cap B)'$ represents the number of students who are NOT enrolled in BOTH Anatomy AND Biology. <br>
+                    They include students who are: enrolled in ONLY Anatomy class, enrolled in ONLY Biology class, 
+                    and enrolled at AWC but NOT taking any of those two classes. <br><br>
+                    (5.) $n(A' \cap B)$ represents the number of students enrolled in ONLY Biology class. <br><br>
+                    (6.) $n(A \cap B')$ represents the number of students enrolled in ONLY Anatomy class. <br><br>
+                    (7.) $n(A')$ represents the number of students enrolled in ONLY Biology class as well as those
+                    students NOT enrolled in any of the two classes. <br><br>
+                    (8.) $n(B')$ represents the number of students enrolled in ONLY Anatomy class as well as those
+                    students NOT enrolled in any of the two classes. <br><br>
+                </div>    
+
+
+                <h3>Interpretations for Three Sets</h3>
+                <p>
+                    <b><u>Exercise 8</u></b> <br>
+                    Assume: <br>
+                    Set $A$ represents Anatomy class at AWC (Arizona Western College) <br>
+                    Set $B$ represents Biology class at AWC (Arizona Western College) <br>
+                    Set $C$ represents Chemistry class at AWC (Arizona Western College) <br>
+                    $n(A)$ represents the number of AWC (Arizona Western College) students enrolled in Anatomy class <br>
+                    $n(B)$ represents the number of AWC (Arizona Western College) students enrolled in Biology class <br>
+                    $n(C)$ represents the number of AWC (Arizona Western College) students enrolled in Chemistry class <br>
+                    Interpret the following sets.
+                </p>
+                <p>
+                    (1.) $n(A \cup B \cup C)$ <br><br>
+                    (2.) $n(A \cap B \cap C)$ <br><br>
+                    (3.) $n(A \cap B \cap C')$ <br>
+                    Same as to $n(A' \cup B' \cup C)'$ <br><br>
+                    (4.) $n(A \cap C \cap B')$ <br>
+                    Same as to $n(A' \cup C' \cup B)'$ <br><br>
+                    (5.) $n(B \cap C \cap A')$ <br>
+                    Same as to $n(B' \cup C' \cup A)'$ <br><br>
+                    (6.) $n(A \cup B \cap C')$ <br>
+                    Same as to $n(A' \cap B' \cup C)'$ <br><br>
+                    (7.) $n(A \cup C \cap B')$ <br>
+                    Same as to $n(A' \cap C' \cup B)'$ <br><br>
+                    (8.) $n(B \cup C \cap A')$ <br>
+                    Same as to $n(B' \cap C' \cup A)'$ <br><br>
+                    (9.) $n(A \cap B' \cap C')$ <br>
+                    Same as to $n(A' \cup B \cup C)'$ <br><br>
+                    (10.) $n(A \cap C' \cap B')$ <br>
+                    Same as to $n(A' \cup C \cup B)'$ <br><br>
+                    (11.) $n(B \cap C' \cap A')$ <br>
+                    Same as to $n(B' \cup C \cup A)'$ <br><br>
+                    (12.) $n(A' \cap B' \cap C')$ <br>
+                    Same as to $n(A \cup B \cup C)'$ <br><br>
+
+                </p>
+                <button class="solutions" onclick="solutions('solution8')">Show/Hide Answer</button>
+                <div class="result" id="solution8">
+                    <br>
+                    (1.) $n(A \cup B \cup C)$ represents the number of students enrolled in Anatomy OR Biology OR Chemistry class. <br><br>
+                    (2.) $n(A \cap B \cap C)$ represents the number of students enrolled in Anatomy AND Biology AND Chemistry class. <br><br>
+                    (3.) $n(A \cap B \cap C')$ represents the number of students enrolled in Anatomy AND Biology class ONLY. <br>
+                    They are students enrolled in Anatomy AND Biology class but NOT Chemistry class. <br><br>
+                    (4.) $n(A \cap C \cap B')$ represents the number of students enrolled in Anatomy AND Chemistry class ONLY. <br>
+                    They are students enrolled in Anatomy AND Chemistry class but NOT Biology class. <br><br>
+                    (5.) $n(B \cap C \cap A')$ represents the number of students enrolled in Biology AND Chemistry class ONLY. <br>
+                    They are students enrolled in Biology AND Chemistry class but NOT Anatomy class. <br><br>
+                    (6.) $n(A \cup B \cap C')$ represents the number of students enrolled in Anatomy OR Biology class but NOT Chemistry class. <br><br>
+                    (7.) $n(A \cup C \cap B')$ represents the number of students enrolled in Anatomy OR Chemistry class but NOT Biology class. <br><br>
+                    (8.) $n(B \cup C \cap A')$ represents the number of students enrolled in Biology OR Chemistry class but NOT Anatomy class. <br><br>
+                    (9.) $n(A \cap B' \cap C')$ represents the number of students enrolled in Anatomy class ONLY. <br>
+                    They are students enrolled in Anatomy but NOT Biology class NOR Chemistry class. <br><br>
+                    (10.) $n(A \cap C' \cap B')$ represents the number of students enrolled in Anatomy class ONLY. <br>
+                    They are students enrolled in Anatomy but NOT Chemistry class NOR Biology class. <br><br>
+                    (11.) $n(B \cap C' \cap A')$ represents the number of students enrolled in Biology Chemistry class ONLY. <br>
+                    They are students enrolled in Biology but NOT Chemistry class NOR Anatomy class. <br><br>
+                    (12.) $n(A' \cap B' \cap C')$ represents the number of students NOT enrolled in any of the classes. <br>
+                    They are still students of AWC but they are NOT taking any of the three classes. <br><br>
+
+                </div>    
+
+
+
+            </div>
+            <!-- End Interpretations -->
+
+            <br><br><br><br>
+
+
+            <!-- Laws of Sets -->
+            <div class="w3-container w3-padding-32" id="lawsSets">
+                <h2 class="w3-padding-16">Laws of Sets</h2>
+                <hr>
+                <p>
+                    <i>
+                        Prove some of these laws in the class. <br>
+                        Ask students to prove the rest. <br>
+                        Show the <b>Equality of Sets</b> based on these laws. <br>
+                        Assess <b>Critical Thinking:</b> Ask students to develop their own laws or equal sets.
+                    </i>
+                </p>
+
+                <h3>Laws of Sets</h3>
+                <p>
+                    (1.) <b>Identity Law</b> or <b>Law of Identity</b> <br><br>
+                    $
+                    A \cup \phi = A \\[3ex]
+                    A \cap \mu = A \\[5ex]
+                    $
+                
+                    (2.) <b>Domination Law</b> <br><br>
+                    $
+                    A \cup \mu = \mu \\[3ex]
+                    A \cap \phi = \phi \\[5ex]
+                    $
+                
+                    (3.) <b>Idempotent Law</b> <br><br>
+                    $
+                    A \cup A = A \\[3ex]
+                    A \cap A = A \\[5ex]
+                    $
+                
+                    (4.) <b>Complement Law</b> or <b>Law of Complementation</b> <br><br>
+                    $
+                    A \cup A' = \mu \\[3ex]
+                    A \cap A' = \phi \\[3ex]
+                    \phi' = \mu \\[3ex]
+                    \mu' = \phi \\[5ex]
+                    $
+                
+                    (5.) <b>De Morgan's Law</b> <br><br>
+                    $
+                    (A \cup B)' = A' \cap B' \\[3ex]
+                    (A \cap B)' = A' \cup B' \\[5ex]
+                    $
+                
+                    (6.) <b>Commutative Law</b> <br><br>
+                    $
+                    A \cup B = B \cup A \\[3ex]
+                    A \cap B = B \cap A \\[5ex]
+                    $
+                
+                    (7.) <b>Absorption Law</b> <br><br>
+                    $
+                    A \cup (A \cap B) = A \\[3ex]
+                    A \cap (A \cup B) = A \\[5ex]
+                    $
+                
+                    (8.) <b>Involution Law</b> or <b>Law of Double Complementation</b> <br><br>
+                    $
+                    A'' = A \\[5ex]
+                    $
+                
+                    (9.) <b>Associative Law</b> <br><br>
+                    $
+                    (A \cup B) \cup C = A \cup (B \cup C) \\[3ex]
+                    (A \cap B) \cap C = A \cap (B \cap C) \\[5ex]
+                    $
+                
+                    (10.) <b>Distributive Law</b> <br><br>
+                    $
+                    A \cup (B \cap C) = (A \cup B) \cap (A \cup C) \\[3ex]
+                    A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
+                    $
+                </p>
+
+                <br><br>
+
+                <p>
+                    <b><u>Exercise 9</u></b> <br>
+                    Based on the Laws of Sets, write the sets equal to these sets. <br>
+                    Indicate the laws as applicable. <br><br>
+                    $
+                    (1.) (A \cup B)' \\[3ex]
+                    (2.) (A \cap B)' \\[3ex]
+                    (3.) (A' \cup B)' \\[3ex]
+                    (4.) (A' \cap B)' \\[3ex]
+                    (5.) (A \cup B')' \\[3ex]
+                    (6.) (A \cap B')' \\[3ex]
+                    (7.) (A' \cup B')' \\[3ex]
+                    (8.) (A' \cap B')'
+                    $
+                </p>
+                <button class="solutions" onclick="solutions('solution4')">Show/Hide Answer</button>
+                <div class="result" id="solution4">
+                    <br>
+                    $
+                    (1.) (A \cup B)' = A' \cap B' ...De\: Morgan's\:\: Law \\[3ex]
+                    (2.) (A \cap B)' = A' \cup B' ...De\: Morgan's\:\: Law \\[3ex]
+                    (3.) (A' \cup B)' = A \cap B' ...Involution\:\: Law\:\:\: and\:\:\: De\: Morgan's\:\: Law \\[3ex]
+                    (4.) (A' \cap B)' = A \cup B' ...Involution\:\: Law\:\:\: and\:\:\: De\: Morgan's\:\: Law \\[3ex]
+                    (5.) (A \cup B')' = A' \cap B ...De\: Morgan's\:\: Law\:\:\: and\:\:\: Involution\:\: Law \\[3ex]
+                    (6.) (A \cap B')' = A' \cup B ...De\: Morgan's\:\: Law\:\:\: and\:\:\: Involution\:\: Law \\[3ex]
+                    (7.) (A' \cup B')' = A \cap B ...Involution\:\: Law\:\:\: and\:\:\: De\: Morgan's\:\: Law \\[3ex]
+                    (8.) (A' \cap B')' = A \cup B ...Involution\:\: Law\:\:\: and\:\:\: De\: Morgan's\:\: Law
+                    $
+                </div>
+            </div>
+            <!-- End Laws of Sets -->
+
+            <br><br><br><br>
+
+            <!-- Venn Diagrams -->
+            <div class="w3-container w3-padding-32" id="vennDiagrams">
+                <h2 class="w3-padding-16">Venn Diagrams</h2>
+                <hr>
+                <p>
+                    A <b>Venn Diagram is a diagrammatic representation of a set.</b> <br>
+                    It was developed by the English mathematician, John Venn.
+                </p>
+
+                <h3>Venn Diagrams for Two Sets</h3>
+                <p>
+                    <b><u>Exercise 10</u></b> <br>
+                    Draw the Venn diagrams, and shade the regions for these two sets. 
+                
+                    <br><br>
+
+                    Let us begin with a working copy.
+                </p>
+
+                <p class="w3-center">
+                    <img src="images/Set Algebra/Two Sets/working copy.png" alt="Working Copy - 2 Sets">
+                </p>
+
+                <p>
+                    $
+                    \mu = \{1, 2, 3, 4\} \\[3ex]
+                    A = \{1, 2\} \\[3ex]
+                    A' = \{3, 4\} \\[3ex]
+                    B = \{2, 3\} \\[3ex]
+                    B' = \{1, 4\} \\[3ex]
+                    A \cup B = \{1, 2, 3\} \\[3ex] 
+                    A \cap B = \{2\} \\[3ex]
+                    A' \cup B' = \{1, 3, 4\} \\[3ex] 
+                    A' \cap B' = \{4\} \\[3ex]
+                    A' \cup B = \{2, 3, 4\} \\[3ex]
+                    A' \cap B = \{3\} \\[3ex]
+                    A \cup B' = \{1, 2, 4\} \\[3ex]
+                    A' \cap B' = \{1\} \\[5ex]
+                    $
+                
+                    Shade the regions represented by the answers.
+                
+                    <br><br>
+
+                    (1.) $A \cup B = \{1, 2, 3\}$ <br>
+                    $(A' \cap B')' = \{1, 2, 3\}$
+                
+                    <br><br>
+
+                    (2.) $A \cap B = \{2\}$ <br>
+                    $(A' \cup B')' = \{2\}$
+                
+                    <br><br>
+
+                    (3.) $A' \cap B = \{3\}$ <br>
+                    $(A \cup B')' = \{3\}$
+                
+                    <br><br>
+
+                    (4.) $A \cap B' = \{1\}$ <br>
+                    $(A' \cup B)' = \{1\}$
+                
+                    <br><br>
+
+                    (5.) $A' \cup B = \{2, 3, 4\}$ <br>
+                    $(A \cap B')' = \{2, 3, 4\}$
+                
+                    <br><br>
+
+                    (6.) $A \cup B' = \{1, 2, 4\}$ <br>
+                    $(A' \cap B)' = \{1, 2, 4\}$
+                
+                    <br><br>
+
+                    (7.) $(A \cup B)' = \{4\}$ <br>
+                    $A' \cap B' = \{4\}$
+                
+                    <br><br>
+
+                    (8.) $(A \cap B)' = \{1, 3, 4\}$ <br>
+                    $A' \cup B' = \{1, 3, 4\}$
+                </p>
+
+                <table>
+                    <tr>
+                        <td class="w3-padding" style="width: 30%;">
+                            <p> 
+                                (1.) $A \cup B$ <br>
+                                Same as: <br>
+                                $(A' \cap B')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding" style="width: 70%;">
+                            <button class="solutions" onclick="solutions('solution2VD1')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD1">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A union B.png" alt="A union B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (2.) $A \cap B$ <br>
+                                Same as: <br>
+                                $(A' \cup B')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD2')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD2">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A intersect B.png" alt="A intersect B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (3.) $A' \cap B$ <br>
+                                Same as: <br>
+                                $(A \cup B')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD3')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD3">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A' intersect B.png" alt="A' intersect B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (4.) $A \cap B'$ <br>
+                                Same as: <br>
+                                $(A' \cup B)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD4')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD4">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A intersect B'.png" alt="A intersect B'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (5.) $A' \cup B$ <br>
+                                Same as: <br>
+                                $(A \cap B')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD5')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD5">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A' union B.png" alt="A' union B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (6.) $A \cup B'$ <br>
+                                Same as: <br>
+                                $(A' \cap B)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD6')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD6">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A union B'.png" alt="A union B'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (7.) $(A \cup B)'$ <br>
+                                Same as: <br>
+                                $A' \cap B'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD7')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD7">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/(A union B)'.png" alt="(A union B)'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (8.) $(A \cap B)'$ <br>
+                                Same as: <br>
+                                $A' \cup B'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD8')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD8">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/(A intersect B)'.png" alt="(A intersect B)'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (9.) $\mu$ <br>
+                                Same as: <br>
+                                $\phi'$ <br>
+                                $A \cup A'$ <br>
+                                $A \cup \mu$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD9')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD9">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/Universal Set.png" alt="Universal Set" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (10.) $\phi$ <br>
+                                Same as: <br>
+                                $\mu'$ <br>
+                                $A \cap A'$ <br>
+                                $A \cap \phi$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD10')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD10">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/(Universal Set)'.png" alt="Empty Set" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (11.) $Disjoint\:\: Sets$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD11')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD11">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/Disjoint Sets.png" alt="Disjoint Sets" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (12.) $B \subset A$ <br>
+                                Same as: <br>
+                                $A \supset B$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD12')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD12">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/Proper Subset and Superset.png" alt="Proper Subset and Superset" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (13.) $A$ <br>
+                                Same as: <br>
+                                $A \cup \phi$ <br>
+                                $A \cap \mu$ <br>
+                                $A \cup A$ <br>
+                                $A \cap A$ <br>
+                                $A \cup (A \cap B)$ <br>
+                                $A \cap (A \cup B)$ <br>
+                                $A''$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD13')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD13">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A.png" alt="Set A" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (14.) $B$ <br>
+                                Same as: <br>
+                                $B \cup \phi$ <br>
+                                $B \cap \mu$ <br>
+                                $B \cup B$ <br>
+                                $B \cap B$ <br>
+                                $B \cup (A \cap B)$ <br>
+                                $B \cap (A \cup B)$ <br>
+                                $B''$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD14')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD14">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/B.png" alt="Set B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (15.) $A'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD15')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD15">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A'.png" alt="Set A'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (16.) $B'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD16')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD16">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/B'.png" alt="Set B'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (17.) Shaded area outside Disjoint Sets: $A' \cap B'$ <br><br>
+                                $
+                                \mu = \{1, 2, 3, 4, 5\} \\[3ex]
+                                A = \{1, 2\} \\[3ex]
+                                B = \{3, 4\} \\[3ex]
+                                A' = \{3, 4, 5\} \\[3ex]
+                                B' = \{1, 2, 5\} \\[3ex]
+                                A' \cap B' = \{5\} 
+                                $
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution2VD17')">Show/Hide Answer</button>
+                            <div class="result" id="solution2VD17">
+                                <br>
+                                <img src="images/Set Algebra/Two Sets/A'intersectB'.png" alt="A'intersectB'" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br><br><br>
+
+                <h3>Venn Diagrams for Three Sets</h3>
+                <p>
+                    <b><u>Exercise 11</u></b> <br>
+                    Draw the Venn diagrams, and shade the regions for these three sets. 
+                </p>
+                <p>
+                    Let us begin with a working copy.
+                </p>
+                <p class="w3-center">
+                    <img src="images/Set Algebra/Three Sets/working copy.png" alt="Working Copy - 3 Sets">
+                </p>
+                <p>
+                    $
+                    \mu = \{1, 2, 3, 4, 5, 6, 7, 8\} \\[3ex]
+                    A = \{1, 4, 5, 7\} \\[3ex]
+                    A' = \{2, 3, 6, 8\} \\[3ex]
+                    B = \{2, 5, 6, 7\} \\[3ex]
+                    B' = \{1, 3, 4, 8\} \\[3ex]
+                    C = \{3, 4, 6, 7\} \\[3ex]
+                    C' = \{1, 2, 5, 8\} \\[3ex]
+                    A \cup B \cup C = \{1, 2, 3, 4, 5, 6, 7\} \\[3ex]
+                    A \cap B \cap C = \{7\} \\[3ex]
+                    A' \cup B' \cup C' = \{1, 2, 3, 4, 5, 6, 8\} \\[3ex]
+                    A' \cap B' \cap C' = \{8\} \\[3ex]
+                    A \cup B = \{1, 2, 4, 5, 6, 7\} \\[3ex]
+                    A \cup C = \{1, 3, 4, 5, 6, 7\} \\[3ex]
+                    B \cup C = \{2, 3, 4, 5, 6, 7\} \\[3ex]
+                    A \cap B = \{5, 7\} \\[3ex]
+                    A \cap C = \{4, 7\} \\[3ex]
+                    B \cap C = \{6, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (1.) $A$ OR $B$ OR $C$ <br><br>
+                    $
+                    A \cup B \cup C = \{1, 2, 3, 4, 5, 6, 7\} \\[3ex] 
+                    (A' \cap B' \cap C')' = \{1, 2, 3, 4, 5, 6, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (2.) $A$ AND $B$ AND $C$ <br><br>
+                    $
+                    A \cap B = \{5, 7\} \\[3ex] 
+                    A \cap B \cap C = \{5, 7\} \cap \{3, 4, 6, 7\} = \{7\} \\[3ex]
+                    A \cap B \cap C = \{7\} \\[3ex]
+                    (A' \cup B' \cup C')' = \{7\} 
+                    $
+                </p>
+                <br>
+                <p>
+                    (3.) $A \cup (B \cap C)$<br><br>
+                    $
+                    B \cap C = \{6, 7\} \\[3ex] 
+                    A \cup (B \cap C) = \{1, 4, 5, 7\} \cup \{6, 7\} \\[3ex]
+                    A \cup (B \cap C) = \{1, 4, 5, 6, 7\} \\[3ex]
+                    (A \cup B) \cap (A \cup C) = \{1, 4, 5, 6, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (4.) $B \cup (A \cap C)$<br><br>
+                    $
+                    A \cap C = \{4, 7\} \\[3ex] 
+                    B \cup (A \cap C) = \{2, 5, 6, 7\} \cup \{4, 7\} \\[3ex]
+                    A \cup (B \cap C) = \{2, 4, 5, 6, 7\} \\[3ex]
+                    (B \cup A) \cap (B \cup C) = \{2, 4, 5, 6, 7\} 
+                    $
+                </p>
+                <br>
+                <p>
+                    (5.) $C \cup (A \cap B)$<br><br>
+                    $
+                    A \cap B = \{5, 7\} \\[3ex] 
+                    C \cup (A \cap B) = \{3, 4, 6, 7\} \cup \{5, 7\} \\[3ex]
+                    A \cup (B \cap C) = \{3, 4, 5, 6, 7\} \\[3ex] 
+                    (C \cup A) \cap (C \cup B) = \{3, 4, 5, 6, 7\} 
+                    $
+                </p>
+                <br>
+                <p>
+                    (6.) $A \cup B \cap C$<br><br>
+                    $
+                    A \cup B = \{1, 2, 4, 5, 6, 7\} \\[3ex] 
+                    A \cup B \cap C = \{1, 2, 4, 5, 6, 7\} \cap \{3, 4, 6, 7\} \\[3ex]
+                    A \cup B \cap C = \{4, 6, 7\} \\[3ex] 
+                    (A' \cap B' \cup C')' = \{4, 6, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (7.) $B \cup C \cap A$<br><br>
+                    $
+                    B \cup C = \{2, 3, 4, 5, 6, 7\} \\[3ex] 
+                    A \cup B \cap C = \{2, 3, 4, 5, 6, 7\} \cap \{1, 4, 5, 7\} \\[3ex]
+                    A \cup B \cap C = \{4, 5, 7\} \\[3ex] 
+                    (B' \cap C' \cup A')' = \{4, 5, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (8.) $A \cup C \cap B$<br><br>
+                    $
+                    A \cup C = \{1, 3, 4, 5, 6, 7\} \\[3ex] 
+                    A \cup C \cap B = \{1, 3, 4, 5, 6, 7\} \cap \{2, 5, 6, 7\} \\[3ex]
+                    A \cup C \cap B = \{5, 6, 7\} \\[3ex] 
+                    (A' \cap C' \cup B')' = \{5, 6, 7\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (9.) $A \cup B \cup C'$<br><br>
+                    $
+                    A \cup B = \{1, 2, 4, 5, 6, 7\} \\[3ex] 
+                    A \cup B \cup C' = \{1, 2, 4, 5, 6, 7\} \cup \{1, 2, 5, 8\} \\[3ex]
+                    A \cup B \cup C' = \{1, 2, 4, 5, 6, 7, 8\} \\[3ex] 
+                    (A' \cap B' \cap C)' = \{1, 2, 4, 5, 6, 7, 8\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (10.) $A \cup B' \cup C$<br><br>
+                    $
+                    A \cup B' = \{1, 3, 4, 5, 7, 8\} \\[3ex] 
+                    A \cup B' \cup C = \{1, 3, 4, 5, 7, 8\} \cup \{3, 4, 6, 7\} \\[3ex]
+                    A \cup B' \cup C = \{1, 3, 4, 5, 6, 7, 8\} \\[3ex] 
+                    (A' \cap B \cap C')' = \{1, 3, 4, 5, 6, 7, 8\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (11.) $A' \cup B \cup C$<br><br>
+                    $
+                    A' \cup B = \{2, 3, 5, 6, 7, 8\} \\[3ex] 
+                    A' \cup B \cup C = \{2, 3, 5, 6, 7, 8\} \cup \{3, 4, 6, 7\} \\[3ex]
+                    A' \cup B \cup C = \{2, 3, 4, 5, 6, 7, 8\} \\[3ex] 
+                    (A \cap B' \cap C')' = \{2, 3, 4, 5, 6, 7, 8\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (12.) $A$ OR $B$ but NOT $C$ <br><br>
+                    $
+                    A \cup B \cap C' = \{1, 2, 5\} \\[3ex] 
+                    (A' \cap B' \cup C)' = \{1, 2, 5\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (13.) $A$ OR $C$ but NOT $B$ <br><br>
+                    $
+                    A \cup C \cap B' = \{1, 3, 4\} \\[3ex] 
+                    (A' \cap C' \cup B)' = \{1, 3, 4\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (14.) $B$ OR $C$ but NOT $A$ <br><br>
+                    $
+                    B \cup C \cap A' = \{2, 3, 6\} \\[3ex]
+                    (B' \cap C' \cup A)' = \{2, 3, 6\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (15.) $A$ AND $B$ but NOT $C$ <br>
+                    $A$ AND $B$ ONLY <br><br>
+                    $
+                    A \cap B \cap C' = \{5\} \\[3ex] 
+                    (A' \cup B' \cup C)' = \{5\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (16.) $A$ AND $C$ but NOT $B$ <br>
+                    $A$ AND $C$ ONLY <br><br>
+                    $
+                    A \cap B' \cap C = \{4\} \\[3ex]
+                    (A' \cup B \cup C')' = \{4\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (17.) $B$ AND $C$ but NOT $A$ <br>
+                    $B$ AND $C$ ONLY <br><br>
+                    $
+                    A' \cap B \cap C = \{6\} \\[3ex] 
+                    (A \cup B' \cup C')' = \{6\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (18.) $A$ ONLY<br>
+                    $A \cap B' \cap C' = \{1\}$ <br>
+                    $(A' \cup B \cup C)' = \{1\}$
+                </p>
+                <br>
+                <p>
+                    (19.) $B$ ONLY <br><br>
+                    $
+                    A' \cap B \cap C' = \{2\} \\[3ex] 
+                    (A \cup B' \cup C)' = \{2\}
+                    $
+                </p>
+                <br>
+                <p>
+                    (20.) $C$ ONLY<br><br>
+                    $
+                    A' \cap B' \cap C = \{3\} \\[3ex] 
+                    (A \cup B \cup C')' = \{3\}
+                    $
+                </p>
+                <br>
+
+                <table>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (1.) $A \cup B \cup C$ <br>
+                                Same as: <br>
+                                $(A' \cap B' \cap C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD1')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD1">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B union C.png" alt="A union B union C" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (2.) $A \cap B \cap C$ <br>
+                                Same as: <br>
+                                $(A' \cup B' \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD2')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD2">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A intersect B intersect C.png" alt="A intersect B intersect C" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (3.) $A \cup (B \cap C)$ <br>
+                                Same as: <br>
+                                $(A \cup B) \cap (A \cup C)$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD3')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD3">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union (B intersect C).png" alt="A union (B intersect C)" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (4.) $B \cup (A \cap C)$ <br>
+                                Same as: <br>
+                                $(B \cup A) \cap (B \cup C)$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD4')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD4">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/B union (A intersect C).png" alt="B union (A intersect C)" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (5.) $C \cup (A \cap B)$ <br>
+                                Same as: <br>
+                                $(C \cup A) \cap (C \cup B)$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD5')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD5">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/C union (A intersect B).png" alt="C union (A intersect B)" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (6.) $A \cup B \cap C$ <br>
+                                Same as: <br>
+                                $(A' \cap B' \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD6')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD6">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B intersect C.png" alt="A union B intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (7.) $B \cup C \cap A$ <br>
+                                Same as: <br>
+                                $(B' \cap C' \cup A')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD7')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD7">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/B union C intersect A.png" alt="B union C intersect A" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (8.) $A \cup C \cap B$ <br>
+                                Same as: <br>
+                                $(A' \cap C' \cup B')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD8')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD8">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union C intersect B.png" alt="A union C intersect B" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (9.) $A \cup B \cup C'$ <br>
+                                Same as: <br>
+                                $(A' \cap B' \cap C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD9')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD9">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B union C'.png" alt="A union B union C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (10.) $A \cup B' \cup C$ <br>
+                                Same as: <br>
+                                $(A' \cap B \cap C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD10')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD10">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B' union C.png" alt="A union B' union C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (11.) $A' \cup B \cup C$ <br>
+                                Same as: <br>
+                                $(A \cap B' \cap C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD11')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD11">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' union B union C.png" alt="A' union B union C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (12.) $A \cup B \cap C'$ <br>
+                                Same as: <br>
+                                $(A' \cap B' \cup C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD12')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD12">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B intersect C'.png" alt="A union B intersect C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (13.) $A \cup C \cap B'$ <br>
+                                Same as: <br>
+                                $(A' \cap C' \cup B)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD13')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD13">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union C intersect B'.png" alt="A union C intersect B'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (14.) $B \cup C \cap A'$ <br>
+                                Same as: <br>
+                                $(B' \cap C' \cup A)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD14')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD14">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/B union C intersect A'.png" alt="B union C intersect A'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (15.) $A \cap B \cap C'$ <br>
+                                Same as: <br>
+                                $(A' \cup B' \cup C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD15')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD15">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A intersect B intersect C'.png" alt="A intersect B intersect C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (16.) $A \cap B' \cap C$ <br>
+                                Same as: <br>
+                                $(A' \cup B \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD16')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD16">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A intersect B' intersect C.png" alt="A intersect B' intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (17.) $A' \cap B \cap C$ <br>
+                                Same as: <br>
+                                $(A \cup B' \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD17')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD17">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' intersect B intersect C.png" alt="A' intersect B intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (18.) $A \cap B' \cap C'$ <br>
+                                Same as: <br>
+                                $(A' \cup B \cup C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD18')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD18">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A intersect B' intersect C'.png" alt="A intersect B' intersect C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (19.) $A' \cap B \cap C'$ <br>
+                                Same as: <br>
+                                $(A \cup B' \cup C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD19')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD19">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' intersect B intersect C'.png" alt="A' intersect B intersect C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (20.) $A' \cap B' \cap C$ <br>
+                                Same as: <br>
+                                $(A \cup B \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD20')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD20">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' intersect B' intersect C.png" alt="A' intersect B' intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (21.) $A' \cap B' \cap C'$ <br>
+                                Same as: <br>
+                                $(A \cup B \cup C)'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD21')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD21">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' intersect B' intersect C'.png" alt="A' intersect B' intersect C'" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (22.) $A$ <br>
+                                Same as: <br>
+                                $A \cup \phi$ <br>
+                                $A \cap \mu$ <br>
+                                $A \cup A$ <br>
+                                $A \cap A$ <br>
+                                $A''$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD22')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD22">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A.png" alt="Set A" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (23.) $B$ <br>
+                                Same as: <br>
+                                $B \cup \phi$ <br>
+                                $B \cap \mu$ <br>
+                                $B \cup B$ <br>
+                                $B \cap B$ <br>
+                                $B''$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD23')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD23">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/B.png" alt="Set B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (24.) $C$ <br>
+                                Same as: <br>
+                                $C \cup \phi$ <br>
+                                $C \cap \mu$ <br>
+                                $C \cup C$ <br>
+                                $C \cap C$ <br>
+                                $C''$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD24')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD24">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/C.png" alt="Set C" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (25.) $A'$ 
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD25')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD25">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A'.png" alt="Complement of Set A" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (26.) $B'$ 
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD26')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD26">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/B'.png" alt="Complement of Set B" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (27.) $C'$ 
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD27')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD27">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/C'.png" alt="Complement of Set C" style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (28.) $A \cup B' \cap C$ <br>
+                                Same as: <br>
+                                $(A' \cap B \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD28')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD28">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A union B' intersect C.png" alt="A union B' intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            <p> 
+                                (29.) $A' \cup B \cap C$ <br>
+                                Same as: <br>
+                                $(A \cap B' \cup C')'$
+                            </p>
+                        </td>
+                        <td class="w3-padding">
+                            <button class="solutions" onclick="solutions('solution3VD29')">Show/Hide Answer</button>
+                            <div class="result" id="solution3VD29">
+                                <br>
+                                <img src="images/Set Algebra/Three Sets/A' union B intersect C.png" alt="A' union B intersect C" 
+                                     style="width: 700px; height: 500px">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End Venn Diagrams -->
+
+            <br><br><br><br>
+
+            <!-- Categorical Propositions -->
+            <div class="w3-container w3-padding-32" id="categoricalPropositions">
+                <h2 class="w3-padding-16">Categorical Propositions</h2>
+                <hr>
+                <p>
+                    <b>Categorical Propositions</b> are 
+                    <b>propositions that make a claim about the relationship between two sets (categories or classes).</b> <br><br>
+                    
+                    <i>
+                        Let us use the topic of 
+                        <a href="https://quantitativereasoning.appspot.com/Numbers/numbersandnotations.html#definitions" target="_blank">Definitions of Numbers</a> and
+                        <a href="https://quantitativereasoning.appspot.com/Numbers/numbersandnotations.html#classifyNumbers" target="_blank">Classifying Numbers</a> 
+                        to explain these concepts. <br>
+                        But there are several other examples you can use.
+                    </i>
+                    <br><br>
+                    
+                    The two sets are: the <b>subject set</b> represented by <b>S</b> and the <b>predicate set</b> represented by <b>P</b> <br>
+                    The subject set is the first set while the predicate set is the second set. <br><br>
+                    <i>
+                        <b>Please NOTE:</b> These are different from the subject and predicate concepts in sentences as taught in English 
+                        classes. <br>
+                        Besides, notice that I used <b>subject set</b> and <b>predicate set</b>. The word, set was included.  
+                    </i>
+                    <br><br>
+                    The <b>relationship</b> can be: <br>
+                    (1.) <b>Whole or Complete Inclusion:</b> This is the relationship where one set is the <b>proper subset</b> of another set. <br>
+                    <i>Recall the definition of Proper Subset</i> <br>
+                    For example: Given two sets: the set of rational numbers and the set of real numbers <br>
+                    All rational numbers are real numbers. However, not all real numbers are rational numbers. <br>
+                    This implies that the set of real numbers completely includes the set of rational numbers. <br>
+                    This implies that the set of rational numbers is a proper subset of the set of real numbers. <br>
+                    In this case, the subject set is wholly completely included in the predicate set. <br>
+                    This implies that the set of rational numbers is the subject set, and the set of real numbers is the predicate. <br><br> 
+                    <img src="images/CategoricalProposition/whole-inclusion.png" alt="Whole Inclusion"> <br><br>
+                    <u>Example</u> <br>
+                    <img src="images/CategoricalProposition/whole-inclusion-example.png" alt="Whole Inclusion Example"> <br><br>
+                    Notice that the 0.23759456287... and &pi; are irratioanal numbers. Hence, they are outside the set of rational numbers. <br>
+                    But, they are real numbers. So, they are included in the set of real numbers. 
+                    <br><br>
+                    <i>
+                        If any student does not ask the question: <br>
+                        <b>Teacher:</b> $\dfrac{22}{7}$ is a rational number. <br>
+                        But $\pi$ is an irratioanal number. <br>
+                        Can someone explain the reason? <br>
+                        (Teach students the meaning of exact values and approximate values). <br>
+                        Still on the topic of <b>Numbers</b>, can we find another example that meets the complete inclusion of the subject set 
+                        inside the predicate set?
+                    </i>
+                    <br><br>
+                    (2.) <b>Partial Inclusion:</b> This is the relationship between <b>overlapping sets.</b> <br>
+                    <i>Recall the definition of Overlapping Sets</i> <br>
+                    For example: Given two sets: the set of prime numbers and the set of odd numbers <br>
+                    Some prime numbers are odd numbers. <br>
+                    Some odd numbers are prime numbers. <br>
+                    This implies that both sets share at least one common element. <br>
+                    This implies that both sets are overlapping sets. <br>
+                    We shall take the set of prime numbers as the subject set and the set of odd numbers as the predicate set. <br><br>
+                    <img src="images/CategoricalProposition/partial-inclusion.png" alt="Partial Inclusion"> <br><br>
+                    <u>Example</u> (Let us write the example for Numbers: [1, 10]) <br><br>
+                    <img src="images/CategoricalProposition/partial-inclusion-example.png" alt="Partial Inclusion Example"> <br><br>
+                    (3.) <b>Exclusion:</b>(<b>No Inclusion</b>) This is the relationship between <b>disjoint sets.</b> <br>
+                    <i>Recall the definition of Disjoint Sets</i> <br>
+                    For example: Given two sets: the set of even numbers and the set of odd numbers <br>
+                    No even number is an odd number. <br>
+                    No odd number is an even number. <br>
+                    This implies that both sets do not share any common element. <br>
+                    We shall take the set of even numbers as the subject set and the set of odd numbers as the predicate set. <br><br>
+                    <img src="images/CategoricalProposition/exclusion.png" alt="Exclusion"> <br><br>
+                    <u>Example</u> (Let us write the example for Numbers: [1, 10]) <br><br>
+                    <img src="images/CategoricalProposition/exclusion-example.png" alt="Exclusion Example"> <br><br>
+
+                    These relationships leads us to...
+                </p>
+
+                <h3>Types of Categorical Propositions</h3>
+                <p>
+                    The four standard categorical propositions are: <br>
+                    (1.) Universal Affirmative (<b>A</b>): This proposition affirms the whole inclusion of the subject set, <i>S</i> in the 
+                    predicate set, <i>P</i>. <br>
+                    In other words, it is a proposition of the form: <b>All S are P</b> <br>
+                    For example: All dogs are mammals. <br>
+                    The set of dogs is the subject set. <br>
+                    The set of mammals is the predicate set. <br><br>
+
+                    Question (1.): Choose the correct Venn diagram for the categorical proposition: "All S are P". <br>
+                    The X indicates the region claimed to have at least one member. <br><br>
+                    <img src="images/CategoricalProposition/Question1.png" alt="Question 1">
+                </p>
+                <button class="solutions" onclick="solutions('solutionCP1')">Show/Hide Answer</button>
+                <div class="result" id="solutionCP1">
+                    <br>
+                    This is the proposition where the subject set is a <b>proper subset</b> of the predicate set. <br>
+                    The correct option is <b>B.</b> 
+                </div>
+
+                <br><br>
+
+                <p>
+                    (2.) Universal Negative (<b>E</b>): This proposition affirms the complete exclusion of the subject set, <i>S</i> 
+                    from the predicate set, <i>P</i>. <br>
+                    In other words, it is a proposition of the form: <b>No S are P</b> <br>
+                    For example: No dogs are reptiles. <br>
+                    The set of dogs is the subject set. <br>
+                    The set of reptiles is the predicate set. <br><br>
+
+                    Question (2.): Choose the correct Venn diagram for the categorical proposition: "No S are P". <br>
+                    The X indicates the region claimed to have at least one member. <br><br>
+                    <img src="images/CategoricalProposition/Question2.png" alt="Question 2">
+                </p>
+                <button class="solutions" onclick="solutions('solutionCP2')">Show/Hide Answer</button>
+                <div class="result" id="solutionCP2">
+                    <br>
+                    This is the proposition where the subject set and the predicate set are <b>disjoint sets.</b> <br>
+                    The correct option is <b>D.</b> 
+                </div>
+
+                <br><br>
+
+                <p>
+                    (3.) Particular Affirmative (<b>I</b>): This proposition affirms the partial inclusion of the subject set, <i>S</i> in the 
+                    predicate set, <i>P</i>. <br>
+                    In other words, it is a proposition of the form: <b>Some S are P</b> <br>
+                    For example: Some animals are herbivores. <br>
+                    The set of animals is the subject set. <br>
+                    The set of herbivores is the predicate set. <br><br>
+
+                    Question (3.): Choose the correct Venn diagram for the categorical proposition: "Some S are P". <br>
+                    The X indicates the region claimed to have at least one member. <br><br>
+                    <img src="images/CategoricalProposition/Question3.png" alt="Question 3">
+                </p>
+                <button class="solutions" onclick="solutions('solutionCP3')">Show/Hide Answer</button>
+                <div class="result" id="solutionCP3">
+                    <br>
+                    This is the proposition where the subject set and the predicate set are <b>overlapping sets</b> where some elements 
+                    of the subject set are also elements of the predicate set. <br>
+                    The correct option is <b>C.</b> 
+                </div>
+
+                <br><br>
+
+                <p>
+                    (4.) Particular Negative (<b>O</b>): This proposition denies the whole inclusion of the subject set, <i>S</i> in the 
+                    predicate set, <i>P</i>. <br>
+                    In other words, it is a proposition of the form: <b>Some S are not P</b> <br>
+                    For example: Some animals are not herbivores. <br>
+                    The set of animals is the subject set. <br>
+                    The set of herbivores is the predicate set. <br><br>
+
+                    Question (4.): Choose the correct Venn diagram for the categorical proposition: "Some S are P". <br>
+                    The X indicates the region claimed to have at least one member. <br><br>
+                    <img src="images/CategoricalProposition/Question4.png" alt="Question 4">
+                </p>
+                <button class="solutions" onclick="solutions('solutionCP4')">Show/Hide Answer</button>
+                <div class="result" id="solutionCP4">
+                    <br>
+                    This is the proposition where the subject set and the predicate set are <b>overlapping sets</b> where some elements 
+                    of the subject set are not elements of the predicate set. <br>
+                    The correct option is <b>A.</b> 
+                </div>
+
+                <br><br>
+
+                <p>
+                    It is important to write a categorical proposition in standard form. <br>
+                    Writing it in standard form means that it should be written so it has a clear subject set and a clear predicate set.
+                </p>
+            </div>
+            <!-- End Categorical Propositions -->
+
+            <br><br><br><br> 
+
+            
+            <!-- References -->
+            <div class="w3-container w3-padding-32" id="references">
+                <h2 class="w3-padding-16">References</h2>
+                <hr>
+                <p>
+                    Chukwuemeka, S.D (2016, April 30). <i>Samuel Chukwuemeka Tutorials - Math, Science, and Technology.</i>
+                    Retrieved from <a href="https://quantitativereasoning.appspot.com/" target="_blank">https://quantitativereasoning.appspot.com/</a> 
+                    <br><br>
+                    Bennett, J. O., & Briggs, W. L. (2019). <i>Using and Understanding Mathematics: A Quantitative Reasoning Approach.</i> Pearson.
+                    <br><br>
+                    Bennett, J. O., & Briggs, W. L. (2023). <i>Using and Understanding Mathematics: A Quantitative Reasoning Approach.</i> Pearson.
+                    <br><br>
+                    Blitzer, R. (2019). <i>Thinking Mathematically.</i> Pearson.
+                    <br><br>   
+                    CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/ 
+                    <br><br>
+                    CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                    <br><br>
+                    Datasets - Data.gov. (2012). Data.Gov. https://catalog.data.gov/dataset
+                    <br><br>
+                    Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners. https://www.vastlearners.com/free-jamb-past-questions/
+                    <br><br>
+                    Mathematics. (n.d.). waeconline.org.ng. Retrieved May 30, 2020, from https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                    <br><br>
+                    NSC Examinations. (n.d.). www.education.gov.za. https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                    <br><br>
+                    Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg. Retrieved November 24, 2020, from http://www.education.gov.pg/TISER/exams.html
+                    <br><br>
+                    51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.). 
+                    Mcelroytutoring.com. Retrieved December 12, 2022, 
+                    from https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+                </p>
+            </div>
+            <!-- End References -->
+
+
+            <!-- End page content -->
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-24">
+            <p>
+                &copy; 2018 &nbsp; Samdom4Peace &nbsp;Designs.
+            </p>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="scripts/messages2.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+    </body>
+</html>

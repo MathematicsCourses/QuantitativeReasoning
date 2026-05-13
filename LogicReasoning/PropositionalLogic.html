@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <title>Symbolic Logic: Symbols into Predicate Logic</title>
+
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD, GOD, and Anointed Savior JESUS CHRIST. We are experts in propositional logic.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, samdom4peace,
+              mathematics, arithmetic, algebra, logic, logical science, mathematical logic, logical statement, logical proposition, 
+              propositional logic, symbolic logic, predicate logic, truth tables, logical equivalence, tautology, contradiction, 
+              contingency, argument, premise, hypothesis, antecedent, conclusion, precedent, sound logic, reasoning, 
+              flawed reasoning, laws of logic, negation, quantifier, disjunction, conjunction, exclusive disjunction, 
+              conditional statement, proposition, biconditional statement, double negation, valid argument, 
+              invalid argument, fallacy, inductive reasoning, deductive reasoning, induction, deduction, propositional function,
+              predicate, domain of discourse, free variable, bound variable, universal quantifier, counterexample, bound variable, 
+              existential quantifier, symbolic argument, syllogistic argument, syllogism, Euler diagram, logic circuits,
+              sound argument, critical thinking, quantitative reasoning, problem solving">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-padding-32 cornsilk">
+        <h1>Solved Examples on Propositional Logic</h1>
+    </header>
+    <!-- End Header -->
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+
+        <p class="w3-container">
+            <!-- Image in top left corner --
+                <a href="https://quantitativereasoning.appspot.com/LogicReasoning/Logic.html" title="Samuel Dominic Chukwuemeka">
+                    <img class="image" src="images/samuel-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+                <br>
+            -->
+            Solve all questions. <br>
+            Show all work. <br>
+            You may use any of the Laws of Logical Equivalences and/or Logical Equivalences for Propositional Logic and
+            Predicate Logic. <br>
+            For any law of logical equivalence that you use, please indicate the law or the
+            logical equivalence number.
+        </p>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Decide whether these statements makes sense​ (or is clearly​ true) or does not make sense​ (or is
+                clearly​ false). <br>
+                Explain your reasoning.
+                <br><br>
+                (a.) My logical proposition is a question that you must answer.
+                <br><br>
+                (b.) The United States intends to capture​ the terrorist, dead or alive.
+                <br><br>
+                (c.) When Sally is​ depressed, she listens to music. I saw her today listening to​ music, so she must
+                have been depressed.
+                <br><br>
+                (d.) Now that​ I've studied​ logic, I can always determine the truth of any statement by making a truth
+                table for it.
+                <br><br>
+                (e.) If all novels are​ books, then all books are novels.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL1')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL1">
+                    <br>
+                    (a.) Propositions are not questions. So, the statement does not make sense.
+                    <br><br>
+                    (b.) The statement makes sense because when the terrorist the statement is referring to is​ caught,
+                    he must be either dead or alive.
+                    <br><br>
+                    (c.) The statement does not make sense. <br>
+                    Sally listens to music when she is​ depressed, but the statement does not clearly state that this is
+                    the only time Sally listens to music.
+                    <br><br>
+                    (d.) The statement does not make sense. <br>
+                    A truth table displays each possible set of truth values for the propostions being​ considered, but
+                    does not always make a definitive conclusion about the propostion.
+                    <br><br>
+                    (e.) The statement does not make sense. <br>
+                    Not all books are novels.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Which of the following is an: <br>
+                (I.) Inclusive Disjunction <br>
+                (II.) Exclusive Disjunction
+                <br><br>
+                <b>A.</b> An integer is either a positive number or a negative number. <br>
+                <b>B.</b> Two lines are parallel or intersect at a point. <br>
+                <b>C.</b> A​ non-zero number can be greater than or less than zero. <br>
+                <b>D.</b> A quadrilateral can be a polygon with 4 sides or a polygon with 4 vertices. <br>
+                <b>E.</b> Someone will read a book or a magazine the next time I go to the library. <br>
+                <b>F.</b> The insurance covers a trip to the​ doctor's office or a trip to the emergency room. <br>
+                <b>G.</b> The rules clearly state that chewing gum or eating food is not permitted. <br>
+                <b>H.</b> Before the​ test, someone have the choice of studying or watching television. <br>
+                <b>I.</b> Her favorite sport is tennis or golf. <br>
+                <b>J.</b> He will eat supper at restaurant A or restaurant B. <br>
+                <b>K.</b> For elective classes, she could take Spanish or Arabic.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL2')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL2">
+                    <br>
+                    Let us analyze each option: (based on the possibilities of only what we are given rather than all
+                    possibilities)
+                    <br><br>
+                    <b>A.</b> An integer is either a positive number or a negative number. <br>
+                    An integer cannot be both a positive number and a negative number. <br>
+                    Based on what we are given: this is an Exclusive OR <br>
+                    Based on all possibilities: <br>
+                    An integer can also be zero. Zero is neither a positive number nor a negative number.
+                    <br><br>
+                    <b>B.</b> Two lines are parallel or intersect at a point. <br>
+                    Based on what are given: this is an Exclusive OR because two lines will either not meet (parallel)
+                    or meet(intersect) at a point. <br>
+                    Two lines cannot meet, and meet at a point.
+                    <br><br>
+                    <b>C.</b> A​ non-zero number can be greater than or less than zero. <br>
+                    This is an Exclusive OR <br>
+                    A non-zero number is either greater than zero or less than zero. It cannot be both.
+                    <br><br>
+                    <b>D.</b> A quadrilateral can be a polygon with 4 sides or a polygon with 4 vertices. <br>
+                    Examples of quadrilaterals are: square, rectangle, rhombus, kite, parallelogram, trapezium <br>
+                    These are polygons with four sides and four vertices. <br>
+                    They have four sides. <br>
+                    They have four vertices. <br>
+                    They have four sides and four vertices. <br>
+                    This is an example of Inclusive OR
+                    <br><br>
+                    <b>E.</b> I will read a book or a magazine the next time I go to the library. <br>
+                    Technically speaking, magazine is a book. Be it as it may, one can read a book and a magazine at the
+                    same time. <br>
+                    One can read a book. <br>
+                    One can read a magazine. <br>
+                    One can read a book and a magazine simultaneously. <br>
+                    This is an example of Inclusive OR
+                    <br><br>
+                    <b>F.</b> My insurance covers a trip to the​ doctor's office or a trip to the emergency room. <br>
+                    The insurance can cover a trip to the doctor's office. <br>
+                    The insurance can also cover a trip to the emergency room. <br>
+                    The insurance can conver a trip to the doctor's office and a trip to the emergency room. <br>
+                    This is an example of Inclusive OR
+                    <br><br>
+                    The rules clearly state that chewing gum or eating food is not permitted. <br>
+                    This implies that chewing gum is not permitted. <br>
+                    Eating food is not permitted. <br>
+                    Chewing gum and eating food is not permitted. <br>
+                    This is an example of Inclusive OR
+                    <br><br>
+                    <b>H.</b> Before the​ test, someone have the choice of studying or watching television. <br>
+                    Someone can be studying. <br>
+                    Someone can be watching television. <br>
+                    However, someone cannot be studying and watching television simultaneously. <br>
+                    This is an example of Exclusive OR
+                    <br><br>
+                    <b>I.</b> Her favorite sport is tennis or golf. <br>
+                    Her favorite sport [emphasis on <i>sport</i> (not sports)] cannot be both tennis and golf. It has to
+                    be just one of them. <br>
+                    This is an example of Exclusive OR
+                    <br><br>
+                    <b>J.</b> He will eat supper at restaurant A or restaurant B. <br>
+                    He cannot eat supper at the two restaurants simultaneously. He will either eat at restaurant A or
+                    restaurant B but not both. <br>
+                    This is an example of Exclusive OR
+                    <br><br>
+                    <b>K.</b> For elective classes, she could take Spanish or Arabic. <br>
+                    She could take Spanish. <br>
+                    She could take Arabic. <br>
+                    She could take both Spanish and Arabic. <br>
+                    This is an example of Inclusive OR
+                    <br><br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                Sarah did not decline the offer to go to dinner. <br>
+                Did Sarah go to​ dinner?
+                <br><br>
+                <b>A.</b> The first negation​ "decline the​ offer" makes it seem that Sarah would not go to dinner. <br>
+                But the statement negates this​ negation, "did not decline the​ offer." <br>
+                Therefore, Sarah accepts the offer to go to dinner.
+                <br><br>
+                <b>B.</b> The first negation​ "decline the​ offer" makes it seem that Sarah would go to dinner. <br>
+                But the statement negates this​ negation, "did not decline the​ offer." <br>
+                Therefore, Sarah declines the offer to go to dinner.
+                <br><br>
+                <b>C.</b> The first negation​ "decline the​ offer" makes it seem that Sarah would go to dinner. <br>
+                The statement reinforces this negation, "did not decline the​ offer." <br>
+                Therefore, Sarah accepts the offer to go to dinner.
+                <br><br>
+                <b>D.</b> The first negation​ "decline the​ offer" makes it seem that Sarah would not go to dinner. <br>
+                The statement reinforces this​ negation, "did not decline the​ offer." <br>
+                Therefore, Sarah declines the offer to go to dinner.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL3')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL3">
+                    <br>
+                    <b>A.</b> The first negation​ "decline the​ offer" makes it seem that Sarah would not go to dinner.
+                    <br>
+                    But the statement negates this​ negation, "did not decline the​ offer." <br>
+                    Therefore, Sarah accepts the offer to go to dinner.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Determine if each of the following statements is a​ proposition, and give an explanation.
+                <br><br>
+                (a.) Some women have served as United States Senators.
+                <br><br>
+                (b.) Turn off the lights.
+                <br><br>
+                (c.) Who cares?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL4')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL4">
+                    <br>
+                    (a.) Yes, because the given statement can be either true or​ false, and it is a complete sentence.
+                    <br><br>
+                    (b.) No, because the statement does not make a​ claim, and it is not a complete sentence.
+                    <br><br>
+                    (c.) No, because the statement does not make a​ claim; it is a question.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Rephrase the following statements using one or more conditional statements​ (if p, then​ q).
+                <br><br>
+                (a.) Without adversity​, you​ don't have triumph. Without ​triumph, you have nothing.
+                <br><br>
+                (b.) Even if​ you're flipping burgers at a carnival​, if you are great​, everybody wants to be in your
+                line.
+                <br><br>
+                (c.) Whenever the student attends his class, the student acquires new knowledge.
+                <br><br>
+                (d.) Not winning is a sufficient condition for losing.
+                <button class="solutions" onclick="solutions('solutionSPL5')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL5">
+                    <br>
+                    (a.) If you​ don't have adversity​, then you​ don't have triumph. If you​ don't have triumph​, then
+                    you have nothing.
+                    <br><br>
+                    (b.) If you are great at flipping burgers at a carnival​, then everyone will want to be in your
+                    line.
+                    <br><br>
+                    (c.) If the student attends his class, the student acquires new knowledge.
+                    <br><br>
+                    (d.) If someone is not winning, then the person is losing.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Write the negation of these propositions. <br>
+                Then state the truth value of the original proposition and its negation.
+                <br><br>
+                (a.) Spain is in South America.
+                <br><br>
+                (b.) October does not come before September.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL6')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL6">
+                    <br>
+                    (a.) $p$ Spain is in South America. <br>
+                    Truth value is: <b>F</b> <br>
+                    $\neg p$: Spain is not in South America. <br>
+                    Truth value is: <b>T</b>
+                    <br><br>
+                    (b.) $p$: October does not come before September. <br>
+                    Truth value is <b>T</b> <br>
+                    $\neg p$: October does comes before September. <br>
+                    Truth value is <b>F</b>
+                    <br><br>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL7')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL7">
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL8')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL8">
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL9')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL9">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                The mayor opposes the ban on​ anti-fracking rallies. <br>
+                Does the mayor approve of allowing the​ rallies?
+                <br><br>
+                <b>A.</b> The mayor believes that​ anti-fracking is the best reason to rally. <br>
+                So, the mayor approves of allowing the rallies.
+                <br><br>
+                <b>B.</b> The mayor believes that​ anti-fracking is not a valid reason to rally.​ <br>
+                So, the mayor does not approve of allowing the rallies.
+                <br><br>
+                <b>C.</b> The mayor believes that a ban on​ anti-fracking rallies should not be allowed.​ <br>
+                So, the mayor approves of allowing the rallies.
+                <br><br>
+                <b>D.</b> The mayor believes that a ban on​ anti-fracking rallies should be allowed. <br>
+                So, the mayor does not approve of allowing the rallies.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL10')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL10">
+                    <br>
+                    <b>C.</b> The mayor believes that a ban on​ anti-fracking rallies should not be allowed.​ <br>
+                    So, the mayor approves of allowing the rallies.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL11')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL11">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL12')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                Did the Congressman vote in favor of​ discrimination? <br>
+                The Congressman voted against the​ anti-discrimination bill.
+                <br><br>
+                <b>A.</b> The statement means that the Congressman did not vote in favor of a bill that favors
+                discrimination.​ <br>
+                So, the Congressman voted in favor of discrimination.
+                <br><br>
+                <b>B.</b> The statement means that the Congressman did not vote in favor of a bill that does not favor
+                discrimination.​ <br>
+                So, the Congressman voted against discrimination.
+                <br><br>
+                <b>C.</b> The statement means that the Congressman did not vote in favor of a bill that does not favor
+                discrimination.​ <br>
+                So, the Congressman voted in favor of discrimination.
+                <br><br>
+                <b>D.</b> The statement means that the Congressman voted in favor of a bill that does not favor
+                discrimination.​ <br>
+                So, the Congressman voted against discrimination.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL13')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL13">
+                    <br>
+                    <b>C.</b> The statement means that the Congressman did not vote in favor of a bill that does not
+                    favor discrimination.​ <br>
+                    So, the Congressman voted in favor of discrimination.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL14')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL15')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL15">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL16')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL17')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL17">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                The house failed to overturn the veto on a bill that would stop logging. <br>
+                Based on this​ vote, will logging​ continue?
+                <br><br>
+                <b>A.</b> The house voted to overturn the veto. <br>
+                This outcome will allow logging to continue.
+                <br><br>
+                <b>B.</b> The house voted not to overturn the veto. <br>
+                This outcome will allow logging to continue.
+                <br><br>
+                <b>C.</b> The house voted not to overturn the veto. <br>
+                This outcome will not allow logging to continue.
+                <br><br>
+                <b>D.</b> The house voted to overturn the veto. <br>
+                This outcome will not allow logging to continue.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL18')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL18">
+                    <br>
+                    <b>B.</b> The house voted not to overturn the veto. <br>
+                    This outcome will allow logging to continue.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL19')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL19">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL20')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/LogicReasoning/propositionalLogic.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL21')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL21">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL22')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL23')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL23">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                The senator opposes overriding the​ governor's veto of the bill. <br>
+                Does the senator support the​ bill?
+                <br><br>
+                <b>A.</b> The senator opposes the​ governor's stance on the​ bill, so the senator does support the bill.
+                <br><br>
+                <b>B.</b> The senator opposes the​ governor's stance on the​ bill, so the senator does not support the
+                bill.
+                <br><br>
+                <b>C.</b> The senator supports the​ governor's stance on the​ bill, so the senator does support the
+                bill.
+                <br><br>
+                <b>D.</b> The senator supports the​ governor's stance on the​ bill, so the senator does not support the
+                bill.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL24')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL24">
+                    <br>
+                    <b>D.</b> The senator supports the​ governor's stance on the​ bill, so the senator does not support
+                    the bill.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL25')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL25">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL26')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.) Explain the meaning of each given​ statement, which contains a mulitple negation. <br>
+                Then answer the question that follows. <br>
+                Paul denies that he opposes the plan to build a new dorm. <br>
+                Does Paul support building a new​ dorm?
+                <br><br>
+                <b>A.</b> The first negation​ "opposes the​ plan" makes it seem that Paul would not support the new
+                dorm. <br>
+                But the statement negates this​ negation, "Paul denies that he opposes the​ plan." <br>
+                Therefore, it seems that Paul supports the plan for the new dorm.
+                <br><br>
+                <b>B.</b> The first negation​ "opposes the​ plan" makes it seem that Paul supports the new dorm. <br>
+                But the statement negates this​ negation, "Paul denies that he opposes the​ plan." <br>
+                Therefore, it seems that Paul opposes the plan for the new dorm.
+                <br><br>
+                <b>C.</b> The first negation​ "opposes the​ plan" makes it seem that Paul supports the new dorm. <br>
+                The statement reinforces this​ negation, "Paul denies that he opposes the​ plan." <br>
+                Therefore, it seems that Paul supports the plan for the new dorm.
+                <br><br>
+                <b>D.</b> The first negation​ "opposes the​ plan" makes it seem that Paul would not support the new
+                dorm. <br>
+                The statement reinforces this​ negation, "Paul denies that he opposes the​ plan." <br>
+                Therefore, it seems that Paul opposes the plan for the new dorm.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL27')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL27">
+                    <br>
+                    <b>A.</b> The first negation​ "opposes the​ plan" makes it seem that Paul would not support the new
+                    dorm. <br>
+                    But the statement negates this​ negation, "Paul denies that he opposes the​ plan." <br>
+                    Therefore, it seems that Paul supports the plan for the new dorm.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL28')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL29')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL29">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL30')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL31')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL31">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL32')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL32">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL33')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL33">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSPL34')">Show/Hide Answer</button>
+                <div class="result" id="solutionSPL34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020 &nbsp; Samdom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

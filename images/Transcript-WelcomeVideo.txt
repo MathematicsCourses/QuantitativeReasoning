@@ -1,0 +1,188 @@
+1
+00:00:00,000 --> 00:00:10,398
+Good afternoon, Students.
+
+2
+00:00:10,398 --> 00:00:16,511
+Welcome to MTH 154: Quantitative Reasoning.
+
+3
+00:00:16,511 --> 00:00:21,228
+My name is Samuel Dominic Chukwuemeka
+
+4
+00:00:21,228 --> 00:00:29,906
+also known as SamDom For Peace
+
+5
+00:00:29,906 --> 00:00:33,821
+Chukwuemeka is a name from the Igbo tribe
+
+6
+00:00:33,821 --> 00:00:38,327
+Chukwu means GOD
+
+7
+00:00:38,327 --> 00:00:46,262
+Emeka means "has done a lot"
+
+8
+00:00:46,262 --> 00:00:53,510
+So, Chukwuemeka means that GOD has done a lot for me.
+
+9
+00:00:53,510 --> 00:00:56,419
+This class requires a lot of critical thinking,
+
+10
+00:00:56,419 --> 00:01:03,169
+and problem-solving approaches.
+
+11
+00:01:03,169 --> 00:01:08,370
+We shall review several topics including:
+
+12
+00:01:08,370 --> 00:01:10,440
+Logic and Arguments
+
+13
+00:01:10,440 --> 00:01:15,111
+Set Theory
+
+14
+00:01:15,111 --> 00:01:26,726
+Measurements and Units
+
+15
+00:01:26,726 --> 00:01:31,464
+Numbers including Index Numbers; Fractions, Decimals and Percents
+
+16
+00:01:31,464 --> 00:01:39,820
+The Mathematics of Finance (Financial Mathematics)
+
+17
+00:01:39,820 --> 00:01:44,233
+Introductory Statistics
+
+18
+00:01:44,233 --> 00:01:49,743
+and Correlation among others.
+
+19
+00:01:49,743 --> 00:01:54,145
+This is a lot of work
+
+20
+00:01:54,145 --> 00:01:59,935
+You will do a lot of work
+
+21
+00:01:59,935 --> 00:02:04,013
+You will do a lot of work on your own.
+
+22
+00:02:04,013 --> 00:02:09,462
+But, I am here to help you.
+
+23
+00:02:09,462 --> 00:02:17,176
+The class is a flipped-classroom model
+
+24
+00:02:17,176 --> 00:02:23,765
+I provide the resources on each section/topic
+
+25
+00:02:23,765 --> 00:02:34,782
+You are required to review these resources
+
+26
+00:02:34,782 --> 00:02:45,969
+and it is highly recommended but not required
+
+27
+00:02:45,969 --> 00:02:54,157
+to attend the weekly Student Engagement Hours and Live Sessions
+
+28
+00:02:54,157 --> 00:02:57,039
+where you can ask me questions on whatever you do not understand
+
+29
+00:02:57,039 --> 00:03:10,368
+regarding the resources
+
+30
+00:03:10,368 --> 00:03:21,110
+If the day and time for the sessions are not convenient for you,
+
+31
+00:03:21,110 --> 00:03:24,793
+and let me know the days and times that work for you.
+
+32
+00:03:24,793 --> 00:03:31,901
+I shall respond.
+
+33
+00:03:31,901 --> 00:03:35,740
+For all communications regarding the class,
+
+34
+00:03:35,740 --> 00:03:47,921
+please use your school email .edu domain
+
+35
+00:03:47,921 --> 00:03:55,277
+My communication lines are open
+
+36
+00:03:55,277 --> 00:04:01,475
+You can come and see me and speak to me during the sessions
+
+37
+00:04:01,475 --> 00:04:07,864
+You can send an email to me using your school email
+
+38
+00:04:07,864 --> 00:04:14,517
+You can also text my Google Voice number any day, any time
+
+39
+00:04:14,517 --> 00:04:26,041
+If you want a fast response, then use my Google Voice number.
+
+40
+00:04:26,041 --> 00:04:31,749
+There are three types of assessments in the class:
+
+41
+00:04:31,749 --> 00:04:37,279
+MyMath Lab assignments
+
+42
+00:04:37,279 --> 00:04:44,499
+Weekly Discussion Board assessments
+
+43
+00:04:44,499 --> 00:04:51,980
+and one project
+
+44
+00:04:51,980 --> 00:05:02,287
+Please visit the course website and review every information there.
+
+45
+00:05:02,287 --> 00:05:09,152
+Also, on the Canvas course, please review every information there.
+
+46
+00:05:09,152 --> 00:05:15,714
+Let us work together for success.
+
+47
+00:05:15,714 --> 00:05:17,739
+See you online and Have a great day!!!
+

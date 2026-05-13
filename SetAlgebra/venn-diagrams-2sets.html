@@ -1,0 +1,3525 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4PFFZ0RE6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4PFFZ0RE6');
+    </script>
+
+    <meta name="msvalidate.01" content="80BFAD7B2BBA3F6284FE6189DC1AFA92">
+
+    <title>Venn Diagrams for Two Sets</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in Venn diagrams for two sets calculations." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samdom4peace, samuel dominic chukwuemeka, math, mathematics, algebra, set, set theory, 
+              union, intersection, intersect, set notation, prime, complement, universal set, empty set, null set, set algebra,
+              Cartesian product, symmetric difference, difference of sets, power set, subset, proper subset, superset,
+              finite set, infinite set, roster form, set builder notation, set generator notation, cardinality, cardinal number,
+              equal sets, equivalent sets, ellipsis, infinity, element, member, Venn diagrams, Identity law, Domination law, 
+              Idempotent law, Complement law, law of Complementation, De Morgan's law, Involution law, law of Double Complementation, 
+              Commutative law, Associative law, Distributive law, Absorption law, n-tuple notation, roster notation" />
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-32 silver" id="quotes">
+        <h1>Solved Examples on Venn Diagrams for Two Sets</h1>
+    </header>
+    <!-- End Header/Home -->
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+
+        <div class="w3-container">
+            <!-- Image in top left corner --
+                <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                    <img class="image" src="images/samdom4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                </a>
+            -->
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+            So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+            Please ensure you attempt <b>all ACT questions</b>. <br>
+            There is no <i>negative</i> penalty for a wrong answer.
+            <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits
+            from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+            <br><br>
+            <b>Corequisites:</b>
+            <a href="https://statistical-science.appspot.com/Probability/probability.html"
+                target="_blank">Probability</a>
+            <br><br>
+            Solve all questions <br>
+            Draw Venn Diagrams for each question and answer as applicable <br>
+            Show all work.
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>ACT</b> Fifty shoppers at a pet store were asked if they owned at least 1 cat or at least 1 dog.
+                <br>
+                Data from their answers were recorded below. <br>
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 50;">Ownership</td>
+                        <td class="w3-center" style="width: 50%;">Number of shoppers</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Cat(s) only</td>
+                        <td class="w3-center">13</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Dog(s) only</td>
+                        <td class="w3-center">24</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">Both cat(s) and dog(s)</td>
+                        <td class="w3-center">7</td>
+                    </tr>
+                </table>
+                <br>
+                How many of these shoppers said that they owned NEITHER a cat NOR a dog? <br><br>
+                $
+                A.\;\; 0 \\[3ex]
+                B.\;\; 6 \\[3ex]
+                C.\;\; 7 \\[3ex]
+                D.\;\; 13 \\[3ex]
+                E.\;\; 43 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets1')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets1">
+                    <br>
+                    $
+                    Let \\[3ex]
+                    Cat = C \\[3ex]
+                    Dog = D \\[3ex]
+                    Neither\;\;a\;\;cat\;\;nor\;\;a\;\;dog = k \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number1.png" alt="Number 1">
+                    </div>
+                    <br>
+                    $
+                    13 + 7 + 24 + k = 50 \\[3ex]
+                    44 + k = 50 \\[3ex]
+                    k = 50 - 44 \\[3ex]
+                    k = 6
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>GCSE</b> In a group of 20 people <br>
+                7 own a dog <br>
+                3 own a cat <br>
+                12 do not own a dog or a cat. <br>
+                Aidan shows this information on a Venn diagram. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number2.png" alt="Number 2">
+                </div> <br>
+                Make <b>two</b> criticisms of his Venn diagram.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets2')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets2">
+                    <br>
+                    <i>Choose any two</i> <br>
+                    The criticisms of his Venn diagram are: <br><br>
+                    (1.) <b>Statement:</b> 7 own a dog <br>
+                    <b>His Venn diagram:</b> 7 own a dog ONLY <br>
+                    These are two different statements <br><br>
+
+                    (2.) <b>Statement:</b> 3 own a cat <br>
+                    <b>His Venn diagram:</b> 3 own a cat ONLY <br>
+                    These are two different statements <br><br>
+
+                    (3.) <b>Statement:</b> 12 do not own a dog or a cat. <br>
+                    However, 12 is still a subset of the universal set. <br>
+                    In other words, 12 is still a part of the group of 20 people <br>
+                    <b>His Venn diagram:</b> 12 is outside the universal set...not part of the group of 20 people <br>
+                    That is incorrect
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>CSEC</b> <i>T</i> and <i>E</i> are subsets of a universal set, <i>U</i>, such that: <br>
+                <i>U</i> = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12} <br>
+                <i>T</i> = {multiples of 3} <br>
+                <i>E</i> = {even numbers} <br><br>
+                (i) Draw a Venn diagram to represent this information. <br><br>
+                (ii) List the members of the set <br>
+                (a) $T \cap E$ <br>
+                (b) $(T \cup E)'$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets3')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets3">
+                    <br>
+                    $
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\} \\[3ex]
+                    T = \{3, 6, 9, 12\} \\[3ex]
+                    E = \{2, 4, 6, 8, 10, 12\} \\[3ex]
+                    (ii) \\[3ex]
+                    (a) \\[3ex]
+                    T \cap E = \{6, 12\} \\[3ex]
+                    (b) \\[3ex]
+                    T \cup E = \{2, 3, 4, 6, 8, 9, 10, 12\} \\[3ex]
+                    (T \cup E)' = \{1, 5, 7, 11\} \\[3ex]
+                    $
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number3.png" style="width: 100%;" alt="Number 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>JAMB</b> In a science class of 42 students, each offers at least one of Mathematics and Physics.
+                <br>
+                If 22 students offer Physics and 28 students offer Mathematics, find how many students offer Physics
+                only. <br><br>
+                $
+                A.\;\; 6 \\[3ex]
+                B.\;\; 8 \\[3ex]
+                C.\;\; 12 \\[3ex]
+                D.\;\; 14 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets4')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets4">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Physics = P \\[3ex]
+                    Mathematics = M \\[3ex]
+                    n(P) = 22 \\[3ex]
+                    n(M) = 28 \\[3ex]
+                    n(P \cap M) = k \\[3ex]
+                    n(P \cap M') = 22 - k \\[3ex]
+                    n(M \cap P') = 28 - k \\[3ex]
+                    n(\xi) = 42 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number4.png" style="width: 100%;" alt="Number 4">
+                    </div>
+                    <br>
+                    $
+                    22 - k + 28 - k + k = 42 \\[3ex]
+                    50 - k = 42 \\[3ex]
+                    50 - 42 = k \\[3ex]
+                    k = 8 \\[3ex]
+                    n(P\;\;ONLY) = n(P \cap M') \\[3ex]
+                    = 22 - k \\[3ex]
+                    = 22 - 8 \\[3ex]
+                    = 14 \\[3ex]
+                    $
+                    14 students offer Physics only
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>CSEC</b> The Universal set, <i>U</i>, is given as <br>
+                <i>U</i> = {Whole numbers from 1 to 12} <br><br>
+                <i>H</i> is a subset of <i>U</i>, such that <i>H</i> = {Odd numbers between 4 and 12} <br>
+                (i) List the members of the set <i>H</i> <br><br>
+                <i>J</i> is a subset of <i>U</i>, such that <i>J</i> = {Prime numbers} <br>
+                (ii) List the members of the set <i>J</i> <br><br>
+                (iii) Draw a Venn diagram to represent the sets, <i>U, H</i> and <i>J</i>, showing ALL the elements in
+                the subsets.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets5')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets5">
+                    <br>
+                    $
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\} \\[3ex]
+                    (i) \\[3ex]
+                    H = \{5, 7, 9, 11\} \\[3ex]
+                    (ii) \\[3ex]
+                    J = \{2, 3, 5, 7, 11\} \\[3ex]
+                    H \cap J = \{5, 7, 11\} \\[3ex]
+                    H \cup J = \{2, 3, 5, 7, 9, 11\} \\[3ex]
+                    (H \cup J)' = \{1, 4, 6, 8, 10, 12\} \\[3ex]
+                    $
+                    (iii) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number5.png" style="width: 100%;" alt="Number 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>ACT</b> Among a group of 20 students, 13 students are members of the Math Club, 11 students are
+                members of the
+                Drama Club, and 9 students are members of both clubs. <br>
+                How many of the 20 students are NOT members of either club? <br><br>
+                $
+                F.\;\; 4 \\[3ex]
+                G.\;\; 5 \\[3ex]
+                H.\;\; 6 \\[3ex]
+                J.\;\; 11 \\[3ex]
+                K.\;\; 13 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets6')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets6">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Math\;\;Club = M \\[3ex]
+                    Drama\;\;Club = D \\[3ex]
+                    NOT\;\;members\;\;of\;\;either\;\;club = p \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number6.png" style="width: 100%;" alt="Number 6">
+                    </div>
+                    <br>
+                    $
+                    4 + 9 + 2 + p = 20 \\[3ex]
+                    15 + p = 20 \\[3ex]
+                    p = 20 - 15 \\[3ex]
+                    p = 5 \\[3ex]
+                    $
+                    5 students are NOT members of either club.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) <b>USSCE Advance Mathematics Paper 2, 2011</b> <br>
+                If U = {Positive whole numbers &le; 12} be the universal set. <br>
+                A = {Positive primes &le; 12} <br>
+                B = {Positive factors of 12} <br><br>
+                a) List the elements of sets A and B <br>
+                b) Show the sets A, B, and U on a Venn diagram. <br>
+                c) List the elements not in A (or A')
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets7')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets7">
+                    <br>
+                    $
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\} \\[3ex]
+                    a) \\[3ex]
+                    A = \{2, 3, 5, 7, 11\} \\[3ex]
+                    B = \{1, 2, 3, 4, 6, 12\} \\[3ex]
+
+                    b) \\[3ex]
+                    A \cap B = \{2, 3\} \\[3ex]
+                    A \cup B = \{1, 2, 3, 4, 5, 6, 7, 11, 12\} \\[3ex]
+                    (A \cup B)' = \{8, 9, 10\} \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number7.png" style="width: 100%;" alt="Number 7">
+                    </div> <br>
+                    $
+                    c) \\[3ex]
+                    A' = \{1, 4, 6, 8, 9, 10, 12\}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>CSEC</b> A club has 160 members, some of whom play tennis (<b>T</b>) or cricket (<b>C</b>) or
+                both. <br>
+                97 play tennis, 86 play cricket and 10 play neither. <br>
+                <i>x</i> play both tennis and cricket. <br><br>
+                (i) Draw a Venn diagram to represent this information. <br>
+                (ii) How many members play both tennis and cricket?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets8')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets8">
+                    <br>
+                    (i) The Venn Diagram is: <br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number8.png" style="width: 100%;" alt="Number 8">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    97 - x + 86 - x + x + 10 = 160 \\[3ex]
+                    193 - x = 160 \\[3ex]
+                    193 - 160 = x \\[3ex]
+                    x = 33
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) <b>GCSE</b> $\varepsilon$ = {2, 3, 4, 5, 6, 7, 8, 9} <br>
+                P = {even numbers} <br>
+                Q = {numbers divisible by 3} <br><br>
+                (a) Complete the Venn diagram below. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number9.png" alt="Number 9">
+                </div> <br>
+                (b) A number is chosen at random from the numbers 2 to 9 <br>
+                What is the probability that the number chosen is odd and <b>not</b> divisible by 3?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets9')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets9">
+                    <br>
+                    $
+                    \varepsilon = \{2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+                    P = \{2, 4, 6, 8\} \\[3ex]
+                    Q = \{3, 6, 9\} \\[3ex]
+                    P \cap Q = \{6\} \\[3ex]
+                    P \cup Q = \{2, 3, 4, 6, 8, 9\} \\[3ex]
+                    (P \cup Q)' = \{5, 7\} \\[3ex]
+                    $
+                    (a) <br>
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number9.png" alt="Number 9">
+                    </div> <br>
+                    (b) <br>
+                    Let the set: R = {odd and <b>not</b> divisible by 3} <br><br>
+                    $
+                    R = \{5, 7\} \\[3ex]
+                    n(R) = 2 \\[3ex]
+                    n(\varepsilon) = 8 \\[3ex]
+                    P(R) = \dfrac{n(R)}{n(\varepsilon)} = \dfrac{2}{8} = \dfrac{1}{4}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>ACT</b> A health club surveyed 175 members about which types of equipment they had used in the
+                past month. <br>
+                Of the 175 members, 117 had used treadmills, 89 had used stationary bikes, and 53 had used both types of
+                equipment. <br>
+                Some members had used neither type of equipment. <br>
+                Of the 175 members, how many had used treadmills, stationary bikes, or both? <br><br>
+                $
+                A.\;\; 53 \\[3ex]
+                B.\;\; 81 \\[3ex]
+                C.\;\; 122 \\[3ex]
+                D.\;\; 134 \\[3ex]
+                E.\;\; 153 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets10')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets10">
+                    <br>
+                    The members that had used treadmills, stationary bikes, or both are those that: <br>
+                    used treadmills ONLY <br>
+                    used stationary bikes ONLY <br>
+                    used both treadmills and stationary bikes <br><br>
+                    $
+                    Let: \\[3ex]
+                    treadmills = T \\[3ex]
+                    stationary\;\;bikes = B \\[3ex]
+                    n(\xi) = 175 \\[3ex]
+                    n(T) = 175 \\[3ex]
+                    n(B) = 89 \\[3ex]
+                    n(T \cap B) = 53 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number10.png" style="width: 100%;"
+                            alt="Number 10">
+                    </div> <br>
+                    The members that had used treadmills, stationary bikes, or both <br><br>
+                    $
+                    = n(T \cup B) \\[3ex]
+                    = 64 + 36 + 53 \\[3ex]
+                    = 153 \\[3ex]
+                    $
+                    153 members had used treadmills, stationary bikes, or both
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) <b>WASCCE</b> A number of tourists were interviewed on their choice of means of travel. <br>
+                Two-thirds said that they travelled by road, $\dfrac{13}{30}$ by air and $\dfrac{4}{15}$ by both air and
+                road. <br>
+                If 20 tourists did not travel by either air or road, <br><br>
+                (i) represent the information on a Venn diagram <br><br>
+                (ii) how many tourists <br>
+                (a) were interviewed? <br>
+                (b) travelled by air only?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets11')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets11">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    number\;\;of\;\;people\;\;that\;\;were\;\;interviewed = n(universal\;\;set) = p \\[3ex]
+                    road = R \\[3ex]
+                    air = A \\[3ex]
+                    n(R \cap A) = \dfrac{4p}{15} \\[5ex]
+                    n(R) = \dfrac{2p}{3} \\[5ex]
+                    n(R\;\;only) = \dfrac{2p}{3} - \dfrac{4p}{15} = \dfrac{10p - 4p}{15} = \dfrac{6p}{15} =
+                    \dfrac{2p}{5} \\[5ex]
+                    n(A) = \dfrac{13p}{30} \\[5ex]
+                    n(A\;\;only) = \dfrac{13p}{30} - \dfrac{4p}{15} = \dfrac{13p - 8p}{30} = \dfrac{5p}{30} =
+                    \dfrac{p}{6} \\[5ex]
+                    $
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number11.png" style="width: 100%;"
+                            alt="Number 11">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    (a) \\[3ex]
+                    \dfrac{2p}{5} + \dfrac{p}{6} + \dfrac{4p}{15} + 20 = p \\[5ex]
+                    LCD = 30 \\[3ex]
+                    30\left(\dfrac{2p}{5}\right) + 30\left(\dfrac{p}{6}\right) + 30\left(\dfrac{4p}{15}\right) + 30(20)
+                    = 30(p) \\[5ex]
+                    6(2p) + 5p + 2(4p) + 600 = 30p \\[3ex]
+                    12p + 5p + 8p - 30p = -600 \\[3ex]
+                    -5p = -600 \\[3ex]
+                    p = \dfrac{-600}{-5} \\[5ex]
+                    p = 120 \\[3ex]
+                    $
+                    120 tourists were interviewed <br><br>
+                    $
+                    (b) \\[3ex]
+                    n(A\;\;only) = \dfrac{p}{6} = \dfrac{120}{6} = 20 \\[5ex]
+                    $
+                    20 people travelled by air only
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>JAMB</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number12.png" alt="Number 12">
+                </div> <br>
+                From the Venn diagram above, the complement of the set $P \cap Q$ is given by <br><br>
+                $
+                A.\;\; \{a, b, d, e\} \\[3ex]
+                B.\;\; \{b, d\} \\[3ex]
+                C.\;\; \{a, e\} \\[3ex]
+                D.\;\; \{c\} \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets12')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets12">
+                    <br>
+                    $
+                    \mu = \{a, b c, d, e\} \\[3ex]
+                    P = \{b, c\} \\[3ex]
+                    Q = \{c, d\} \\[3ex]
+                    P \cap Q = \{c\} \\[3ex]
+                    (P \cap Q)' = \{a, b, d, e\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) <b>GCSE</b> There are 135 passengers on a plane. <br>
+                3 of the passengers in Business Class are flying for the first time. <br>
+                In total, there are 15 passengers in Business Class. <br>
+                $\dfrac{1}{4}$ of the passengers <b>not</b> in Business Class are flying for the first time. <br><br>
+                (a.) In the Venn diagram, <br>
+                $\xi$ = passengers on the plane <br>
+                B = passengers in Business Class <br>
+                F = passengers flying for the first time <br>
+                Complete the Venn diagram. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number13.png" alt="Number 13">
+                </div> <br>
+                (b.) One of the passengers is chosen at random. <br>
+                Write down the probability that the passenger is in Business Class.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets13')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets13">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    n(\xi) = 135 \\[3ex]
+                    n(B \cap F) = 3 \\[3ex]
+                    n(B) = 15 \\[3ex]
+                    \implies \\[3ex]
+                    n(B\;\;ONLY) = n(B \cap F') \\[3ex]
+                    = 15 - 3 = 12 \\[3ex]
+                    n(B') = n(\xi) - n(B) \\[3ex]
+                    = 135 - 15 \\[3ex]
+                    = 120 \\[3ex]
+                    n(F \cap B') = \dfrac{1}{4} * 120 = 30 \\[5ex]
+                    n(B' \cap F') \\[3ex]
+                    = n(neither\;\;B\;\;nor\;\;F) \\[3ex]
+                    = 135 - (12 + 30 + 3) \\[3ex]
+                    = 135 - 45 \\[3ex]
+                    = 90 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number13.png" alt="Number 13">
+                    </div> <br>
+                    $
+                    (b.) \\[3ex]
+                    n(B) = 15 \\[3ex]
+                    n(\xi) = 135 \\[3ex]
+                    P(B) = \dfrac{n(B)}{n(\xi)} \\[5ex]
+                    = \dfrac{15}{135} \\[5ex]
+                    = \dfrac{1}{9}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>CSEC</b> The incomplete Venn diagram below shows the number of students in a class of 28 who
+                play football and
+                tennis. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number14.png" alt="Number 14">
+                </div> <br>
+                <b>U</b> = {all students in the class} <br>
+                <b>F</b> = {students who play football} <br>
+                <b>T</b> = {students who play tennis} <br><br>
+                Additional information about the class is that <br>
+                12 students play tennis <br>
+                15 students play football <br>
+                8 students play neither football nor tennis <br>
+                <i>x</i> students play BOTH football and tennis <br><br>
+                (i) Complete the Venn diagram above to represent the information, showing the number of students in EACH
+                subset. <br><br>
+                (ii) Calculate the value of <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets14')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets14">
+                    <br>
+                    (i) <br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number14.png" alt="Number 14">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    15 - x + 12 - x + x + 8 = 28 \\[3ex]
+                    35 - x = 28 \\[3ex]
+                    35 - 28 = x \\[3ex]
+                    x = 7
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) Assume that <i>A</i> represents the set of all plums and <i>B</i> represents the set of all
+                fruits. <br>
+                What is the correct Venn diagram for the relationship between these sets? <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number15.png" alt="Number 15">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets15')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets15">
+                    <br>
+                    All plums are fruits. <br>
+                    Hence the Venn diagram shows that the set of plums is a proper subset of the set of fruits. <br>
+                    Correct option is <b>D.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) <b>WASCCE</b> In a class of 50 students, 30 offered History, 15 offered History and Geography
+                while 3 did not offer
+                any of the two subjects. <br>
+                (i) Represent the information on a Venn diagram. <br><br>
+                (ii) Find the number of candidates that offered: <br>
+                (a) History only <br>
+                (b) Geography only
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets16')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets16">
+                    <br>
+                    $
+                    n(Universal\;\;Set) = n(\xi) = 50 \\[3ex]
+                    Let: \\[3ex]
+                    History = H \\[3ex]
+                    Geography = G \\[3ex]
+                    n(H) = 30 \\[3ex]
+                    n(G) = g \\[3ex]
+                    n(H \cap G) = 15 \\[3ex]
+                    n(H\;\;only) = 30 - 15 = 15 \\[3ex]
+                    n(G\;\;only) = g - 15 \\[3ex]
+                    n(neither\;\;H\;\;nor\;\;G) = 3 \\[3ex]
+                    $
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number16.png" alt="Number 16">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    (a) \\[3ex]
+                    n(H\;\;only) = 30 - 15 = 15 \\[3ex]
+                    $
+                    15 students offered only History <br><br>
+                    $
+                    (b) \\[3ex]
+                    15 + (g - 15) + 15 + 3 = 50 \\[3ex]
+                    15 + g - 15 + 15 + 3 = 50 \\[3ex]
+                    18 + g = 50 \\[3ex]
+                    g = 50 - 18 \\[3ex]
+                    g = 32 \\[3ex]
+                    n(G\;\;only) \\[3ex]
+                    = g - 15 \\[3ex]
+                    = 32 - 15 \\[3ex]
+                    = 17 \\[3ex]
+                    $
+                    17 students offered only Geography
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) What do amusement park rides and films have in common? <br>
+                As the thrill and interest in 3D rides becomes more realistic, motion capture brings the computer
+                enhanced graphics of
+                film to amusement park rides. <br>
+                Universal entertainment paired with Illumination Entertainment to produce the blockbuster film
+                Despicable Me in 2010
+                and paired again for the 2013 creation of Despicable Me 2. <br>
+                Illumination Entertainment is also working with Universal Studios to create a 3D ride which debuted in
+                summer of 2012
+                at Universal Studios in Florida and will also be built and open in spring of 2014 in California. <br>
+                A company produces work for 250 productions. 175 are films, 80 are 3D rides, and 25 are motion capture.
+                <br>
+                How many of the productions are purely for 3D rides? <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number17.png" alt="Number 17">
+                </div> <br>
+                $
+                A.\;\; 80 \\[3ex]
+                B.\;\; 30 \\[3ex]
+                C.\;\; 55 \\[3ex]
+                D.\;\; Not\;\;enough\;\;information \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets17')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets17">
+                    <br>
+                    Let: <br>
+                    the productions for Film = <i>F</i> <br>
+                    the productions for 3D Rides = <i>R</i>
+                    <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number17.png" alt="Number 17">
+                    </div> <br>
+                    $
+                    n(\mu) = 250 \\[3ex]
+                    n(Motion\;\;Capture) = n(F \cap R) = 25 \\[3ex]
+                    n(R) = 80 \\[3ex]
+                    n(R\;\;only) = 80 - 25 = 55 \\[3ex]
+                    $
+                    55 productions are purely for 3D rides.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) <b>GCSE</b> Here are five shapes, A to E <br><br>
+
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">A</td>
+                        <td style="width: 80%;">Parallelogram</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">B</td>
+                        <td style="width: 80%;">Regular pentagon</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">C</td>
+                        <td style="width: 80%;">Rhombus</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">D</td>
+                        <td style="width: 80%;">Scalene triangle</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center" style="width: 20%;">E</td>
+                        <td style="width: 80%;">Trapezium</td>
+                    </tr>
+                </table> <br>
+
+                In the Venn diagram, <br>
+                $\xi$ is the set of all shapes <br>
+                Q is the set of quadrilaterals <br>
+                R is the set of shapes which <b>always</b> have rotational symmetry <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number18.png" alt="Number 18">
+                </div> <br>
+                Complete the Venn diagram with the letters A to E.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets18')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets18">
+                    <br>
+                    Quadrilateral: four-sided polygon <br>
+                    They are: Parallelogram (A), Rhombus (C), and Trapezium (E) <br><br>
+                    Rotational Symmetry: shape looks the same after some rotations from it's initial position <br>
+                    They are: Parallelogram (A) (<i>order: 2</i>), Regular pentagon (B) (<i>order: 5</i>),
+                    and Rhombus (C) (<i>order: 2</i>) <br><br>
+                    <i>
+                        Order of rotational symmetry of 1 (for Trapezium and Scalene triangle) does not count as a
+                        rotational <b>symmetry</b> <br>
+                        Explain to students if they ask questions.
+                    </i> <br><br>
+                    $
+                    \xi = \{A, B, C, D, E\} \\[3ex]
+                    Q = \{A, C, E\} \\[3ex]
+                    R = \{A, B, C\} \\[3ex]
+                    Q \cap R = \{A, C\} \\[3ex]
+                    Q \cup R = \{A, B, C, E\} \\[3ex]
+                    (Q \cup R)' = \{D\} \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number18.png" alt="Number 18">
+                    </div> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) <b>ACT</b> Kelly asked 120 students questions about skiing. <br>
+                The results of the poll are shown in the table below. <br>
+                <table>
+                    <tr>
+                        <td class="w3-center" style="width: 80%;">Question</td>
+                        <td class="w3-center" style="width: 10%;">Yes</td>
+                        <td class="w3-center" style="width: 10%;">No</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">1. Have you skied either cross-country or downhill?</td>
+                        <td class="w3-center">65</td>
+                        <td class="w3-center">55</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">2. If you answered Yes to Question 1, did you ski downhill?</td>
+                        <td class="w3-padding">28</td>
+                        <td class="w3-padding">37</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">3. If you answered Yes to Question 1, did you ski cross-country?</td>
+                        <td class="w3-padding">45</td>
+                        <td class="w3-padding">20</td>
+                    </tr>
+                </table>
+                <br>
+                After completing the poll, Kelly wondered how many of the students polled had skied both cross-country
+                <i>and</i>
+                downhill. <br>
+                How many of the students polled indicated that they had skied both cross-country and downhill?
+                <br><br>
+                $
+                A.\;\; 73 \\[3ex]
+                B.\;\; 65 \\[3ex]
+                C.\;\; 47 \\[3ex]
+                D.\;\; 18 \\[3ex]
+                E.\;\; 8 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets19')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets19">
+                    <br>
+                    To solve this question, we shall not deal with the <i>No</i> responses <br><br>
+                    $
+                    Let: \\[3ex]
+                    C = cross-country \\[3ex]
+                    D = downhill \\[3ex]
+                    n(C \cup D) = 65 \\[3ex]
+                    n(D) = 28 \\[3ex]
+                    n(C) = 45 \\[3ex]
+                    Both\;\;cross-country\;\;and\;\;downhill = n(C \cap D) = e \\[3ex]
+                    n(\mu) = 120 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number19.png" alt="Number 19">
+                    </div>
+                    <br>
+                    $
+                    45 - e + e + 28 - e = 65 \\[3ex]
+                    73 - e = 65 \\[3ex]
+                    73 - 65 = e \\[3ex]
+                    e = 8 \\[3ex]
+                    $
+                    8 students skied both cross-country and downhill
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>CSEC</b> In a survey of 30 families, the findings were that: <br>
+                15 families owned dogs <br>
+                12 families owned cats <br>
+                <i>x</i> families owned BOTH dogs and cats <br>
+                8 families owned NEITHER dogs NOR cats <br><br>
+                (i.) Given that: <br>
+                <i>U</i> = {families in the survey} <br>
+                <i>C</i> = {families who owned cats} <br>
+                <i>D</i> = {families who owned dogs} <br>
+                Use the given information to copy and complete the Venn diagram below. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number20.png" alt="Number 20">
+                </div> <br>
+                (ii.) Write an expression, in <i>x</i>, which represents the TOTAL number of families in the survey.
+                <br><br>
+                (iii.) Write an equation which may be used to solve for <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets20')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets20">
+                    <br>
+                    (i.) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number20.png" alt="Number 20">
+                    </div> <br>
+                    $
+                    (ii.) \\[3ex]
+                    12 - x + 15 - x + x + 8 \\[3ex]
+                    35 - x \\[3ex]
+                    (iii.) \\[3ex]
+                    35 - x = 30
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) <b>GCSE</b> In a tennis tournament, <br>
+                98 players took part in the singles only <br>
+                34 players took part in the doubles only <br>
+                twice as many players took part in the singles as took part in the doubles <br><br>
+                How many players took part in both the singles <b>and</b> the doubles? <br>
+                You may use the Venn diagram to help you. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number21.png" alt="Number 21">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets21')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets21">
+                    <br>
+                    Let the number of players in both the singles <b>and</b> the doubles = <i>p</i> <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number21.png" alt="Number 21">
+                    </div> <br>
+                    twice as many players took part in the singles as took part in the doubles <br><br>
+                    $
+                    n(Singles) = 98 + p \\[3ex]
+                    n(Doubles) = 34 + p \\[3ex]
+                    \implies \\[3ex]
+                    98 + p = 2(34 + p) \\[3ex]
+                    98 + p = 68 + 2p \\[3ex]
+                    68 + 2p = 98 + p \\[3ex]
+                    2p - p = 98 - 68 \\[3ex]
+                    p = 30 \\[3ex]
+                    $
+                    30 players took part in both the singles <b>and</b> the doubles
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) <b>ACT</b> In a small high school with 20 seniors, 8 of the seniors are in soccer, 9 of the
+                seniors are in band,
+                and 5 of the seniors are in both. <br>
+                How many seniors are in neither soccer nor band? <br><br>
+                $
+                A.\;\; 15 \\[3ex]
+                B.\;\; 12 \\[3ex]
+                C.\;\; 11 \\[3ex]
+                D.\;\; 8 \\[3ex]
+                E.\;\; 3 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets22')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets22">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    Soccer = C \\[3ex]
+                    Band = B \\[3ex]
+                    Neither\;\;soccer\;\;nor\;\;band = p \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number22.png" style="width: 100%;"
+                            alt="Number 22">
+                    </div>
+                    <br>
+                    $
+                    3 + 4 + 5 + p = 20 \\[3ex]
+                    12 + p = 20 \\[3ex]
+                    p = 20 - 12 \\[3ex]
+                    p = 8 \\[3ex]
+                    $
+                    8 seniors are in neither soccer nor band.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) <b>CSEC</b> The universal set <i>U</i> is defined as follows: <br>
+                $U = \{x:x \in N, 2 \lt x \lt 12\}$ <br>
+                The sets <i>M</i> and <i>R</i> are subsets of <i>U</i> such that <br>
+                <i>M</i> = {odd numbers} <br>
+                <i>R</i> = {square numbers} <br><br>
+                (i) List the members of the subset <i>M</i> <br><br>
+                (ii) List the members of the subset <i>R</i> <br><br>
+                (iii) Draw a Venn Diagram that represents the relationship among the defined subsets of <i>U</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets23')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets23">
+                    <br>
+                    $
+                    U = \{x:x \in N, 2 \lt x \lt 12\} \\[3ex]
+                    U = \{3, 4, 5, 6, 7, 8, 9, 10, 11\} \\[3ex]
+                    (i) \\[3ex]
+                    M = \{odd\;\;numbers\} \\[3ex]
+                    M = \{3, 5, 7, 9, 11\} \\[3ex]
+                    (ii) \\[3ex]
+                    R = \{square\;\;numbers\} \\[3ex]
+                    R = \{4, 9\} \\[3ex]
+                    (iii) \\[3ex]
+                    M \cap R = \{9\} \\[3ex]
+                    M \cup R = \{3, 4, 5, 7, 9, 11\} \\[3ex]
+                    (M \cup R)' = \{6, 8, 10\} \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number23.png" style="width: 100%;"
+                            alt="Number 23">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) <b>ACT</b> After polling a class of 20 music students by a show of hands, you find that 8 students
+                play the guitar
+                and 9 students play the piano. <br>
+                Given that information, what is the minimum number of students in this music class who play both the
+                guitar and the
+                piano? <br><br>
+                $
+                F.\;\; 0 \\[3ex]
+                G.\;\; 1 \\[3ex]
+                H.\;\; 8 \\[3ex]
+                J.\;\; 9 \\[3ex]
+                K.\;\; 17 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets24')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets24">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    guitar = G \\[3ex]
+                    piano = P \\[3ex]
+                    n(G) = 8 \\[3ex]
+                    n(P) = 9 \\[3ex]
+                    Both\;\;guitar\;\;and\;\;piano = n(G \cap P) = k \\[3ex]
+                    n(\mu) = 20 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number24.png" style="width: 100%;"
+                            alt="Number 24">
+                    </div>
+                    <br>
+                    $
+                    8 - k + k + 9 - k = 20 \\[3ex]
+                    17 - k = 20 \\[3ex]
+                    17 - 20 = k \\[3ex]
+                    k = -3 \\[3ex]
+                    $
+                    This is not possible because the number that play both the guitar and the piano cannot be negative
+                    <br>
+                    That number must be non-negative (zero and positive integers only) <br>
+                    So, let us analyze the options. <br>
+                    The number of students that play ONLY the guitar cannot be negative. This eliminates Options
+                    <b>J.</b> and <b>K.</b> <br>
+                    Any of Options <b>F.</b>, <b>G.</b>, and <b>H.</b> can be the number of students that play both the
+                    guitar and the
+                    piano. <br>
+                    However, the question is asking for the minimum number <br>
+                    That leaves us with zero...Option <b>F.</b> as the correct answer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) A scan of all biology and business majors at a college shows the accompanying breakdown by gender.
+                <br>
+                Let set A equals women and set B equals business majors. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number25-1st.png" alt="Number 25-1st"> <br><br>
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number25-2nd.png" alt="Number 25-2nd">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets25')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets25">
+                    <br>
+                    $
+                    n(Women) = 33 + 113 = 146 \\[3ex]
+                    n(Men) = 20 + 88 = 108 \\[3ex]
+                    n(Biology) = 33 + 20 = 53 \\[3ex]
+                    n(Business) = 113 + 88 = 201 \\[3ex]
+                    n(\mu) = n(Women) + n(Men) = 146 + 108 = 254 \\[3ex]
+                    OR \\[3ex]
+                    n(\mu) = n(Biology) + n(Business) = 53 + 201 = 254 \\[5ex]
+                    Women = A \\[3ex]
+                    Business = B \\[3ex]
+                    n(A \cap B) = 113 \\[3ex]
+                    n(A) = n(Women) = 146 \\[3ex]
+                    n(only\;\;A) = n(A \cap B') = 146 - 113 = 33 \\[3ex]
+                    n(B) = n(Business) = 201 \\[3ex]
+                    n(only\;\;B) = n(B \cap A') = 201 - 113 = 88 \\[3ex]
+                    n(neither\;\;A\;\;nor\;\;B) \\[3ex]
+                    = n(A \cup B)' \\[3ex]
+                    = 254 - (33 + 113 + 88) \\[3ex]
+                    = 254 - 234 \\[3ex]
+                    = 20 \\[3ex]
+                    $
+                    The Venn diagram for the set of comedies and the set of favorable performances is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number25.png" alt="Number 25">
+                    </div> <br>
+                    Option <b>C.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) <b>GCSE</b> The Venn diagram shows information about 50 people who are in bands. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number26.png" alt="Number 26">
+                </div> <br>
+                (a) How many of the people are guitar players? <br><br>
+                (b) How many of the people are singers but <b>not</b> guitar players? <br><br>
+                (c) One of the people is chosen at random. <br>
+                Write down the probability that the person is <b>not</b> a singer and <b>not</b> a guitar player.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets26')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets26">
+                    <br>
+                    $
+                    (a) \\[3ex]
+                    n(guitar\;\;players) = n(G) = 21 + 8 = 29 \\[3ex]
+                    $
+                    29 people are guitar players <br><br>
+                    $
+                    (b) \\[3ex]
+                    n(singers\;\;but\;\;not\;\;guitar\;\;players) \\[3ex]
+                    = n(singers\;\;only) \\[3ex]
+                    = 4 \\[3ex]
+                    $
+                    4 people are singers but not guitar players <br><br>
+                    $
+                    (c) \\[3ex]
+                    n(universal\;\;set) = n(\xi) = 50 \\[3ex]
+                    n(not\;\;a\;\;singer\;\;and\;\;not\;\;a\;\;guitar\;\;player) = 17 \\[3ex]
+                    P(not\;\;a\;\;singer\;\;and\;\;not\;\;a\;\;guitar\;\;player) \\[3ex]
+                    = \dfrac{n(not\;\;a\;\;singer\;\;and\;\;not\;\;a\;\;guitar\;\;player)}{n(\xi)} \\[5ex]
+                    = \dfrac{17}{50}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets27')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) <b>CSEC</b> On a certain day, 300 customers visited a bakery that sell bread and cakes. <br>
+                70 customers bought cakes only <br>
+                80 customers bought <u>neither</u> bread nor cakes <br>
+                <i>2x</i> customers boought bread only <br>
+                <i>x</i> customers bought both bread and cakes <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number28.png" alt="Number 28">
+                </div> <br>
+                (i) <i>U</i> represents the rest of customers visiting the bakery on that day, <i>B</i> represents the
+                set of customers
+                who bought bread, and <i>C</i> represents the set of customers who bought cake. <br>
+                Copy and complete the Venn diagram to illustrate the information. <br><br>
+                (ii) Write an expression in <i>x</i> to represent the TOTAL number of customers who visited the bakery
+                on that day. <br><br>
+                (iii) Calculate the number of customers who bought bread ONLY.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets28')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets28">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number28.png" style="width: 100%;"
+                            alt="Number 28">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    TOTAL\;\;number\;\;of\;\;customers\;\;that\;\;day \\[3ex]
+                    = 2x + x + 70 + 80 \\[3ex]
+                    = 3x + 150 \\[3ex]
+                    (iii) \\[3ex]
+                    3x + 150 = 300 \\[3ex]
+                    3x = 300 - 150 \\[3ex]
+                    3x = 150 \\[3ex]
+                    x = \dfrac{150}{3} \\[5ex]
+                    x = 50 \\[3ex]
+                    n(B\;\;only) \\[3ex]
+                    = 2x \\[3ex]
+                    = 2(50) \\[3ex]
+                    100 \\[3ex]
+                    $
+                    100 customers bought bread only
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.) <b>GCSE</b> A and B are two events. <br>
+                Some probabilities are shown on the Venn diagram. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number29.png" alt="Number 29">
+                </div> <br>
+                Work out $P(A' \cup B)$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets29')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets29">
+                    <br>
+                    Please do this quickly...find the shaded area of $P(A' \cup B)$...as seen in
+                    <a href="https://quantitativereasoning.appspot.com/SetAlgebra/set-theory.html#vennDiagrams"
+                        target="_blank">Number (5.): Venn Diagram for Two Sets</a> <br>
+                    As noted, we are concerned with those three shaded areas <br>
+                    But, first; let us find the probability of neither A nor B <br>
+                    The sum of all the probabilities is 1 <br><br>
+                    $
+                    P(A \cup B)' = P(neither) \\[3ex]
+                    0.3 + 0.15 + 0.35 + P(neither) = 1 \\[3ex]
+                    0.8 + P(neither) = 1 \\[3ex]
+                    P(neither) = 1 - 0.8 \\[3ex]
+                    P(neither) = 0.2 \\[3ex]
+                    $
+                    So, we need to add these shaded areas <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number29.png" style="width: 100%;"
+                            alt="Number 29">
+                    </div> <br>
+                    $
+                    P(A' \cup B) \\[3ex]
+                    = 0.15 + 0.35 + 0.2 \\[3ex]
+                    = 0.7
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.) Use the Venn diagram to answer questions (a.) through (d.) <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number30.png" alt="Number 30">
+                </div> <br>
+                (a.) How many women at the party are under 30? <br>
+                (b.) How many men at the party are not under 30? <br>
+                (c.) How many women are at the party? <br>
+                (d.) How many people are at the party?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets30')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets30">
+                    <br>
+                    Let the set of: <br>
+                    men = M <br>
+                    people under 30 = E <br><br>
+                    (a.) Women at the party under 30 = $n(M' \cap E)$ = the people under 30 <i>only</i> = 11 <br>
+                    11 women at the party are under 30
+                    <br><br>
+                    (b.) Men at the party are not under 30 = $n(M \cap E')$ = the men <i>only</i> = 18 <br>
+                    18 men at the party are not under 30
+                    <br><br>
+                    (c.) Women at the party = $n(A')$ = the sum of: under the age 30 <i>only</i> <u>and</u> neither men
+                    nor
+                    under age 30 = 11 + 25 = 36 <br>
+                    36 women were at the party.
+                    <br><br>
+                    (d.) Number of people at the party = n(Universal Set) = the sum of: men <i>only</i> <u>and</u> under
+                    age 30 <i>only</i>
+                    <u>and</u> the men under age 30 <u>and</u> neither men nor under the age 30 = 18 + 11 + 12 + 25 = 66
+                    <br>
+                    66 people were at the party.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.) <b>CSEC</b> A Universal set, U, is defined as <br>
+                U = {15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25} <br>
+                Sets M and N are subsets of U such that <br>
+                M = {Prime Numbers} and N = {Even Numbers} <br><br>
+                (i) Draw a Venn diagram to represent the sets M, N and U <br><br>
+                (ii) List the elements of the set $(M \cup N)'$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets31')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets31">
+                    <br>
+                    $
+                    (ii) \\[3ex]
+                    U = \{15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25\} \\[3ex]
+                    M = \{17, 19, 23\} \\[3ex]
+                    N = \{16, 18, 20, 22, 24\} \\[3ex]
+                    M \cap N = \phi \\[3ex]
+                    M \cup N = \{16, 17, 18, 19, 20, 22, 23, 24\} \\[3ex]
+                    (M \cup N)' = \{15, 21, 25\} \\[3ex]
+                    $
+                    (i) <br>
+                    Sets M and N are disjoint sets <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number31.png" style="width: 100%;"
+                            alt="Number 31">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) <b>ACT</b> All 30 students in a history class took 2 tests. <br>
+                Of these students, 28 passed the first test and 25 passed the second test. <br>
+                What is the maximum possible number of students who passed both tests?
+                <br><br>
+                $
+                F.\;\; 23 \\[3ex]
+                G.\;\; 25 \\[3ex]
+                H.\;\; 27 \\[3ex]
+                J.\;\; 28 \\[3ex]
+                K.\;\; 30 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets32')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets32">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    first\;\;test = F \\[3ex]
+                    second\;\;test = E \\[3ex]
+                    n(F) = 28 \\[3ex]
+                    n(E) = 25 \\[3ex]
+                    n(both\;\;tests) = n(F \cap E) = p \\[3ex]
+                    n(\xi) = 30 \\[3ex]
+                    $
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number32.png" style="width: 100%;"
+                            alt="Number 32">
+                    </div>
+                    <br>
+                    $
+                    28 - p + p + 25 - p = 30 \\[3ex]
+                    53 - p = 30 \\[3ex]
+                    53 - 30 = p \\[3ex]
+                    p = 23 \\[3ex]
+                    $
+                    The number of students who passed both tests is 23 <br>
+                    However, the maximum number of students who passed both tests is 25 <br><br>
+                    <i>
+                        <b>Student:</b> How is it 25? <br>
+                        <b>Teacher:</b> Because the number of students who passed either test ONLY cannot be negative
+                        <br>
+                        The number of students who passed the either test ONLY should be at least the number of people
+                        who passed
+                        either test <br>
+                        For example: the number of people who passed the second test ONLY should be at least the number
+                        of people who
+                        passed the second test. <br>
+                        In other words, the number of people who passed the second test ONLY cannot be negative. <br>
+                        <b>Student:</b> You used the second test as the example because 28 is greater than 25? <br>
+                        <b>Teacher:</b> That is correct.
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets33')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.) Of the 36 theater performances that a critic reviewed, 19 were comedies. <br>
+                She gave favorable reviews to 7 of the comedies and unfavorable reviews to 9 of the non-comedies. <br>
+                (a.) Complete a two-way table summarizing the reviews. <br>
+                (b.) Make a Venn diagram for two sets from the table in part (a) using the set of comedies and the
+                set of favorable performances as the two sets. <br>
+                (c.) How many comedies received unfavorable reviews? <br>
+                (d.) How many non-comedies received favorable reviews?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets34')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets34">
+                    <br>
+                    Total performances = 36 <br>
+                    Comedy = 19 <br>
+                    Non-comedy = 36 &minus; 19 = 17 <br>
+                    Favorable comedy = 7 <br>
+                    Unfavorable comedy = 19 &minus; 7 = 12 <br>
+                    Unfavorable non-comedy = 9 <br>
+                    Favorable non-comedy = 17 &minus; 9 = 8 <br><br>
+
+                    (a.) The two-way table summarizing the reviews is: <br>
+                    <table>
+                        <tr>
+                            <td style="width: 40%;"></td>
+                            <td style="width: 30%;" class="w3-center">Favorable</td>
+                            <td style="width: 30%;" class="w3-center">Unfavorable</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Comedy</td>
+                            <td class="w3-center">7</td>
+                            <td class="w3-center">12</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Non-comedy</td>
+                            <td class="w3-center">8</td>
+                            <td class="w3-center">9</td>
+                        </tr>
+                    </table>
+                    <br>
+                    Let the set of: <br>
+                    comedy = C <br>
+                    favorable performances = F <br><br>
+                    $
+                    n(\mu) = 36 \\[3ex]
+                    n(C \cap F) = 7 \\[3ex]
+                    n(C) = 19 \\[3ex]
+                    n(only\;\;C) = n(C \cap F') = 19 - 7 = 12 \\[3ex]
+                    n(F) = 7 + 8 = 15 \\[3ex]
+                    n(only\;\;F) = n(F \cap C') = 15 - 7 = 8 \\[3ex]
+                    n(neither\;\;C\;\;nor\;\;F) \\[3ex]
+                    = n(C \cup F)' \\[3ex]
+                    = 36 - (12 + 8 + 7) \\[3ex]
+                    = 36 - 27 \\[3ex]
+                    = 9 \\[3ex]
+                    $
+                    (b.) The Venn diagram for the set of comedies and the set of favorable performances is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number34.png" style="width: 100%;"
+                            alt="Number 34">
+                    </div>
+                    <br>
+                    Based on the table in Part (a.): <br>
+                    (c.) 12 comedies received unfavorable reviews. <br>
+                    (d.) 8 non-comedies received favorable reviews.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.) <b>GCSE</b> A school has 86 teachers. <br>
+                42 are male and 44 are female. <br><br>
+                $\dfrac{1}{3}$ of the male teachers have blue eyes. <br><br>
+                $\dfrac{1}{4}$ of the female teachers have blue eyes. <br><br>
+                (a) $\xi$ = teachers in the school <br>
+                M = male teachers <br>
+                B = teachers who have blue eyes <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number35.png" alt="Number 35">
+                </div> <br>
+                Complete the Venn diagram. <br><br>
+                (b) One teacher who has blue eyes is chosen at random. <br>
+                Work out the probability that the teacher is male.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets35')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets35">
+                    <br>
+                    $
+                    (a) \\[3ex]
+                    Male\;\;teachers\;\;with\;\;blue\;\;eyes \\[3ex]
+                    = n(M \cap B) \\[3ex]
+                    = \dfrac{1}{3} * 42 \\[5ex]
+                    = 14 \\[3ex]
+                    Male\;\;teachers = n(M) = 42 \\[3ex]
+                    n(Male\;\;teachers\;\;only) = 42 - 14 = 28 \\[3ex]
+                    Female\;\;teachers\;\;with\;\;blue\;\;eyes \\[3ex]
+                    = \dfrac{1}{4} * 44 \\[5ex]
+                    = 11 \\[3ex]
+                    Teachers\;\;with\;\;blue\;\;eyes \\[3ex]
+                    = n(blue\;\;eyes) \\[3ex]
+                    = 14 + 11 = 25 \\[3ex]
+                    n(Blue\;\;eyes\;\;only) = 25 - 14 = 11 \\[3ex]
+                    Let\;\;n(neither\;\;male\;\;nor\;\;blue\;\;eyes) = k \\[3ex]
+                    28 + 14 + 11 + k = 86 \\[3ex]
+                    53 + k = 86 \\[3ex]
+                    k = 86 - 53 \\[3ex]
+                    k = 33 \\[3ex]
+                    $
+                    The Venn Diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number35.png" style="width: 100%;"
+                            alt="Number 35">
+                    </div> <br>
+                    $
+                    n(sample\;\;space) = n(B) = 25 \\[3ex]
+                    n(M \cap B) = 14 \\[3ex]
+                    P(M \cap B) = \dfrac{n(M \cap B)}{n(B)} = \dfrac{14}{25}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.) <b>CSEC</b> A school has 90 students in Form 5 <br>
+                54 students study Physical Education <br>
+                42 students study Music <br>
+                6 students study neither Physical Education nor Music <br>
+                <i>x</i> students study both Physical Education and Music <br><br>
+                (i) Copy the Venn diagram shown below. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number36.png" alt="Number 36">
+                </div> <br>
+                (ii) Show on your Venn diagram the information relating to the students in Form 5 <br><br>
+                (iii) Calculate the number of students who study BOTH Physical Education and Music.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets36')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets36">
+                    <br>
+                    (ii) The information on the Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number36.png" style="width: 100%;"
+                            alt="Number 36">
+                    </div>
+                    <br>
+                    $
+                    (iii) \\[3ex]
+                    54 - x + 42 - x + x + 6 = 90 \\[3ex]
+                    102 - x = 90 \\[3ex]
+                    102 - 90 = x \\[3ex]
+                    x = 12 \\[3ex]
+                    $
+                    12 students study BOTH Physical Education and Music
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets37')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.) One hundred and four people who grew up in either City A or City B were surveyed to determine
+                whether they
+                preferred country music or blues (both and neither were not acceptable responses). <br>
+                Of those who grew up in City B, 44 preferred blues and 15 preferred country music. <br>
+                Of those who grew up in City A, 21 preferred country music. <br>
+                (a.) Complete a two-way table summarizing the reviews. <br>
+                (b.) Draw a Venn diagram for the sets: City B and Country. <br>
+                (c.) How many City B residents preferred blues? <br>
+                (d.) How many respondents preferred blues?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets38')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets38">
+                    <br>
+                    Total number of residents in City A and City B = 104 <br>
+                    <u>City B</u>: <br>
+                    Blues = 44 <br>
+                    Country music = 15 <br>
+                    <u>City A</u>: <br>
+                    Country music = 21 <br>
+                    Blues = 104 &minus; (44 + 15 + 21) <br>
+                    Blues = 104 &minus; 80 = 24 <br><br>
+
+                    (a.) The two-way table summarizing the reviews is: <br>
+                    <table>
+                        <tr>
+                            <td style="width: 40%;"></td>
+                            <td style="width: 30%;" class="w3-center">Country Music</td>
+                            <td style="width: 30%;" class="w3-center">Blues</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">City A</td>
+                            <td class="w3-center">21</td>
+                            <td class="w3-center">24</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">City B</td>
+                            <td class="w3-center">15</td>
+                            <td class="w3-center">44</td>
+                        </tr>
+                    </table>
+                    <br>
+                    Let the set of: <br>
+                    City B = B <br>
+                    Country Music = C <br><br>
+                    $
+                    n(\mu) = 104 \\[3ex]
+                    n(B \cap C) = 15 \\[3ex]
+                    n(B) = 44 + 15 = 59 \\[3ex]
+                    n(only\;\;B) = n(B \cap C') = 59 - 15 = 44 \\[3ex]
+                    n(C) = 15 + 21 = 36 \\[3ex]
+                    n(only\;\;C) = n(C \cap B') = 36 - 15 = 21 \\[3ex]
+                    n(neither\;\;B\;\;nor\;\;C) \\[3ex]
+                    = n(B \cup C)' \\[3ex]
+                    = 104 - (44 + 21 + 15) \\[3ex]
+                    = 104 - 80 \\[3ex]
+                    = 24 \\[3ex]
+                    $
+                    (b.) The Venn diagram for the set of City B and the set of Country Music is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number38.png" style="width: 100%;"
+                            alt="Number 38">
+                    </div>
+                    <br>
+                    Based on the table in Part (a.): <br>
+                    (c.) 44 City B residents preferred blues. <br>
+                    (d.) Number of respondents that preferred blues = 24 + 44 = 68.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.) <b>CSEC</b> (a) Describe, using set notation only, the shaded regions in each Venn diagram below.
+                <br>
+                <b>The first one is done for you.</b> <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number39-first.png" alt="Number 39-first">
+                </div> <br>
+                (b) The following information is given. <br>
+                <i>U</i> = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} <br>
+                <i>P</i> = {prime numbers} <br>
+                <i>Q</i> = {odd numbers} <br>
+                Draw a Venn diagram to represent the information above. <br><br>
+                (c) The Venn diagram below shows the number of elements in each region. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number39-second.png" alt="Number 39-second">
+                </div> <br>
+                Determine how many elements are in EACH of the following sets: <br>
+                (i) $A \cup B$ <br>
+                (ii) $A \cap B$ <br>
+                (iii) $(A \cap B)'$ <br>
+                (iv) $U$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets39')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets39">
+                    <br>
+                    (a) <br>
+                    (i) The shaded area is the intersection of the sets: A and B ...what they have in common <br>
+                    $A \cap B$ <br><br>
+                    (ii) The shaded area is the union of sets A and B <br>
+                    $A \cup B$ <br><br>
+                    (iii) We can determine it...as I explained it in the Video Number (3.) in the playlist
+                    <br>
+                    Notice that sets A and B are disjoint sets <br>
+                    So, let us make up an example: <br>
+                    <i>U</i> = {1, 2, 3, 4, 5} <br>
+                    A = {1, 2} <br>
+                    B = {3, 4} <br>
+                    A' = {3, 4, 5} <br>
+                    B' = {1, 2, 5} <br>
+                    5 is the only number outside sets A and B... that is shaded <br>
+                    $A' \cap B' = \{5\}$ <br>
+                    Therefore, the shaded area is $A' \cap B'$ <br><br>
+                    (iv) <br>
+                    The shaded area is Set A <br><br>
+                    $
+                    (b) \\[3ex]
+                    U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\} \\[3ex]
+                    P = \{2, 3, 5, 7\} \\[3ex]
+                    Q = \{1, 3, 5, 7, 9\} \\[3ex]
+                    P \cap Q = \{3, 5, 7\} \\[3ex]
+                    P \cup Q = \{1, 2, 3, 5, 7, 9\} \\[3ex]
+                    (P \cup Q)' = \{4, 6, 8, 10\} \\[3ex]
+                    $
+                    The Venn Diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number39.png" style="width: 100%;"
+                            alt="Number 39">
+                    </div> <br>
+                    $
+                    (c) \\[3ex]
+                    (i) \\[3ex]
+                    n(A \cup B) = 10 + 3 + 4 = 17 \\[3ex]
+                    (ii) \\[3ex]
+                    n(A \cap B) = 4 \\[3ex]
+                    (iii) \\[3ex]
+                    n(A \cap B)' = 10 + 3 + 8 = 21 \\[3ex]
+                    (iv) \\[3ex]
+                    n(U) = 10 + 4 + 3 + 8 = 25
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+
+                <button class="solutions" onclick="solutions('solutionVDTwoSets40')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets41')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.) In a trial of a new allergy medicine, 85 people were given the medicine and 85 were given a
+                placebo. <br>
+                Of those given the medicine, 60 showed improvement in their allergy symptoms. <br>
+                Of those given the placebo, 55 did not show improvement. <br>
+                (a.) Construct a two-way table summarizing the reviews. <br>
+                (b.) Make a Venn diagram for the sets: Medicine and Improvement. <br>
+                (c.) How many people who received medicine did not improve? <br>
+                (d.) How many people who received a placebo improved?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets42')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets42">
+                    <br>
+                    <u>Medicine</u> <br>
+                    Total = 85 <br>
+                    Improvement = 60 <br>
+                    No Improvement = 85 &minus; 60 = 25 <br>
+                    <u>Placebo</u> <br>
+                    Total = 85 <br>
+                    No Improvement = 55 <br>
+                    Improvement = 85 &minus; 55 = 30 <br><br>
+
+                    (a.) The two-way table summarizing the reviews is: <br>
+                    <table>
+                        <tr>
+                            <td style="width: 40%;"></td>
+                            <td style="width: 30%;" class="w3-center">Improvement</td>
+                            <td style="width: 30%;" class="w3-center">No Improvement</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Medicine</td>
+                            <td class="w3-center">60</td>
+                            <td class="w3-center">25</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Placebo</td>
+                            <td class="w3-center">30</td>
+                            <td class="w3-center">55</td>
+                        </tr>
+                    </table>
+                    <br>
+                    Let the set of: <br>
+                    Medicine = M <br>
+                    Improvement = I <br><br>
+                    $
+                    n(\mu) = 85 + 85 = 170 \\[3ex]
+                    n(M \cap I) = 60 \\[3ex]
+                    n(M) = 85 \\[3ex]
+                    n(only\;\;M) = n(M \cap I') = 85 - 60 = 25 \\[3ex]
+                    n(I) = 60 + 30 = 90 \\[3ex]
+                    n(only\;\;I) = n(I \cap M') = 90 - 60 = 30 \\[3ex]
+                    n(neither\;\;M\;\;nor\;\;I) \\[3ex]
+                    = n(M \cup I)' \\[3ex]
+                    = 170 - (25 + 60 + 30) \\[3ex]
+                    = 170 - 115 \\[3ex]
+                    = 55 \\[3ex]
+                    $
+                    (b.) The Venn diagram for the set of Medicine and the set of Improvement is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number42.png" style="width: 100%;"
+                            alt="Number 42">
+                    </div>
+                    <br>
+                    Based on the table in Part (a.): <br>
+                    (c.) 25 people who received medicine did not improve. <br>
+                    (d.) 30 people who received a placebo improved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.) <b>WASSCE</b> Out of 120 customers in a shop, 45 bought bags and shoes. <br>
+                If all the customers bought either bags or shoes and 11 more customers bought shoes than bags: <br><br>
+                (a) Illustrate this information in a diagram <br><br>
+                (b) Find the number of customers who bought shoes <br><br>
+                (c) Calculate the probability that a customer selected at random bought bags
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets43')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets43">
+                    <br>
+                    $
+                    n(\xi) = 120 \\[3ex]
+                    Let: \\[3ex]
+                    bags = B \\[3ex]
+                    shoes = H \\[3ex]
+                    n(B \cap H) = n(both) = 45 \\[3ex]
+                    n(B) = n(bags) = b \\[3ex]
+                    \rightarrow n(H) = n(shoes) = 11 + b \\[3ex]
+                    n(bags\;\;only) = b - 45 \\[3ex]
+                    n(shoes\;\;only) = (11 + b) - 45 = 11 + b - 45 = b - 34 \\[3ex]
+                    $
+                    (a) <br>
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number43.png" style="width: 100%;"
+                            alt="Number 39">
+                    </div> <br>
+                    $
+                    (b - 45) + (b - 34) + 45 = 120 \\[3ex]
+                    b - 45 + b - 34 + 45 = 120 \\[3ex]
+                    2b = 120 + 34 \\[3ex]
+                    2b = 154 \\[3ex]
+                    b = \dfrac{154}{2} \\[5ex]
+                    b = 77 \\[3ex]
+                    (b) \\[3ex]
+                    n(shoes) = n(H) \\[3ex]
+                    = (b - 34) + 45 \\[3ex]
+                    = b - 34 + 45 \\[3ex]
+                    = 77 - 34 + 45 \\[3ex]
+                    = 88 \\[3ex]
+                    $
+                    88 customers bought shoes <br><br>
+                    $
+                    (c) \\[3ex]
+                    n(bags) = n(B) \\[3ex]
+                    = (b - 45) + 45 \\[3ex]
+                    = 77 - 45 + 45 \\[3ex]
+                    = 77 \\[3ex]
+                    n(\xi) = 120 \\[3ex]
+                    P(bags) = \dfrac{n(bags)}{n\xi} = \dfrac{77}{120}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.) <b>CSEC</b> A universal set, <i>U</i>, is defined as: <br>
+                <i>U</i> = {51, 52, 53, 54, 55, 56, 57, 58, 59} <br>
+                <i>A</i> and <i>B</i> are subsets of <i>U</i>, such that: <br>
+                <i>A</i> = {odd numbers} <br>
+                <i>B</i> = {prime numbers} <br><br>
+                (i) List the members of the set <i>A</i> <br><br>
+                (ii) List the members of the set <i>B</i> <br><br>
+                (iii) Draw a Venn diagram to represent the sets <i>A, B</i> and <i>U</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets44')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets44">
+                    <br>
+                    $
+                    U = \{51, 52, 53, 54, 55, 56, 57, 58, 59\} \\[3ex]
+                    (i) \\[3ex]
+                    A = \{51, 53, 55, 57, 59\} \\[3ex]
+                    (ii) \\[3ex]
+                    B = \{53, 59\} \\[3ex]
+                    A \cap B = \{53, 59\} \\[3ex]
+                    A \cup B = \{51, 53, 55, 57, 59\} \\[3ex]
+                    (A \cup B)' = \{52, 54, 56, 58\} \\[3ex]
+                    $
+                    The Venn diagram that represents the sets <i>A, B</i> and <i>U</i> is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number44.png" style="width: 100%;"
+                            alt="Number 44">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.) <b>CSEC</b> The universal set, <i>U</i>, is defined as the set of integers between 11 and 26 <br>
+                <i>A</i> and <i>B</i> are subsets of <i>U</i> such that: <br>
+                <i>A</i> = {even numbers} <br>
+                <i>B</i> = {multiples of 3} <br><br>
+                (i) How many members are in the universal set, <i>U</i>? <br><br>
+                (ii) List the members of the subset, <i>A</i> <br><br>
+                (iii) List the members of the subset, <i>B</i> <br><br>
+                (iv) Draw a Venn diagram to represent the relationships among <i>A, B</i> and <i>U</i> <br>
+                (Assume: <i>between</i> means that the two endpoints are <u>not</u> included)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets45')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets45">
+                    <br>
+                    $
+                    (i) \\[3ex]
+                    U = \{12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25\} \\[3ex]
+                    n(U) = 14 \\[3ex]
+                    (ii) \\[3ex]
+                    A = \{12, 14, 16, 18, 20, 22, 24\} \\[3ex]
+                    (iii) \\[3ex]
+                    B = \{12, 15, 18, 21, 24\}
+                    (iv) \\[3ex]
+                    A \cap B = \{12, 18, 24\} \\[3ex]
+                    A \cup B = \{12, 14, 15, 16, 18, 20, 21, 22, 24\} \\[3ex]
+                    (A \cup B)' = \{13, 17, 19, 23, 25\} \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number45.png" style="width: 100%;"
+                            alt="Number 45">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.) <b>JAMB</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number46.png" alt="Number 46">
+                </div> <br>
+                The Venn diagram below shows the number of students offering Music and History in a class of 80
+                students. <br>
+                If a student is picked at random from the class, what is the probability that he offers Music only?
+                <br><br>
+                $
+                A.\;\; 0.13 \\[3ex]
+                B.\;\; 0.25 \\[3ex]
+                C.\;\; 0.38 \\[3ex]
+                D.\;\; 0.50 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets46')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets46">
+                    <br>
+                    $
+                    30 - x + 40 - x + x + 20 = 80 \\[3ex]
+                    90 - x = 80 \\[3ex]
+                    90 - 80 = x \\[3ex]
+                    10 = x \\[3ex]
+                    x = 10 \\[3ex]
+                    n(Music\;\;only) \\[3ex]
+                    = 30 - x \\[3ex]
+                    = 30 - 10 \\[3ex]
+                    = 20 \\[3ex]
+                    P(Music\;\;only) = \dfrac{n(Music\;\;only)}{n(\mu)} = \dfrac{20}{80} = \dfrac{1}{4} = 0.25
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets47')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets48')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.) <b>GCSE</b> In the Venn diagram <br>
+                $\xi$ represents 31 students in a class <br>
+                <i>C</i> is students who have a cat <br>
+                <i>D</i> is students who have a dog <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number49.png" alt="Number 49">
+                </div> <br>
+                (a) One student from the class is picked at random. <br>
+                Work out the probability that the student has a dog. <br><br>
+                (b) One of the students who has a cat is picked at random. <br>
+                Work out the probability that this student has a dog.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets49')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets49">
+                    <br>
+                    $
+                    6 + 2x + 5 + (x + 2) = 31 \\[3ex]
+                    11 + 2x + x + 2 = 31 \\[3ex]
+                    3x + 13 = 31 \\[3ex]
+                    3x = 31 - 13 \\[3ex]
+                    3x = 18 \\[3ex]
+                    x = \dfrac{18}{3} \\[5ex]
+                    x = 6 \\[3ex]
+                    (a) \\[3ex]
+                    n(sample\;\;space) = n(\xi) = 31 \\[3ex]
+                    n(event\;\;space) = n(D) \\[3ex]
+                    = 2x + 5 \\[3ex]
+                    = 2(6) + 5 \\[3ex]
+                    = 12 + 5 \\[3ex]
+                    = 17 \\[3ex]
+                    P(D) = \dfrac{n(D)}{n(\xi)} = \dfrac{17}{31} \\[5ex]
+                    (b) \\[3ex]
+                    n(sample\;\;space) = n(C) = 6 + 5 = 11 \\[3ex]
+                    n(event\;\;space) = n(C \cap D) = 5 \\[3ex]
+                    P(C \cap D) = \dfrac{n(C \cap D)}{n(C)} = \dfrac{5}{11}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.) <b>CSEC</b> There are 50 students in a class. <br>
+                Students in the class were given awards for Mathematics or Science. <br>
+                36 students received awards in either Mathematics or Science. <br>
+                6 students received awards in <b>BOTH</b> Mathematics and Science <br>
+                <i>2x</i> students received awards for Mathematics only. <br>
+                <i>x</i> students received awards for Science only. <br>
+                In the Venn diagram below: <br>
+                U = {all students in the class} <br>
+                M = {students who received awards for Mathematics} <br>
+                S = {students who received awards for Science} <br><br>
+                (i) Copy and complete the Venn diagram to represent the information about the awards given, showing the
+                number of
+                students in <b>EACH</b> subsets. <br><br>
+                (ii) Calculate the value of <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets50')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets50">
+                    <br>
+                    $
+                    n(U) = 50 \\[3ex]
+                    n(M \cup S) = 36 \\[3ex]
+                    n(neither\;\;M\;\;nor\;\;S) = n(M \cup S)' = 50 - 36 = 14 \\[3ex]
+                    $
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number50.png" style="width: 100%;"
+                            alt="Number 50">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    2x + x + 6 = 36 \\[3ex]
+                    3x = 36 - 6 \\[3ex]
+                    3x = 30 \\[3ex]
+                    x = \dfrac{30}{3} \\[5ex]
+                    x = 10
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (51.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets51')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets51">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (52.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets52')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets52">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (53.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets53')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets53">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (54.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets54')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets54">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (55.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets55')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets55">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (56.) <b>CSEC</b> The Venn diagram below shows the number of students in Form 5A who have visited Canada
+                (C) or
+                Dominica (D) <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number56.png" alt="Number 56">
+                </div> <br>
+                (i) How many students have visited Dominica ONLY? <br><br>
+                (ii) Write an <b>expression</b>, in terms of <i>x</i>, to represent the TOTAL number of students who
+                have visited
+                Canada. <br><br>
+                (iii) Given that there are 25 students in Form 5A, calculate the value of <i>x</i> <br><br>
+                (iv) Hence, write down the number of students in each of the following subsets: <br>
+                <ul style="list-style-type: disc;">
+                    <li>$C \cup D$</li>
+                    <li>$C \cap D$</li>
+                    <li>$(C \cup D)'$</li>
+                </ul>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets56')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets56">
+                    <br>
+                    (i) 10 students have visited Dominica ONLY <br><br>
+                    (ii) The total number of number of students who have visited Canada is: $3 + x$ <br><br>
+                    $
+                    (iii) \\[3ex]
+                    n(U) = 25 \\[3ex]
+                    3 + 10 + x + 2x = 25 \\[3ex]
+                    13 + 3x = 25 \\[3ex]
+                    3x = 25 - 13 \\[3ex]
+                    3x = 12 \\[3ex]
+                    x = \dfrac{12}{3} \\[5ex]
+                    x = 4 \\[3ex]
+                    (iv) \\[3ex]
+                    n(C \cup D) = 3 + 10 + x = 13 + 4 = 17 \\[3ex]
+                    n(C \cap D) = x = 4 \\[3ex]
+                    n(C \cup D)' = 2x = 2(4) = 8
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (57.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets57')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets57">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (58.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets58')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets58">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (59.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets59')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets59">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (60.) <b>GCSE</b> Twenty people go on a trip to the seaside. <br>
+                Of these 20 people
+                <ul style="list-style-type: disc;">
+                    <li>13 swim in the sea</li>
+                    <li>17 go to the funfair</li>
+                    <li>2 do not swim in the sea or go to the funfair</li>
+                </ul>
+                (a) Complete the Venn diagram below to show this information. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number60.png" alt="Number 60">
+                </div> <br>
+                One person is chosen at random. <br><br>
+                (b) Find the probability that this person swims in the sea and goes to the funfair. <br><br>
+                (c) Find the probability that this person either swims in the sea or goes to the funfair, but does not
+                do both. <br><br>
+                (d.) One person is chosen at random from those who swim in the sea. <br>
+                Find the probability that this person does not go to the funfair.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets60')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets60">
+                    <br>
+                    $
+                    Let: \\[3ex]
+                    swim\;\;in\;\;sea = W \\[3ex]
+                    go\;\;to\;\;the\;\;funfair = G \\[3ex]
+                    n(swim) = n(W) = 13 \\[3ex]
+                    n(go) = n(G) = 17 \\[3ex]
+                    n(both) = n(W \cap G) = p
+                    n(swim\;\;only) = 13 - p \\[3ex]
+                    n(go\;\;only) = 17 - p \\[3ex]
+                    n(neither) = n((W \cup G)') = 2 \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number60-first.png" style="width: 100%;"
+                            alt="Number 60-first">
+                    </div> <br>
+                    $
+                    13 - p + 17 - p + p + 2 = 20 \\[3ex]
+                    32 - p = 20 \\[3ex]
+                    32 - 20 = p \\[3ex]
+                    p = 12 \\[3ex]
+                    \implies \\[3ex]
+                    n(both) = 12 \\[3ex]
+                    n(swim\;\;only) \\[3ex]
+                    = 13 - p \\[3ex]
+                    = 13 - 12 \\[3ex]
+                    = 1 \\[3ex]
+                    n(go\;\;only) \\[3ex]
+                    = 17 - p \\[3ex]
+                    = 17 - 12 \\[3ex]
+                    = 5 \\[3ex]
+                    $
+                    The completed Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number60-second.png" style="width: 100%;"
+                            alt="Number 60-second">
+                    </div> <br>
+                    $
+                    (b) \\[3ex]
+                    P(both) = \dfrac{n(both)}{n(\varepsilon)} \\[5ex]
+                    = \dfrac{12}{20} \\[5ex]
+                    = \dfrac{3}{5} \\[5ex]
+                    (c) \\[3ex]
+                    $
+                    Swimming in the sea or going to the funfair without doing both are: <br>
+                    those who do <u>only one:</u> swim the sea <u>only</u> OR go to the funfair <u>only</u> <br><br>
+                    $
+                    n(only\;\;one) \\[3ex]
+                    = 1 + 5 = 6 \\[3ex]
+                    P(only\;\;one) \\[3ex]
+                    = \dfrac{n(only\;\;one)}{n(\varepsilon)} \\[5ex]
+                    = \dfrac{6}{20} \\[5ex]
+                    = \dfrac{3}{10} \\[5ex]
+                    $
+                    Selecting somone who swims but does not go to the funfair means that the person swims <u>only</u>
+                    <br><br>
+                    $
+                    (d) \\[3ex]
+                    n(swim) = 13 \\[3ex]
+                    n(swim\;\;only) = 1 \\[3ex]
+                    P(swim\;\;only) = \dfrac{n(swim\;\;only)}{n(swim)} = \dfrac{1}{13}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (61.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets61')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets61">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (62.) <b>CSEC</b> In a survey of 39 students, it was found that <br>
+                18 can ride a bicycle <br>
+                15 can drive a car <br>
+                <i>x</i> can ride a bicycle and drive a car <br>
+                <i>3x</i> can do neither <br><br>
+                (i) Copy and complete the Venn diagram to represent the information <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number62.png" alt="Number 62">
+                </div> <br>
+                (ii) Write an expression in <i>x</i> for the number of students in the survey. <br><br>
+                (iii) Calculate the value of <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets62')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets62">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number62.png" style="width: 100%;"
+                            alt="Number 62">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    Number\;\;of\;\;students \\[3ex]
+                    = 18 - x + 15 - x + x + 3x \\[3ex]
+                    = 33 + 2x \\[3ex]
+                    = 2x + 33 \\[3ex]
+                    (iii) \\[3ex]
+                    \implies \\[3ex]
+                    2x + 33 = 39 \\[3ex]
+                    2x = 39 - 33 \\[3ex]
+                    2x = 6 \\[3ex]
+                    x = \dfrac{6}{2} \\[5ex]
+                    x = 3
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (63.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets63')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets63">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (64.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets64')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets64">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (65.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets65')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets65">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (66.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets66')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets66">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (67.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets67')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets67">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (68.) <b>CSEC</b> In a survey of 50 students, <br>
+                23 owned cellular phones <br>
+                18 owned digital cameras <br>
+                <i>x</i> owned cellular phones and digital cameras <br>
+                <i>2x</i> owned neither. <br>
+                Let <i>C</i> represent the set of students in the survey who owned cellular phones, and <i>D</i> the set
+                of students
+                who owned digital cameras. <br><br>
+                (i) Copy and complete the Venn diagram below to represent the information obtained from the survey.
+                <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number68.png" alt="Number 68">
+                </div> <br>
+                (ii) Write an expression in <i>x</i> for the TOTAL number of students in the survey. <br><br>
+                (iii) Calculate the value of <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets68')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets68">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number68.png" style="width: 100%;"
+                            alt="Number 68">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    TOTAL\;\;number\;\;of\;\;students \\[3ex]
+                    = 23 - x + 18 - x + x + 2x \\[3ex]
+                    = 41 + x \\[3ex]
+                    = x + 41 \\[3ex]
+                    (iii) \\[3ex]
+                    \implies \\[3ex]
+                    x + 41 = 50 \\[3ex]
+                    x = 50 - 41 \\[3ex]
+                    x = 9
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (69.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets69')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets69">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (70.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets70')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets70">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (71.) <b>GCSE</b> $\mathcal{E}$ = {1, 2, 3, 4, 5, 6, 7, 8, 9} <br>
+                <i>A</i> = {1, 5, 6, 8, 9} <br>
+                <i>B</i> = {2, 6, 9} <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number71.png" alt="Number 71">
+                </div> <br>
+                (a) Complete the Venn diagram to represent this information. <br><br>
+                A number is chosen at random from the universal set $\mathcal{E}$ <br>
+                (b) Find the probability that the number is in the set $A \cap B$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets71')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets71">
+                    <br>
+                    $
+                    A \cap B = \{6, 9\} \\[3ex]
+                    A \cup B = \{1, 2, 5, 6, 8, 9\} \\[3ex]
+                    (A \cup B)' = \{3, 4, 7\} \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number71.png" alt="Number 71">
+                    </div> <br>
+                    $
+                    (b) \\[3ex]
+                    n(A \cap B) = 2 \\[3ex]
+                    n(\mathcal{E}) = 9 \\[3ex]
+                    P(A \cap B) = \dfrac{n(A \cap B)}{n(\mathcal{E})} = \dfrac{2}{9}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (72.) <b>CSEC</b> In a class of 32 students, ALL the students study Spanish (<i>S</i>) and 20 of the
+                students study
+                French (<i>F</i>) <br><br>
+                (i) Represent this information on a Venn diagram <br><br>
+                (ii) Calculate the number of students who study Spanish (<i>S</i>) but NOT French (<i>F</i>) <br><br>
+                (iii) Write, using set notation, the relationship between <i>F</i> and <i>S</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets72')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets72">
+                    <br>
+                    All the students stidy Spanish <br>
+                    This implies that the Spanish set, <i>S</i> is also the universal set <br>
+                    It also implies that the French set, <i>F</i> is a subset of <i>S</i> because every set is a subset
+                    of the
+                    universal set <br>
+                    In other words, <i>F</i> is included in <i>S</i> <br><br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number72.png" style="width: 100%;"
+                            alt="Number 72">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    n(Spanish\;\;but\;\;NOT\;\;French) \\[3ex]
+                    = n(S\;\;ONLY) \\[3ex]
+                    = 32 - 20 \\[3ex]
+                    = 12 \\[3ex]
+                    $
+                    12 students study Spanish but not French <br><br>
+
+                    $
+                    (iii) \\[3ex]
+                    Because\;\; n(S) = n(\mu) = 32 \\[3ex]
+                    F \subseteq S
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (73.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets73')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets73">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (74.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets74')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets74">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (75.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets75')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets75">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (76.) <b>CSEC</b> The Venn diagram below shows the number of students who study Music and Art in a class
+                of 35 students. <br>
+                <i>U</i> = {students in the class} <br>
+                <i>M</i> = {students who study Music} <br>
+                <i>A</i> = {students who study Art} <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number76.png" alt="Number 76">
+                </div> <br>
+                (i) How many students study neither Art nor Music? <br><br>
+                (ii) Calculate the value of <i>x</i> <br><br>
+                (iii) Hence, state the number of students who study Music only.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets76')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets76">
+                    <br>
+                    (i) <br>
+                    4 students study neither Art nor Music <br><br>
+                    $
+                    (ii) \\[3ex]
+                    (x + 5) + x + 8 + 4 = 35 \\[3ex]
+                    x + 5 + x + 8 + 4 = 35 \\[3ex]
+                    2x + 17 = 35 \\[3ex]
+                    2x = 35 - 17 \\[3ex]
+                    2x = 18 \\[3ex]
+                    x = \dfrac{18}{2} \\[5ex]
+                    x = 9 \\[3ex]
+                    (iii) \\[3ex]
+                    n(Music\;\;ONLY) \\[3ex]
+                    = x + 5 \\[3ex]
+                    = 9 + 5 \\[3ex]
+                    = 14 \\[3ex]
+                    $
+                    14 students study only Music.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (77.) <b>CSEC</b> In a survey of 36 students, it was found that <br>
+                30 play tennis, <br>
+                <i>x</i> play volleyball ONLY, <br>
+                <i>9x</i> play BOTH tennis and volleyball <br>4 play neither tennis nor volleyball. <br><br>
+                (i) Given that: <br>
+                <i>U</i> = {students in the survey} <br>
+                <i>V</i> = {students who play Volleyball} <br>
+                <i>T</i> = {students who play Tennis} <br>
+                Copy and complete the Venn diagram below to show the number of students in the subsets marked <i>y</i>
+                and <i>z</i> <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number77.png" alt="Number 77">
+                </div> <br>
+                (ii) (a) Write an <b>expression</b> in <i>x</i> to represent the TOTAL number of students in the survey.
+                <br><br>
+                (b) Write an <b>equation</b> in <i>x</i> to represent the total number of students in the survey and
+                hence solve for <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets77')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets77">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number77.png" style="width: 100%;"
+                            alt="Number 77">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    (a) \\[3ex]
+                    Total\;\;number\;\;of\;\;students \\[3ex]
+                    = x + y + 9x + z \\[3ex]
+                    = x + (30 - 9x) + 9x + 4 \\[3ex]
+                    = x + 30 - 9x + 9x + 4 \\[3ex]
+                    = x + 34 \\[3ex]
+                    (b) \\[3ex]
+                    \implies \\[3ex]
+                    x + 34 = 36 \\[3ex]
+                    x = 36 - 34 \\[3ex]
+                    x = 2
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (78.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets78')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets78">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (79.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets79')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets79">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (80.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets80')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets80">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (81.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets81')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets81">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (82.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets82')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets82">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (83.) <b>CSEC</b> A surevy of the 30 students in Form 5 showed that some students used cameras
+                (<i>C</i>) or mobile
+                phones (<i>M</i>) to take photographs. <br>
+                20 students used mobile phones <br>
+                <i>4x</i> students used ONLY cameras <br>
+                <i>x</i> students used BOTH mobile phones and cameras <br>
+                2 students did not use either cameras or phones. <br><br>
+                (i) Copy the Venn diagram below and complete it to show, in terms of <i>x</i>, the number of students in
+                each region. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number83.png" alt="Number 83">
+                </div> <br>
+                (ii) Write an expression, in terms of <i>x</i>, which represents the TOTAL number of students in the
+                survey. <br><br>
+                (iii) Determine the number of students in Form 5 who used ONLY cameras.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets83')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets83">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number83.png" style="width: 100%;"
+                            alt="Number 83">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    Total\;\;number\;\;of\;\;students \\[3ex]
+                    = 4x + (20 - x) + x + 2 \\[3ex]
+                    = 4x + 20 -x + x + 2 \\[3ex]
+                    = 4x + 22 \\[3ex]
+                    (iii) \\[3ex]
+                    \implies \\[3ex]
+                    4x + 22 = 30 \\[3ex]
+                    4x = 30 - 22 \\[3ex]
+                    4x = 8 \\[3ex]
+                    x = \dfrac{8}{4} \\[5ex]
+                    x = 2
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (84.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets84')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets84">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (85.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets85')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets85">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (86.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets86')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets86">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (87.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets87')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets87">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (88.) <b>CSEC</b> <br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number88.png" alt="Number 88">
+                </div> <br>
+                In the diagram shown above, the Universal set, (<i>U</i>), represents all the students in a class. <br>
+                The set <i>M</i> represents the students who take Music. <br>
+                The set <i>D</i> represents the students who take Drama. <br>
+                If 24 students take Music, calculate <br><br>
+                (i) the number of students who take BOTH Music and Drama <br><br>
+                (ii) the number of students who take Drama ONLY
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets88')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets88">
+                    <br>
+                    $
+                    (i) \\[3ex]
+                    n(M) = 24 \\[3ex]
+                    n(M) = 3x + x \\[3ex]
+                    \implies \\[3ex]
+                    3x + x = 24 \\[3ex]
+                    4x = 24 \\[3ex]
+                    x = \dfrac{24}{4} \\[5ex]
+                    x = 6 \\[3ex]
+                    $
+                    6 students take BOTH Music and Drama <br><br>
+                    $
+                    (ii) \\[3ex]
+                    n(D\;\;ONLY) \\[3ex]
+                    = 7 + x \\[3ex]
+                    = 7 + 6 \\[3ex]
+                    = 13 \\[3ex]
+                    $
+                    13 students take only Drama
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (89.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets89')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets89">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (90.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets90')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets90">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (91.) <b>CSEC</b> A survey was conducted among 40 tourists. The results were: <br>
+                28 visited Antigua (A) <br>
+                30 visited Barbados (B) <br>
+                <i>3x</i> visited both Antigua and Barbados <br>
+                <i>x</i> visited neither Antigua nor Barbados <br><br>
+                (i) Copy and complete the Venn diagram below to represent the given information above. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number91.png" alt="Number 91">
+                </div> <br>
+                (ii) Write an expression, in <i>x</i>, to represent the TOTAL number of tourists in the survey. <br><br>
+                (iii) Calculate the value of <i>x</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets91')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets91">
+                    <br>
+                    (i) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number91.png" style="width: 100%;"
+                            alt="Number 91">
+                    </div> <br>
+                    $
+                    (ii) \\[3ex]
+                    The\;\;total\;\;number\;\;of\;\;tourists \\[3ex]
+                    = (28 - 3x) + (30 - 3x) + 3x + x \\[3ex]
+                    = 28 - 3x + 30 - 3x + 3x + x \\[3ex]
+                    = 58 - 2x \\[3ex]
+                    (iii) \\[3ex]
+                    The\;\;total\;\;number\;\;of\;\;tourists = 40 \\[3ex]
+                    \implies \\[3ex]
+                    58 - 2x = 40 \\[3ex]
+                    58 - 40 = 2x \\[3ex]
+                    18 = 2x \\[3ex]
+                    2x = 18 \\[3ex]
+                    x = \dfrac{18}{2} \\[5ex]
+                    x = 9
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (92.) <b>GCSE</b> $\mathcal{E}$ = {odd numbers less than 30} <br>
+                <i>A</i> = {3, 9, 15, 21, 27} <br>
+                <i>B</i> = {5, 15, 25} <br><br>
+                (a) Complete the Venn diagram to represent this information. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number92.png" alt="Number 92">
+                </div> <br>
+                A number is chosen at random from the universal set, $\mathcal{E}$ <br>
+                (b) What is the probability that the number is in the set $A \cup B$?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets92')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets92">
+                    <br>
+                    $
+                    \mathcal{E} = \{1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29\} \\[3ex]
+                    A = \{3, 9, 15, 21, 27\} \\[3ex]
+                    A' = \{1, 5, 7, 11, 13, 17, 19, 23, 25, 29\} \\[3ex]
+                    B = \{5, 15, 25\} \\[3ex]
+                    B' = \{1, 3, 7, 9, 11, 13, 17, 19, 21, 23, 27, 29\} \\[3ex]
+                    A \cap B = \{15\} \\[3ex]
+                    A \cup B = \{3, 5, 9, 15, 21, 25, 27\} \\[3ex]
+                    (A \cup B)' = \{1, 7, 11, 13, 17, 19, 23, 29\} \\[3ex]
+                    \underline{A\;\;only} \\[3ex]
+                    A \cap B' = \{3, 9, 21, 27\} \\[3ex]
+                    \underline{B\;\;only} \\[3ex]
+                    B \cap A' = \{5, 25\} \\[3ex]
+                    $
+                    (a) The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number92.png" alt="Number 92">
+                    </div> <br>
+                    $
+                    (b) \\[3ex]
+                    A \cup B = \{3, 5, 9, 15, 21, 25, 27\} \\[3ex]
+                    n(A \cup B) = 7 \\[3ex]
+                    \mathcal{E} = \{1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29\} \\[3ex]
+                    n(\mathcal{E}) = 15 \\[3ex]
+                    P(A \cup B) = \dfrac{n(A \cup B)}{n(\mathcal{E})} = \dfrac{7}{15}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (93.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets93')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets93">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (94.) <b>CSEC</b> The Venn diagram below shows the number of students who study History and French in a
+                class of 30
+                students. <br>
+                <i>U</i> = {students in the class} <br>
+                <i>H</i> = {students who study History} <br>
+                <i>F</i> = {students who study French} <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number94.png" alt="Number 94">
+                </div> <br>
+                (i) Write an expression, in <i>x</i>, in its simplest form, for the TOTAL number of students in the
+                class. <br><br>
+                (ii) State whether the following relationships are true or false: <br>
+                <ul style="list-style-type: disc;">
+                    <li>$H \cup F = U$</li>
+                    <li>$H \cap F' = \phi$</li>
+                </ul> <br>
+                (iii) Determine the number of students who study BOTH History and French.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets94')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets94">
+                    <br>
+                    $
+                    (i) \\[3ex]
+                    The\;\;total\;\;number\;\;of\;\;students \\[3ex]
+                    = (18 - x) + (14 - x) + x + 5 \\[3ex]
+                    = 18 - x + 14 - x + x + 5 \\[3ex]
+                    = 37 - x \\[3ex]
+                    (ii) \\[3ex]
+                    H \cup F = U \\[3ex]
+                    $
+                    This is false because the Universal set, U, also contains those who study neither History nor French
+                    <br>
+                    5 students do not study History or French, hence they are outside sets H and F <br>
+                    But they are still part of the universal set <br><br>
+                    $
+                    H \cap F' = \phi \\[3ex]
+                    H \cap F' = ONLY\;\;History \\[3ex]
+                    $
+                    This is also false. <br>
+                    Those who study History only is not an empty set <br><br>
+                    $
+                    (iii) \\[3ex]
+                    n(U) = 30 \\[3ex]
+                    \implies \\[3ex]
+                    37 - x = 30 \\[3ex]
+                    37 - 30 = x \\[3ex]
+                    x = 7
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (95.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets95')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets95">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (96.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets96')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets96">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (97.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets97')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets97">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (98.) <b>CSEC</b> The Venn diagram below shows the number of students who play guitar (G) or the violin
+                (V) in a class
+                of 40 students. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number98.png" alt="Number 98">
+                </div> <br>
+                (i) How many students play neither the guitar nor the violin? <br><br>
+                (ii) Write an expression, in terms of <i>x</i>, which represents the TOTAL number of students in the
+                class. <br><br>
+                (iii) Write an equation which may be used to determine the total number of students in the class.
+                <br><br>
+                (iv) How many students play the guitar?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets98')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets98">
+                    <br>
+                    (i) 12 students play neither the guitar nor the violin <br><br>
+                    $
+                    (ii) \\[3ex]
+                    \underline{Expression}:\;\;The\;\;total\;\;number\;\;of\;\;students \\[3ex]
+                    = 2x + 4 + x + 12 \\[3ex]
+                    = 3x + 16 \\[3ex]
+                    (iii) \\[3ex]
+                    The\;\;total\;\;number\;\;of\;\;students = 40 \\[3ex]
+                    \implies \\[3ex]
+                    \underline{Equation}:\;\;The\;\;total\;\;number\;\;of\;\;students \\[3ex]
+                    3x + 16 = 40 \\[3ex]
+                    (iv) \\[3ex]
+                    3x + 16 = 40 \\[3ex]
+                    3x = 40 - 16 \\[3ex]
+                    3x = 24 \\[3ex]
+                    x = \dfrac{24}{3} \\[5ex]
+                    x = 8 \\[3ex]
+                    n(G) = 2x + x \\[3ex]
+                    = 3x = 3(8) \\[3ex]
+                    = 24 \\[3ex]
+                    $
+                    24 students play the guitar
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (99.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets99')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets99">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (100.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets100')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets100">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://quantitativereasoning.appspot.com/SetAlgebra/venn-diagrams-2sets.html"
+            class="w3-button w3-xlarge w3-circle w3-silver" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (101.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets101')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets101">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (102.) <b>CSEC</b> The universal set $U = \{b, d, e, f, g, i, k, s, t, v, w\}$. <br>
+                The Venn diagram shows $U$ and three
+                sets, <i>M</i>, <i>P</i>, and <i>R</i>, which are subsets of <i>U</i>. <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number102.png" alt="Number 102">
+                </div> <br>
+                (i) State the value of $n(P \cup R)$ <br><br>
+                (ii) List the members of: <br>
+                (a.) $M \cap P$ <br>
+                (b.) $M \cup R'$ <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets102')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets102">
+                    <br>
+                    $
+                    U = \{b, d, e, f, g, i, k, s, t, v, w\} \\[3ex]
+                    M = \{b, d, i, k\} \\[3ex]
+                    P = \{b, d, e, f, s, v\} \\[3ex]
+                    R = \{d, e, f, g, i\} \\[3ex]
+                    (i) \\[3ex]
+                    P \cup R = \{b, d, e, f, g, i, s, v\} \\[3ex]
+                    n(P \cup R) = 8 \\[3ex]
+                    (ii) \\[3ex]
+                    (a.) \\[3ex]
+                    M \cap P = \{b, d\} \\[3ex]
+                    (b.) \\[3ex]
+                    R' = \{b, k, s, t, v, w\} \\[3ex]
+                    M \cup R' = \{b, d, i, k, s, t, v, w\}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (103.) <b>GCSE</b> The Venn diagram shows some information about 150 students. <br>
+                $\xi$ = 150 students <br>
+                C = students who study Chemistry <br>
+                P = students who study Physics <br><br>
+                <div class="w3-center">
+                    <img src="images/VennDiagrams-TwoSets/Questions/Number103.png" alt="Number 103">
+                </div> <br>
+                The probability that a Physics student, chosen at random, also studies Chemistry is $\dfrac{5}{12}$
+                <br><br>
+                One of the 150 students is chosen at random. <br>
+                Work out the probability that the student does <b>not</b> study either Chemistry or Physics
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets103')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets103">
+                    <br>
+                    $
+                    n(sample\;\;space) = n(P) = x + 35...number\;\;of\;\;Physics\;\;students \\[3ex]
+                    n(P \cap C) = x \\[3ex]
+                    P(P \cap C) = \dfrac{n(P \cap C)}{n(P)} = \dfrac{5}{12} \\[5ex]
+                    \implies \\[3ex]
+                    \dfrac{x}{x + 35} = \dfrac{5}{12} \\[5ex]
+                    12x = 5(x + 35) \\[3ex]
+                    12x = 5x + 175 \\[3ex]
+                    12x - 5x = 175 \\[3ex]
+                    7x = 175 \\[3ex]
+                    x = \dfrac{175}{7} \\[5ex]
+                    x = 25 \\[3ex]
+                    47 + 35 + x + y = 150 \\[3ex]
+                    82 + 25 + y = 150 \\[3ex]
+                    107 + y = 150 \\[3ex]
+                    y = 150 - 107 \\[3ex]
+                    y = 43 \\[3ex]
+                    n(neither) = n(P \cup C)' = y = 43 \\[3ex]
+                    n(sample\;\;space) = n(\xi) = 150 \\[3ex]
+                    P(P \cup C)' = \dfrac{n(P \cup C)'}{n(\xi)} \\[5ex]
+                    = \dfrac{y}{150} \\[5ex]
+                    = \dfrac{43}{150}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (104.) <b>ACT</b> At Brookfield High School, 55 seniors are enrolled in the sociology class and 40
+                seniors are enrolled
+                in the drawing class. <br>
+                Of these seniors, 20 are enrolled in both the sociology class and the drawing class. <br>
+                How many of the 120 seniors enrolled at Brookfield High School are NOT enrolled in either the sociology
+                class or the
+                drawing class? <br><br>
+                $
+                F.\;\; 5 \\[3ex]
+                G.\;\; 15 \\[3ex]
+                H.\;\; 20 \\[3ex]
+                J.\;\; 35 \\[3ex]
+                K.\;\; 45 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionVDTwoSets104')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets104">
+                    <br>
+                    $
+                    n(\mu) = 120 \\[3ex]
+                    Let: \\[3ex]
+                    sociology\;\;class = C \\[3ex]
+                    drawing\;\;class = D \\[3ex]
+                    n(C) = 55 \\[3ex]
+                    n(D) = 40 \\[3ex]
+                    n(both\;\;C\;\;and\;\;D) = 20 \\[3ex]
+                    n(neither\;\;C\;\;nor\;\;D) = k \\[3ex]
+                    $
+                    The Venn diagram is: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number104.png" alt="Number 104">
+                    </div> <br>
+                    $
+                    \implies \\[3ex]
+                    35 + 20 + 20 + k = 120 \\[3ex]
+                    75 + k = 120 \\[3ex]
+                    k = 120 - 75 \\[3ex]
+                    k = 45 \\[3ex]
+                    $
+                    45 students are NOT enrolled in either the sociology class or the drawing class
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (105.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets105')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets105">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (106.) <b>WASSCE</b> Out of 30 candidates applying for a post, 17 have degrees, 15 diplomas and 4
+                neither degree nor
+                diploma. <br>
+                How many of them have both?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionVDTwoSets106')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets106">
+                    <br>
+                    $
+                    n(\xi) = 30 \\[3ex]
+                    Let: \\[3ex]
+                    degree = DE \\[3ex]
+                    diploma = DI \\[3ex]
+                    n(DE) = 17 \\[3ex]
+                    n(DI) = 15 \\[3ex]
+                    n(neither) = 4 \\[3ex]
+                    n(both) = n(DE \cap DI) = d \\[3ex]
+                    $
+                    Let us draw the Venn diagram for this information: <br><br>
+                    <div class="w3-center">
+                        <img src="images/VennDiagrams-TwoSets/Answers/Number106.png" alt="Number 106">
+                    </div> <br>
+                    $
+                    \implies \\[3ex]
+                    (17 - d) + (15 - d) + d + 4 = 30 \\[3ex]
+                    17 - d + 15 - d + d + 4 = 30 \\[3ex]
+                    36 - d = 30 \\[3ex]
+                    36 - 30 = d \\[3ex]
+                    d = 6 \\[3ex]
+                    $
+                    6 candidates have both degrees and diplomas
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (107.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets107')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets107">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (108.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets108')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets108">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (109.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets109')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets109">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (110.)
+                <button class="solutions" onclick="solutions('solutionVDTwoSets110')">Show/Hide Answer</button>
+                <div class="result" id="solutionVDTwoSets110">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="w3-center silver w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-S4PFFZ0RE6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2020&nbsp; Samdom4Peace &nbsp;Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages2.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
