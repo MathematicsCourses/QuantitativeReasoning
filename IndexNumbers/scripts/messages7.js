@@ -2,9 +2,7 @@
     Copyright 2023 - Samuel Dominic Chukwuemeka (Samdom For Peace)
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
-    www.chukwuemeka-samuel.appspot.com
     www.samdomforpeace.com
-    www.samdomforpeace.appspot.com
     www.chukwuemekasamuel.com/IndexNumbers/indexNumbers.html
     message 7
 */

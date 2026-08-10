@@ -2,9 +2,6 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.numbersandnotations.appspot.com/numbers.html
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
 // message 7
 
 

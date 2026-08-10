@@ -1,8 +1,6 @@
 // Copyright 2018 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
-// www.chukwuemeka-samuel.appspot.com
-// www.fractions-decimals-percents.appspot.com
 
 "use strict";
 

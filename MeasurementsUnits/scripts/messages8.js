@@ -4,8 +4,7 @@
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
     www.measurementsandunits.appspot.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+
     message 8
 */
 

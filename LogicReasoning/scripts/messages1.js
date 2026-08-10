@@ -1,11 +1,7 @@
 // Copyright 2018 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
-// www.chukwuemeka-samuel.appspot.com
 // www.samdomforpeace.com
-// www.samdomforpeace.appspot.com
-// www.finance-calculators.appspot.com/simpleInterest.html
-// www.finance-calculators.appspot.com/simpleInterestApplications.html
 // message 1
 
 

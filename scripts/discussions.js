@@ -3,9 +3,7 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
-    www.quantitativereasoning.appspot.com/discussions.html
+    https://mathematicscourses.github.io/QuantitativeReasoning/discussions.html
 */
 
 "use strict";
